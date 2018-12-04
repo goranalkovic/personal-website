@@ -54,17 +54,22 @@ function swapNavLogo(animate = true) {
     let logo = $('#navbar-logo');
 
     if (animate) {
-        logo.addClass('animated jello faster');
-    }
+        logo.addClass('animated shake faster');
 
-    logo.attr('src', getNewImg());
+        setTimeout( () => {
+            logo.attr('src', getNewImg());
+        }, 100);
+    }
+    else {
+        logo.attr('src', getNewImg());
+    }
 
     setTimeout(() => {
         if (animate) {
-            logo.removeClass('animated jello faster');
+            logo.removeClass('animated jello fast');
         }
         canSwap = true;
-    }, 550);
+    }, 900);
 
 }
 
