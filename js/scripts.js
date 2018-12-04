@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Loaded");
 });
 
-let usedLogos = [1,2,3,4,5,6,7,8,9];
+let usedLogos = ;
 
 function getNewImg() {
     let currentSrc = document.getElementById('navbar-logo').src;
@@ -16,6 +16,7 @@ function getNewImg() {
     let currentVersion = currentSrc.slice(-5, -4);
 
     let newVersion = 1;
+    let rand = 0;
 
     let engine = Random.engines.mt19937().autoSeed();
     let distribution = Random.integer(0, usedLogos.length);
@@ -24,11 +25,11 @@ function getNewImg() {
 
     // noinspection EqualityComparisonWithCoercionJS
     while (usedLogos[newVersion] == currentVersion) {
-        let rand = distribution(engine);
+        rand = distribution(engine);
         newVersion = usedLogos[rand];
     }
 
-    usedLogos.remove(usedLogos.find(currentVersion));
+    usedLogos.remove(rand);
 
      console.log(`New: ${newVersion}`);
 
