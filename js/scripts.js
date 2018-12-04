@@ -15,8 +15,8 @@ function getNewImg() {
 
     let currentVersion = currentSrc.slice(-5, -4);
 
-    let newVersion = 1;
-    let rand = 0;
+    let newVersion = -1;
+    let rand = -1;
 
     // console.log(`Current: ${currentVersion}`);
 
