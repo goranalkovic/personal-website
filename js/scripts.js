@@ -35,9 +35,9 @@ function getNewImg() {
         usedLogos = [1,2,3,4,5,6,7,8,9];
     }
 
-     console.log(`New: ${newVersion}`);
+     console.log(`New: ${usedLogos[rand]}`);
 
-    return `img/logo/logo-v${newVersion}.svg`;
+    return `img/logo/logo-v${usedLogos[rand]}.svg`;
 
 }
 
