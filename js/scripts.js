@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    swapNavLogo(false);
+    $('#navbar-logo').attr('src', getNewImg());
 
     console.log("Loaded");
 });
@@ -43,31 +43,30 @@ function getNewImg() {
     return `img/logo/logo-v${newVersion}.svg`;
 }
 
-var canSwap = true;
+let canSwap = true;
 
-function swapNavLogo(animate = true) {
+function swapNavLogo() {
 
+    // Check if it's ok to swap
     if (!canSwap) return;
 
+    // Disallow swapping
     canSwap = false;
 
+    // Get logo element
     let logo = $('#navbar-logo');
 
-    if (animate) {
-        logo.addClass('animated shake fast');
+    // Start animation
+    logo.addClass('animated shake fast');
 
-        setTimeout( () => {
-            logo.attr('src', getNewImg());
-        }, 650);
-    }
-    else {
-        logo.attr('src', getNewImg());
-    }
-
+    // Swap logo
     setTimeout(() => {
-        if (animate) {
-            logo.removeClass('animated shake fast');
-        }
+        logo.attr('src', getNewImg());
+    }, 650);
+
+    // Remove animation
+    setTimeout(() => {
+        logo.removeClass('animated shake fast');
         canSwap = true;
     }, 850);
 
