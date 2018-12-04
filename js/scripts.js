@@ -58,7 +58,7 @@ function swapNavLogo(animate = true) {
 
         setTimeout( () => {
             logo.attr('src', getNewImg());
-        }, 100);
+        }, 500);
     }
     else {
         logo.attr('src', getNewImg());
@@ -69,7 +69,7 @@ function swapNavLogo(animate = true) {
             logo.removeClass('animated shake fast');
         }
         canSwap = true;
-    }, 900);
+    }, 850);
 
 }
 
