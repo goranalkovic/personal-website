@@ -18,14 +18,14 @@ function getNewImg() {
     let engine = Random.engines.mt19937().autoSeed();
     let distribution = Random.integer(1, 9);
 
-    // console.log(`Current: ${currentSrc.slice(-11)}`);
+     console.log(`Current: ${currentVersion}`);
 
     // noinspection EqualityComparisonWithCoercionJS
     while (newVersion == currentVersion) {
         newVersion = distribution(engine);
     }
 
-    // console.log(`New: ${newSrc.slice(-11)}`);
+     console.log(`New: ${newVersion}`);
 
     return `img/logo/logo-v${newVersion}.svg`;
 
