@@ -37,7 +37,7 @@ function getNewImg() {
         newVersion = getRandomElement();
     }
 
-    console.log(`New: ${usedLogos[rand]}`);
+    console.log(`New: ${newVersion}`);
     console.log(usedLogos);
 
     return `img/logo/logo-v${newVersion}.svg`;
