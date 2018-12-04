@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("Loaded");
+    swapNavLogo(false);
 
-    swapNavLogo();
+    console.log("Loaded");
 });
 
 function getRandomInt(min, max) {
@@ -28,7 +28,7 @@ function getNewImg() {
 
 var canSwap = true;
 
-function swapNavLogo() {
+function swapNavLogo(animate = true) {
 
     if (!canSwap) return;
 
@@ -36,14 +36,14 @@ function swapNavLogo() {
 
     let logo = $('#navbar-logo');
 
+    if (animate) logo.addClass('animated jello');
+
     logo.attr('src', getNewImg());
 
-    logo.addClass('animated jello');
-
-    setTimeout( () => {
-        logo.removeClass('animated jello');
+    setTimeout(() => {
+        if (animate) logo.removeClass('animated jello');
         canSwap = true;
-    } , 1100);
+    }, 1100);
 
 }
 
