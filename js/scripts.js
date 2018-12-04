@@ -17,11 +17,11 @@ function swapNavLogo() {
 
     let newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`;
 
-    while (newSrc == currentSrc) {
+    while (newSrc === currentSrc) {
         newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`
     }
 
     console.log(`New: ${newSrc}`);
 
-    document.getElementById('navbar-lŁogo').src = newSrc;
+    document.getElementById('navbar-logo').src = newSrc;
 }
