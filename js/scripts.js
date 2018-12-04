@@ -30,11 +30,11 @@ function swapNavLogo() {
 
     let logo = $('#navbar-logo');
 
-    logo.removeClass('animated jello');
-
     logo.attr('src', getNewImg());
 
     logo.addClass('animated jello');
+
+    setTimeout( logo.removeClass('animated jello') , 200);
 
 }
 
