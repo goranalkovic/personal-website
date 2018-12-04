@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Loaded");
 });
 
-let usedLogos = [1,2,3,4,5,6,7,8,9];
+let usedLogos = [1,4,7,2,5,8,3,6,9];
 
 function getNewImg() {
     let currentSrc = document.getElementById('navbar-logo').src;
@@ -32,7 +32,7 @@ function getNewImg() {
     usedLogos.splice(rand,1);
 
     if (usedLogos.length < 1) {
-        usedLogos = [1,2,3,4,5,6,7,8,9];
+        usedLogos = [1,4,7,2,5,8,3,6,9];
     }
 
      console.log(`New: ${usedLogos[rand]}`);
