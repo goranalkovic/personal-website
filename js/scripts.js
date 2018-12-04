@@ -19,8 +19,32 @@ function getRandomElement() {
 
     usedLogos.splice(num, 1);
 
+
     if (usedLogos.length < 1) {
-        usedLogos = [1, 4, 7, 2, 5, 8, 3, 6, 9];
+        let engine2 = Random.engines.mt19937().autoSeed();
+        let distribution2 = Random.integer(0, 5);
+        let num2 = distribution2(engine2);
+
+        switch (num2) {
+            case 0:
+                usedLogos = [1, 4, 7, 2, 5, 8, 3, 6, 9];
+                break;
+            case 1:
+                usedLogos = [1, 4, 7, 3, 6, 9, 2, 5, 8];
+                break;
+            case 2:
+                usedLogos = [2, 5, 8, 1, 4, 7, 3, 6, 9];
+                break;
+            case 3:
+                usedLogos = [2, 5, 8, 3, 6, 9, 1, 4, 7];
+                break;
+            case 4:
+                usedLogos = [3, 6, 9, 1, 4, 7, 2, 5, 8];
+                break;
+            case 5:
+                usedLogos = [3, 6, 9, 2, 5, 8, 1, 4, 7];
+                break;
+        }
     }
 
     return output;
@@ -33,7 +57,7 @@ function getNewImg() {
 
     let newVersion = getRandomElement();
 
-    if (newVersion === currentVersion){
+    if (newVersion === currentVersion) {
         newVersion = getRandomElement();
     }
 
