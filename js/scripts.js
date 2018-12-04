@@ -12,11 +12,16 @@ function getRandomInt(min, max) {
 
 function swapNavLogo() {
     let currentSrc = document.getElementById('navbar-logo').src;
-    let newSrc = `img/logo/logo-v${getRandomInt(1,9)}.svg`;
 
-    while(newSrc == currentSrc) {
-        newSrc = `img/logo/logo-v${getRandomInt(1,9)}.svg`
+    console.log(`Current: ${currentSrc}`);
+
+    let newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`;
+
+    while (newSrc == currentSrc) {
+        newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`
     }
 
-    document.getElementById('navbar-logo').src = newSrc;
+    console.log(`New: ${newSrc}`);
+
+    document.getElementById('navbar-lŁogo').src = newSrc;
 }
