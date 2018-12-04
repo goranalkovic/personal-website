@@ -58,7 +58,7 @@ function swapNavLogo(animate = true) {
 
         setTimeout( () => {
             logo.attr('src', getNewImg());
-        }, 500);
+        }, 650);
     }
     else {
         logo.attr('src', getNewImg());
