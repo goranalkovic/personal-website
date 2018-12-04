@@ -26,6 +26,8 @@ function getNewImg() {
     // console.log(`New: ${newSrc.slice(-11)}`);
 
     return `img/logo/logo-v${newVersion}.svg`;
+
+    swapNavLogo();
 }
 
 let canSwap = true;
