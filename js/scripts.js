@@ -10,35 +10,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let usedLogos = [1, 4, 7, 2, 5, 8, 3, 6, 9];
 
-function getNewImg() {
-    let currentSrc = document.getElementById('navbar-logo').src;
+function getRandomElement() {
+    let engine = Random.engines.mt19937().autoSeed();
+    let distribution = Random.integer(0, usedLogos.length - 1);
+    let num = distribution(engine);
 
-    let currentVersion = currentSrc.slice(-5, -4);
+    let output = usedLogos[num];
 
-    let newVersion = -1;
-    let rand = -1;
-
-    // console.log(`Current: ${currentVersion}`);
-
-    // noinspection EqualityComparisonWithCoercionJS
-    do {
-        let engine = Random.engines.mt19937().autoSeed();
-        let distribution = Random.integer(0, usedLogos.length - 1);
-
-        rand = distribution(engine);
-        newVersion = usedLogos[rand];
-    } while (usedLogos[newVersion] == currentVersion);
-
-    usedLogos.splice(rand, 1);
+    usedLogos.splice(num, 1);
 
     if (usedLogos.length < 1) {
         usedLogos = [1, 4, 7, 2, 5, 8, 3, 6, 9];
     }
 
+    return output;
+}
+
+function getNewImg() {
+    let currentSrc = document.getElementById('navbar-logo').src;
+
+    let currentVersion = currentSrc.slice(-5, -4);
+
+    let newVersion = getRandomElement();
+
+    if (newVersion === currentVersion){
+        newVersion = getRandomElement();
+    }
+
     console.log(`New: ${usedLogos[rand]}`);
     console.log(usedLogos);
 
-    return `img/logo/logo-v${usedLogos[rand]}.svg`;
+    return `img/logo/logo-v${newVersion}.svg`;
 
 }
 
