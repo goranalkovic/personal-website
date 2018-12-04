@@ -28,7 +28,9 @@ function getNewImg() {
 
 function swapNavLogo() {
 
-    $('#navbar-logo').attr('src', getNewImg()).animateCss('jello');
+    $('#navbar-logo').attr('src', getNewImg());
+
+    $('#navbar.logo').animateCss('jello');
 
 }
 
