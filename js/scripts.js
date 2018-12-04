@@ -1,14 +1,10 @@
+import * as Random from "./random";
+
 document.addEventListener("DOMContentLoaded", () => {
     $('#navbar-logo').attr('src', getNewImg());
 
     console.log("Loaded");
 });
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 function getNewImg() {
     let currentSrc = document.getElementById('navbar-logo').src;
@@ -17,10 +13,14 @@ function getNewImg() {
 
     let newVersion = 1;
 
+    let engine = Random.engines.mt19937().autoSeed();
+    let distribution = Random.integer(1, 9);
+
     // console.log(`Current: ${currentSrc.slice(-11)}`);
 
+    // noinspection EqualityComparisonWithCoercionJS
     while (newVersion == currentVersion) {
-        newVersion = getRandomInt(1, 9);
+        newVersion = distribution(engine);
     }
 
     // console.log(`New: ${newSrc.slice(-11)}`);
