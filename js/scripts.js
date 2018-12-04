@@ -28,6 +28,6 @@ function getNewImg() {
 
 function swapNavLogo() {
 
-    $('#navbar-logo').toggle("slow").delay(200).attr('src', getNewImg()).delay(200).toggle("slow");
+    $('#navbar-logo').fadeOut("slow").delay(200).attr('src', getNewImg()).delay(200).fadeIn("slow");
 
 }
