@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-    $("#navbar-logo").click(switchNavbarImg());
-    alert("Test");
+    $("#navbar-logo-link").click(switchNavbarImg());
+
+    console.log("Loaded");
 });
 
 function getRandomInt(min, max) {
