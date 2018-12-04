@@ -29,7 +29,11 @@ function getNewImg() {
         newVersion = usedLogos[rand];
     }
 
-    usedLogos.removeItem(rand);
+    usedLogos.splice(rand,1);
+
+    if (usedLogos.length < 1) {
+        usedLogos = [1,2,3,4,5,6,7,8,9];
+    }
 
      console.log(`New: ${newVersion}`);
 
