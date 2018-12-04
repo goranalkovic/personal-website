@@ -18,13 +18,13 @@ function getNewImg() {
     let newVersion = 1;
     let rand = 0;
 
-    let engine = Random.engines.mt19937().autoSeed();
-    let distribution = Random.integer(0, usedLogos.length);
-
     // console.log(`Current: ${currentVersion}`);
 
     // noinspection EqualityComparisonWithCoercionJS
     while (usedLogos[newVersion] == currentVersion) {
+        let engine = Random.engines.mt19937().autoSeed();
+        let distribution = Random.integer(0, usedLogos.length - 1);
+
         rand = distribution(engine);
         newVersion = usedLogos[rand];
     }
