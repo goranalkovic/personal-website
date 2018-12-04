@@ -36,6 +36,7 @@ function getNewImg() {
     }
 
     console.log(`New: ${usedLogos[rand]}`);
+    console.log(usedLogos);
 
     return `img/logo/logo-v${usedLogos[rand]}.svg`;
 
