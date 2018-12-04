@@ -54,7 +54,7 @@ function swapNavLogo(animate = true) {
     let logo = $('#navbar-logo');
 
     if (animate) {
-        logo.addClass('animated shake faster');
+        logo.addClass('animated shake fast');
 
         setTimeout( () => {
             logo.attr('src', getNewImg());
@@ -66,7 +66,7 @@ function swapNavLogo(animate = true) {
 
     setTimeout(() => {
         if (animate) {
-            logo.removeClass('animated jello fast');
+            logo.removeClass('animated shake fast');
         }
         canSwap = true;
     }, 900);
