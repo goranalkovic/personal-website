@@ -26,7 +26,13 @@ function getNewImg() {
     return newSrc;
 }
 
+var canSwap = true;
+
 function swapNavLogo() {
+
+    if (!canSwap) return;
+
+    canSwap = false;
 
     let logo = $('#navbar-logo');
 
@@ -34,7 +40,10 @@ function swapNavLogo() {
 
     logo.addClass('animated jello');
 
-    setTimeout( logo.removeClass('animated jello') , 200);
+    setTimeout( () => {
+        logo.removeClass('animated jello');
+        canSwap = true;
+    } , 1100);
 
 }
 
