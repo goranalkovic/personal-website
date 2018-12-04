@@ -37,11 +37,7 @@ function getNewImg() {
         newVersion = getRandomElement();
     }
 
-    console.log(`New: ${newVersion}`);
-    console.log(usedLogos);
-
     return `img/logo/logo-v${newVersion}.svg`;
-
 }
 
 let canSwap = true;
