@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+    $("#navbar-logo").click(switchNavbarImg());
+});
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -7,8 +11,9 @@ function getRandomInt(min, max) {
 function switchNavbarImg() {
 
     $("#navbar-logo")
-        .fadeTo("slow", 0.0)
+        // .fadeTo("slow", 0.0)
         .attr("src", `img/logo/logo-v${getRandomInt(1,9)}.svg`)
-        .fadeTo("slow", 1.0);
+        // .fadeTo("slow", 1.0)
+    ;
 
 }
