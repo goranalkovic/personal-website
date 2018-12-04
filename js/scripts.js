@@ -28,6 +28,6 @@ function getNewImg() {
 
 function swapNavLogo() {
 
-    $('#navbar-logo').hide().attr('src', getNewImg()).show();
+    $('#navbar-logo').hide("slow").attr('src', getNewImg()).show("slow");
 
 }
