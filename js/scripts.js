@@ -1,4 +1,4 @@
-import * as Random from "./random";
+// import * as Random from "./random";
 
 document.addEventListener("DOMContentLoaded", () => {
     $('#navbar-logo').attr('src', getNewImg());
