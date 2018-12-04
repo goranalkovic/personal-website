@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Loaded");
 });
 
-let usedLogos = ;
+let usedLogos = [1,2,3,4,5,6,7,8,9];
 
 function getNewImg() {
     let currentSrc = document.getElementById('navbar-logo').src;
