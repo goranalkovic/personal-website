@@ -24,17 +24,17 @@ function getNewImg() {
         case '1':
         case '2':
         case '3':
-            newVersion = getRandomInt(4, 6);
+            newVersion = getRandomInt(4, 9);
             break;
         case '4':
         case '5':
         case '6':
-            newVersion = getRandomInt(7, 9);
+            newVersion = getRandomInt(0,1) ? getRandomInt(1,3) : getRandomInt(7, 9);
             break;
         case '7':
         case '8':
         case '9':
-            newVersion = getRandomInt(1, 3);
+            newVersion = getRandomInt(1, 6);
             break;
     }
 
