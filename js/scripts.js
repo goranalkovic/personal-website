@@ -11,17 +11,24 @@ function getRandomInt(min, max) {
 }
 
 function swapNavLogo() {
-    let currentSrc = document.getElementById('navbar-logo').src;
 
-    console.log(`Current: ${currentSrc.slice(-11)}`);
+    $('#navbar-logo').fadeOut(300, () => {
+        let currentSrc = document.getElementById('navbar-logo').src;
 
-    let newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`;
+        console.log(`Current: ${currentSrc.slice(-11)}`);
 
-    while (newSrc.slice(-11) === currentSrc.slice(-11)) {
-        newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`
-    }
+        let newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`;
 
-    console.log(`New: ${newSrc.slice(-11)}`);
+        while (newSrc.slice(-11) === currentSrc.slice(-11)) {
+            newSrc = `img/logo/logo-v${getRandomInt(1, 9)}.svg`
+        }
 
-    document.getElementById('navbar-logo').src = newSrc;
+        console.log(`New: ${newSrc.slice(-11)}`);
+
+        document.getElementById('navbar-logo').src = newSrc;
+
+        $('#navbar-logo').fadeIn(200);
+    })
+
+
 }
