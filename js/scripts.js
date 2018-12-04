@@ -11,5 +11,12 @@ function getRandomInt(min, max) {
 }
 
 function swapNavLogo() {
-    document.getElementById('navbar-logo').src = `img/logo/logo-v${getRandomInt(1,9)}.svg`;
+    let currentSrc = document.getElementById('navbar-logo').src;
+    let newSrc = `img/logo/logo-v${getRandomInt(1,9)}.svg`;
+
+    while(newSrc == currentSrc) {
+        newSrc = `img/logo/logo-v${getRandomInt(1,9)}.svg`
+    }
+
+    document.getElementById('navbar-logo').src = newSrc;
 }
