@@ -21,13 +21,13 @@ function getNewImg() {
     // console.log(`Current: ${currentVersion}`);
 
     // noinspection EqualityComparisonWithCoercionJS
-    while (usedLogos[newVersion] == currentVersion) {
+    do {
         let engine = Random.engines.mt19937().autoSeed();
         let distribution = Random.integer(0, usedLogos.length - 1);
 
         rand = distribution(engine);
         newVersion = usedLogos[rand];
-    }
+    } while (usedLogos[newVersion] == currentVersion);
 
     usedLogos.splice(rand, 1);
 
