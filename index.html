@@ -11,14 +11,18 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- jQuery -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </head>
 <body>
 
 
 <nav class="navbar navbar-light navbar-expand-sm sticky-top bg-light shadow-sm">
     <div class="container">
-        <a href="#" class="navbar-brand justify-content-start">
-            <img src="img/logo/logo-v4.svg" class="brand-img" alt="Goran Alković"/>
+        <a href="#" class="navbar-brand justify-content-start" onmouseover="switchNavbarImg()" onfocus="switchNavbarImg()">
+            <img src="img/logo/logo-v4.svg" class="brand-img" alt="Goran Alković" id="navbar-logo"/>
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -53,7 +57,7 @@
                 amazing stuff with things I already know. I love all kinds of design, but I also love making something
                 amazing out of my designs.</p>
             <p>
-                <a href="#" class="btn btn-primary my-2">See what I've done</a>
+                <a href="#" class="btn btn-primary my-2">See what I can do</a>
                 <a href="#" class="btn btn-secondary my-2">Contact me</a>
             </p>
         </div>
