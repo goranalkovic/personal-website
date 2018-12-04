@@ -1,11 +1,9 @@
-import * from "./random";
 import * as Random from "./random";
-
 
 document.addEventListener("DOMContentLoaded", () => {
     $('#navbar-logo').attr('src', getNewImg());
 
-document.getElementById('navbar-logo-link').addEventListener('click', swapNavLogo);
+    document.getElementById('navbar-logo-link').addEventListener('click', swapNavLogo);
 
     console.log("Loaded");
 });
