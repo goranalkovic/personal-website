@@ -13,25 +13,29 @@ function getRandomInt(min, max) {
 function getNewImg() {
     let currentSrc = document.getElementById('navbar-logo').src;
 
-    let currentVersion = currentSrc.slice(-5,-4);
+    let currentVersion = currentSrc.slice(-5, -4);
 
     let newVersion = 1;
 
     // console.log(`Current: ${currentSrc.slice(-11)}`);
 
     // noinspection EqualityComparisonWithCoercionJS
-    while (currentVersion == newVersion) {
-        switch (currentVersion) {
-            case '1':
-            case '2':
-            case '3': newVersion = getRandomInt(4,6); break;
-            case '4':
-            case '5':
-            case '6': newVersion = getRandomInt(7,9); break;
-            case '7':
-            case '8':
-            case '9': newVersion = getRandomInt(1,3); break;
-        }
+    switch (currentVersion) {
+        case '1':
+        case '2':
+        case '3':
+            newVersion = getRandomInt(4, 6);
+            break;
+        case '4':
+        case '5':
+        case '6':
+            newVersion = getRandomInt(7, 9);
+            break;
+        case '7':
+        case '8':
+        case '9':
+            newVersion = getRandomInt(1, 3);
+            break;
     }
 
     // console.log(`New: ${newSrc.slice(-11)}`);
@@ -50,7 +54,7 @@ function swapNavLogo(animate = true) {
     let logo = $('#navbar-logo');
 
     if (animate) {
-        logo.addClass('animated jello shadow');
+        logo.addClass('animated jello');
         logo.css('cursor', 'default');
     }
 
@@ -58,7 +62,7 @@ function swapNavLogo(animate = true) {
 
     setTimeout(() => {
         if (animate) {
-            logo.removeClass('animated jello shadow');
+            logo.removeClass('animated jello');
             logo.css('cursor', 'pointer');
         }
         canSwap = true;
