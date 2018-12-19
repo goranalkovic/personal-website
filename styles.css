@@ -39,3 +39,8 @@ footer p {
 .card-img-height {
     height: 5rem;
 }
+
+.card img {
+    -ms-interpolation-mode: bicubic;
+    image-rendering: pixelated;
+}
