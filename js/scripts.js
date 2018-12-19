@@ -19,7 +19,7 @@ function getRandomElement() {
 
     usedLogos.splice(num, 1);
 
-
+    // Random refills
     if (usedLogos.length < 1) {
         let engine2 = Random.engines.mt19937().autoSeed();
         let distribution2 = Random.integer(0, 5);
