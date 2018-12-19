@@ -36,3 +36,8 @@ footer p {
     width: 5rem;
     margin-right: 0.4rem;
 }
+
+.h-4rem {
+    max-height: 4rem;
+    height: 4rem;
+}
