@@ -22,7 +22,7 @@
 <body>
 
 
-<nav class="navbar navbar-light navbar-expand-sm sticky-top bg-light shadow-sm">
+<nav class="navbar navbar-light navbar-expand-sm sticky-top bg-light shadow-sm" id="navigation">
     <div class="container">
         <span class="navbar-brand justify-content-start" id="navbar-logo-link" style="cursor: pointer;">
             <img src="img/logo/logo-v4.svg" class="brand-img" alt="Goran Alković" id="navbar-logo"/>
@@ -34,7 +34,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link" href="#cv">CV</a>
                 </li>
@@ -50,7 +50,7 @@
 </nav>
 
 
-<main role="main">
+<main role="main" data-spy="scroll" data-target="#navigation" data-offset="0">
 
     <section class="jumbotron text-center">
         <div class="container">
