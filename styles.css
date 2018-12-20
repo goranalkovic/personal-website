@@ -36,8 +36,10 @@ footer p {
     width: 5rem;
     margin-right: 0.4rem;
 }
-.card-img-height {
+.card-thumbnail {
     height: 5rem;
+    width: 5rem;
+    object-fit: cover;
 }
 
 .card img {
