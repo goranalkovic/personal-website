@@ -2,20 +2,17 @@
     cursor: ew-resize;
     width: 8.5rem;
     box-shadow: 0px 0.2rem 0.8rem rgba(10, 10, 10, 0.3);
-    margin-bottom: 1.5rem;    
-    transition: 0.24s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 1.5rem;
     border-radius: 0.2rem;
-}
-
-#navbar-logo:hover {
-    box-shadow: 0px 0.6rem 1.4rem 0.2rem rgba(10, 10, 10, 0.4);
 }
 
 p, h1, h2, h3, h4, h5, h6, a, b, i, em, span, strong, button, input {
     font-family: 'Nunito', sans-serif;
 }
 
-
+.section-bg-gradient-light {
+    background-image: linear-gradient(-141deg, rgb(223, 216, 217) 0px, rgb(245, 245, 245) 71%, rgb(255, 255, 255) 100%);
+}
 
 .hero-underline::before {
     content: "";
@@ -57,4 +54,15 @@ p, h1, h2, h3, h4, h5, h6, a, b, i, em, span, strong, button, input {
 .hero-underline:hover::after {
     opacity: 1;
     transform: translateX(-9rem) translateY(2rem) scale(1);
+}
+
+.card {
+    border-radius: 0.8rem;
+}
+
+.card-image img {
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    -ms-interpolation-mode: bicubic;
+    object-fit: cover;
 }
