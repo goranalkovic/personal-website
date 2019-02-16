@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     $('#navbar-logo').attr('src', getNewImg());
 
-    document.getElementById('navbar-logo-link').addEventListener('click', swapNavLogo);
+    document.getElementById('navbar-logo').addEventListener('click', swapNavLogo);
 
     console.log("Loaded");
 });
