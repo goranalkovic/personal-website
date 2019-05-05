@@ -4,11 +4,12 @@
     {
       "name": "Natjecanje u znanju",
       "category": "STEM Games Arene",
-      "startTime": "14:00",
-      "endTime": "15:00",
-      "location": "Hotel Pical",
-      "day": "Tuesday",
-      "date": "2019-06-06"
+      "locationName": "Hotel Pical",
+      "locationLat": "1",
+      "locationLon": "2",
+      "dayNumber": 2,
+      "startTime": "",
+      "endTime": ""
     }
   ]
 }
