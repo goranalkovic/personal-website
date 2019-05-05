@@ -5,11 +5,11 @@
       "name": "Natjecanje u znanju",
       "category": "STEM Games Arene",
       "locationName": "Hotel Pical",
-      "locationLat": "1",
-      "locationLon": "2",
+      "locationLat": "-33.852",
+      "locationLon": "151.211",
       "dayNumber": 2,
-      "startTime": "",
-      "endTime": ""
+      "startTime": "2019-05-06 01:31:10.256743",
+      "endTime": "2019-05-06 01:31:10.256743"
     }
   ]
 }
