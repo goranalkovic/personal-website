@@ -1,0 +1,35 @@
+{
+  "lastUpdate": "2019-05-06 01:31:10.256743",
+  "items": [
+    {
+      "busName": "A",
+      "departureTime": "2019-05-12 08:10:00",
+      "route": "Lanterna - Novigrad"
+    },
+    {
+      "busName": "A",
+      "departureTime": "2019-05-12 08:40:00",
+      "route": "Novigrad - Lanterna"
+    },
+    {
+      "busName": "B",
+      "departureTime": "2019-05-12 08:10:00",
+      "route": "Lanterna - Novigrad"
+    },
+    {
+      "busName": "B",
+      "departureTime": "2019-05-12 08:40:00",
+      "route": "Novigrad - Lanterna"
+    },
+    {
+      "busName": "C",
+      "departureTime": "2019-05-12 08:10:00",
+      "route": "Lanterna - Novigrad"
+    },
+    {
+      "busName": "C",
+      "departureTime": "2019-05-12 08:40:00",
+      "route": "Novigrad - Lanterna"
+    },
+  ]
+}
