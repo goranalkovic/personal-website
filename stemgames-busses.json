@@ -1,35 +1,245 @@
 {
-  "lastUpdate": "2019-05-06 01:31:10.256743",
+  "lastUpdate": "2019-05-08 09:00:00",
   "items": [
-    {
-      "busName": "A",
-      "departureTime": "2019-05-12 08:10:00",
-      "route": "Lanterna - Novigrad"
-    },
-    {
-      "busName": "A",
-      "departureTime": "2019-05-12 08:40:00",
-      "route": "Novigrad - Lanterna"
-    },
-    {
-      "busName": "B",
-      "departureTime": "2019-05-12 08:10:00",
-      "route": "Lanterna - Novigrad"
-    },
-    {
-      "busName": "B",
-      "departureTime": "2019-05-12 08:40:00",
-      "route": "Novigrad - Lanterna"
-    },
-    {
-      "busName": "C",
-      "departureTime": "2019-05-12 08:10:00",
-      "route": "Lanterna - Novigrad"
-    },
-    {
-      "busName": "C",
-      "departureTime": "2019-05-12 08:40:00",
-      "route": "Novigrad - Lanterna"
-    }
-  ]
+  {
+    "busName": "A",
+    "departureTime": "8:10",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "A",
+    "departureTime": "8:40",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "9:00",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "A",
+    "departureTime": "9:25",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "9:45",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "A",
+    "departureTime": "10:10",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "12:00",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "A",
+    "departureTime": "12:45",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "13:30",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "A",
+    "departureTime": "14:15",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "15:55",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "A",
+    "departureTime": "16:15",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "16:40",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "A",
+    "departureTime": "17:00",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "19:30",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "A",
+    "departureTime": "21:00",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "9:15",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "10:00",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "10:45",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "11:30",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "12:15",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "13:00",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "13:45",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "14:30",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "15:15",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "16:00",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "16:45",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "17:30",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "18:15",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "19:00",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "19:45",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "B",
+    "departureTime": "21:15",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "8:10",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "C",
+    "departureTime": "8:40",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:00",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:25",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:45",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "10:10",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "11:30",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "C",
+    "departureTime": "12:15",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "13:00",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "C",
+    "departureTime": "13:45",
+    "route": "Novigrad - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "15:55",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "16:15",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "16:40",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "17:00",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "19:00",
+    "route": "Lanterna - Novigrad"
+  },
+  {
+    "busName": "C",
+    "departureTime": "20:30",
+    "route": "Novigrad - Lanterna"
+  }
+]
 }
