@@ -1,0 +1,41 @@
+{
+  "lastUpdate": "2019-05-06 01:31:10.256743",
+  "events": [
+    {
+      "name": "Breakfast",
+      "category": "meals",
+      "locationName": "Restaurant Lanterna",
+      "locationLat": "45.29572",
+      "locationLon": "13.57295",
+      "startTime": "2019-05-06 07:00:0.0",
+      "endTime": "2019-05-12 10:00:0.0"
+    },
+    {
+      "name": "Lunch",
+      "category": "meals",
+      "locationName": "Restaurant Lanterna",
+      "locationLat": "45.29572",
+      "locationLon": "13.57295",
+      "startTime": "2019-05-06 12:00:0.0",
+      "endTime": "2019-05-12 14:00:0.0"
+    },    
+    {
+      "name": "Dinner",
+      "category": "meals",
+      "locationName": "Restaurant Lanterna",
+      "locationLat": "45.29572",
+      "locationLon": "13.57295",
+      "startTime": "2019-05-06 18:00:0.0",
+      "endTime": "2019-05-12 21:00:0.0"
+    },    
+    {
+      "name": "Lunch",
+      "category": "arenas",
+      "locationName": "Hotel Pical",
+      "locationLat": "45.23717",
+      "locationLon": "13.59840",
+      "startTime": "2019-05-06 13:00:0.0",
+      "endTime": "2019-05-12 14:00:0.0"
+    }
+  ]
+}
