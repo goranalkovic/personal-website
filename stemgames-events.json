@@ -3,7 +3,7 @@
   "events": [
     {
       "name": "Natjecanje u znanju",
-      "category": "STEM Games Arene",
+      "category": "arenas",
       "locationName": "Hotel Pical",
       "locationLat": "-33.852",
       "locationLon": "151.211",
