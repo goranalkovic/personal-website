@@ -7,8 +7,8 @@
       "locationName": "Restaurant Lanterna",
       "locationLat": "45.29572",
       "locationLon": "13.57295",
-      "startTime": "2019-05-06 07:00:0.0",
-      "endTime": "2019-05-12 10:00:0.0"
+      "startTime": "2019-05-06 07:00:00",
+      "endTime": "2019-05-12 10:00:00"
     },
     {
       "name": "Lunch",
@@ -16,8 +16,8 @@
       "locationName": "Restaurant Lanterna",
       "locationLat": "45.29572",
       "locationLon": "13.57295",
-      "startTime": "2019-05-06 12:00:0.0",
-      "endTime": "2019-05-12 14:00:0.0"
+      "startTime": "2019-05-06 12:00:00",
+      "endTime": "2019-05-12 14:00:00"
     },    
     {
       "name": "Dinner",
@@ -25,8 +25,8 @@
       "locationName": "Restaurant Lanterna",
       "locationLat": "45.29572",
       "locationLon": "13.57295",
-      "startTime": "2019-05-06 18:00:0.0",
-      "endTime": "2019-05-12 21:00:0.0"
+      "startTime": "2019-05-06 18:00:00",
+      "endTime": "2019-05-12 21:00:00"
     },    
     {
       "name": "Lunch",
@@ -34,8 +34,8 @@
       "locationName": "Hotel Pical",
       "locationLat": "45.23717",
       "locationLon": "13.59840",
-      "startTime": "2019-05-06 13:00:0.0",
-      "endTime": "2019-05-12 14:00:0.0"
+      "startTime": "2019-05-06 13:00:00",
+      "endTime": "2019-05-12 14:00:00"
     }
   ]
 }
