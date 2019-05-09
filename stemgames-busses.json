@@ -1,315 +1,235 @@
 {
-  "lastUpdate": "2019-05-09 07:45:00",
+  "lastUpdate": "2019-05-10 07:45:00",
   "items": [
   {
     "busName": "A",
-    "departureTime": "8:10",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "A",
-    "departureTime": "8:40",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "A",
-    "departureTime": "9:30",
+    "departureTime": "9:00",
     "route": "Lanterna - Pical"
   },
   {
     "busName": "A",
-    "departureTime": "9:55",
+    "departureTime": "9:25",
     "route": "Pical - Lanterna"
   },
   {
     "busName": "A",
-    "departureTime": "10:00",
-    "route": "Lanterna - Novigrad"
+    "departureTime": "9:45",
+    "route": "Lanterna - Pical"
   },
   {
     "busName": "A",
-    "departureTime": "10:45",
-    "route": "Novigrad - Lanterna"
+    "departureTime": "10:10",
+    "route": "Pical - Lanterna"
   },
   {
     "busName": "A",
-    "departureTime": "11:30",
-    "route": "Lanterna - Novigrad"
+    "departureTime": "13:00",
+    "route": "Lanterna - Joža Šuran Primary school"
   },
   {
     "busName": "A",
-    "departureTime": "12:15",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "A",
-    "departureTime": "13:10",
-    "route": "Lanterna - Primary school of Joža Šuran, Višnjan"
+    "departureTime": "13:30",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "A",
     "departureTime": "14:00",
-    "route": "Primary school of Joža Šuran, Višnjan - Lanterna"
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "A",
+    "departureTime": "14:30",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "A",
     "departureTime": "15:00",
-    "route": "Lanterna - Primary school of Joža Šuran, Višnjan"
+    "route": "Lanterna - Joža Šuran Primary school"
   },
   {
     "busName": "A",
     "departureTime": "15:30",
-    "route": "Primary school of Joža Šuran, Višnjan - Lanterna"
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "A",
-    "departureTime": "16:05",
+    "departureTime": "15:55",
     "route": "Lanterna - Pical"
   },
   {
     "busName": "A",
-    "departureTime": "16:30",
+    "departureTime": "16:15",
     "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "A",
+    "departureTime": "16:40",
+    "route": "Lanterna - Pical"
   },
   {
     "busName": "A",
     "departureTime": "17:00",
-    "route": "Lanterna - Primary school of Joža Šuran, Višnjan"
-  },
-  {
-    "busName": "A",
-    "departureTime": "19:00",
-    "route": "Primary school of Joža Šuran, Višnjan - Lanterna"
-  },
-  {
-    "busName": "A",
-    "departureTime": "19:45",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "A",
-    "departureTime": "21:00",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "B",
-    "departureTime": "8:10",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "B",
-    "departureTime": "8:50",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "B",
-    "departureTime": "9:30",
-    "route": "Lanterna - Pical"
-  },
-  {
-    "busName": "B",
-    "departureTime": "9:55",
     "route": "Pical - Lanterna"
   },
   {
-    "busName": "B",
-    "departureTime": "10:00",
-    "route": "Lanterna - Novigrad"
+    "busName": "A",
+    "departureTime": "17:30",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "A",
+    "departureTime": "18:15",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "B",
-    "departureTime": "10:45",
-    "route": "Novigrad - Lanterna"
+    "departureTime": "13:30",
+    "route": "Lanterna - Joža Šuran Primary school"
   },
   {
     "busName": "B",
-    "departureTime": "11:30",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "B",
-    "departureTime": "12:15",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "B",
-    "departureTime": "13:00",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "B",
-    "departureTime": "13:45",
-    "route": "Novigrad - Lanterna"
+    "departureTime": "14:00",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "B",
     "departureTime": "14:30",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
+    "route": "Lanterna - Joža Šuran Primary school"
   },
   {
     "busName": "B",
-    "departureTime": "15:15",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
+    "departureTime": "15:00",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "B",
-    "departureTime": "16:05",
-    "route": "Lanterna - Pical"
+    "departureTime": "15:30",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "B",
+    "departureTime": "16:00",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "B",
     "departureTime": "16:30",
-    "route": "Pical - Lanterna"
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "B",
+    "departureTime": "17:00",
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "B",
     "departureTime": "17:30",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
+    "route": "Lanterna - Joža Šuran Primary school"
   },
   {
     "busName": "B",
+    "departureTime": "18:10",
+    "route": "Joža Šuran Primary school - Lanterna"
+  },
+  {
+    "busName": "B",
+    "departureTime": "20:30",
+    "route": "Lanterna - Višnjan observatory"
+  },
+  {
+    "busName": "B",
+    "departureTime": "22:15",
+    "route": "Visnjan zvjezdarnica - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:00",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:25",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "9:45",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "10:10",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "13:00",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "C",
+    "departureTime": "13:30",
+    "route": "Joža Šuran Primary school - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "14:00",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "C",
+    "departureTime": "14:30",
+    "route": "Joža Šuran Primary school - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "15:00",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "C",
+    "departureTime": "15:30",
+    "route": "Joža Šuran Primary school - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "15:55",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "16:15",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "16:40",
+    "route": "Lanterna - Pical"
+  },
+  {
+    "busName": "C",
+    "departureTime": "17:00",
+    "route": "Pical - Lanterna"
+  },
+  {
+    "busName": "C",
+    "departureTime": "17:30",
+    "route": "Lanterna - Joža Šuran Primary school"
+  },
+  {
+    "busName": "C",
     "departureTime": "18:15",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
-  },
-  {
-    "busName": "B",
-    "departureTime": "19:15",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
-  },
-  {
-    "busName": "B",
-    "departureTime": "21:15",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
+    "route": "Joža Šuran Primary school - Lanterna"
   },
   {
     "busName": "C",
-    "departureTime": "8:00",
-    "route": "Lanterna - Umag"
+    "departureTime": "21:30",
+    "route": "Lanterna - Višnjan observatory"
   },
   {
     "busName": "C",
-    "departureTime": "8:40",
-    "route": "Umag - Lanterna"
-  },
-  {
-    "busName": "C",
-    "departureTime": "9:30",
-    "route": "Lanterna - Umag"
-  },
-  {
-    "busName": "C",
-    "departureTime": "9:55",
-    "route": "Umag - Lanterna"
-  },
-  {
-    "busName": "C",
-    "departureTime": "10:10",
-    "route": "Lanterna - Umag"
-  },
-  {
-    "busName": "C",
-    "departureTime": "11:00",
-    "route": "Umag - Lanterna"
-  },
-  {
-    "busName": "C",
-    "departureTime": "12:00",
-    "route": "Lanterna - Umag"
-  },
-  {
-    "busName": "C",
-    "departureTime": "15:15",
-    "route": "Umag - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "8:10",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "8:50",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "9:30",
-    "route": "Lanterna - Pical"
-  },
-  {
-    "busName": "D",
-    "departureTime": "9:55",
-    "route": "Pical - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "10:10",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "10:55",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "11:40",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "12:25",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "13:10",
-    "route": "Lanterna - Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "13:55",
-    "route": "Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "14:40",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "15:25",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "16:05",
-    "route": "Lanterna - Pical"
-  },
-  {
-    "busName": "D",
-    "departureTime": "16:30",
-    "route": "Pical - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "17:15",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "18:00",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
-  },
-  {
-    "busName": "D",
-    "departureTime": "19:00",
-    "route": "Lanterna - Sports hall Novigrad, Primary school SE Rivarella Novigrad"
-  },
-  {
-    "busName": "D",
-    "departureTime": "21:15",
-    "route": "Sports hall Novigrad, Primary school SE Rivarella Novigrad - Lanterna"
+    "departureTime": "23:15",
+    "route": "Višnjan observatory - Lanterna"
   }
 ]
 }
