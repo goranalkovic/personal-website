@@ -209,7 +209,7 @@
     "locationLon": "1.357.174",
     "dayNumber": 5,
     "startTime": "2019-05-10 21:00",
-    "endTime": "2019-05-10 1:00"
+    "endTime": "2019-05-10 01:00"
   },
   {
     "name": "eSports tournament",
@@ -219,7 +219,7 @@
     "locationLon": "1.357.868",
     "dayNumber": 5,
     "startTime": "2019-05-10 21:00",
-    "endTime": "2019-05-10 0:00"
+    "endTime": "2019-05-10 00:00"
   },
   {
     "name": "Tug of War",
@@ -239,7 +239,7 @@
     "locationLon": "1.357.810",
     "dayNumber": 5,
     "startTime": "2019-05-10 23:00",
-    "endTime": "2019-05-10 5:00"
+    "endTime": "2019-05-10 05:00"
   }
 ]
 }
