@@ -30,7 +30,7 @@
     },    
     {
       "name": "Lunch",
-      "category": "arenas",
+      "category": "sg_arenas",
       "locationName": "Hotel Pical",
       "locationLat": "45.23717",
       "locationLon": "13.59840",
