@@ -1,12 +1,30 @@
 [
 	{
 		"name": "St@k",
-		"yearStart": 2016,
+		"yearStart": 2017,
 		"yearEnd": null,
 		"description": "Print design for the student magazines St@k and St@kić",
 		"heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
 		"images" : [
-			"https://goranalkovic.github.io/img/projects/stak/card-hero.png"
+			"https://goranalkovic.github.io/img/projects/stak/hero-1.png",
+			"https://goranalkovic.github.io/img/projects/stak/hero-2.png",
+			"https://goranalkovic.github.io/img/projects/stak/hero-3.png",
+			"https://goranalkovic.github.io/img/projects/stak/hero-4.png",
+			"https://goranalkovic.github.io/img/projects/stak/hero-5.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-1.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-2.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-3.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-4.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-5.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-6.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-7.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-8.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-9.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-10.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-11.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-12.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-13.png",
+			"https://goranalkovic.github.io/img/projects/stak/page-14.png"
 		],
 		"tags": [
 			{
@@ -23,6 +41,34 @@
 			},
 			{
 				"text": "Photoshop",
+				"color": ""
+			}
+		]
+	},
+	{
+		"name": "FOI @ STEM Games 2018",
+		"yearStart": 2018,
+		"yearEnd": 2018,
+		"description": "Visuals for the t-shirts and banner that represented\n<abbr title=\"Faculty of organization and informatics\">FOI</abbr>\nat STEM Games 2018\n<br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
+		"heroImage": "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+		"images" : [
+			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
+			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
+			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
+			"https://goranalkovic.github.io/img/projects/szfoi/stem-afterparty-poster.png"
+		],
+		"tags": [
+			{
+				"text": "Print design",
+				"color": "is-primary"
+			},
+			{
+				"text": "Graphic design",
+				"color": "is-info"
+			},
+			{
+				"text": "Illustrator",
 				"color": ""
 			}
 		]
