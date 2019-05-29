@@ -14,6 +14,10 @@ p, h1, h2, h3, h4, h5, h6, a, b, i, em, span, strong, button, input {
     background-image: linear-gradient(-141deg, rgb(223, 216, 217) 0px, rgb(245, 245, 245) 71%, rgb(255, 255, 255) 100%);
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 .hero-underline::before {
     content: "";
     position: absolute;
@@ -56,22 +60,70 @@ p, h1, h2, h3, h4, h5, h6, a, b, i, em, span, strong, button, input {
     transform: translateX(-9rem) translateY(2rem) scale(1);
 }
 
-.card {
-    border-radius: 0.2rem;
-}
 
 .card-image img {
-    border-top-left-radius: 0.2rem;
-    border-top-right-radius: 0.2rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     -ms-interpolation-mode: bicubic;
     object-fit: cover;
 }
 
+.tags {pointer-events: none}
+
+.footer {
+    padding: 3rem 1.5rem 3rem;
+}
+
+.navbar {
+    position: sticky !important;
+    top: 100vh;
+    transition: 0.3s box-shadow;
+}
+
+.navbar-shadow {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
+}
+
+.is-modal-hidden {
+    opacity: 0;
+}
+
+.card {
+    box-shadow: 0 0 7px hsla(0, 0%, 0%, 0.1);
+    transition: 0.2s box-shadow;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1), 0 6px 12px hsla(0, 0%, 0%, 0.1);
+}
+
+.is-modal-hidden .modal-content {
+    transform: scale(0.75);
+}
+
+.modal-content img {
+    border-radius: 0.3rem;
+}
+
+#gallery-modal .modal-content {
+    overflow: hidden;
+}
+
+#gallery-modal, #gallery-modal .modal-background, #gallery-modal .modal-content {
+    transition: 0.2s all;
+}
+
 @supports (backdrop-filter: blur(5px)) {
     .modal-background {
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
     }
 
-
+    .navbar {
+        background: rgba(255, 255, 255, 0.7);
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+    }
 }
 
