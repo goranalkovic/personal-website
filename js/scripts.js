@@ -241,7 +241,15 @@ function addProjectCard(project, projectContainer) {
 
     let projectDuration = document.createElement('h6');
     projectDuration.className = 'subtitle is-6';
-    projectDuration.innerHTML = `${project.yearStart}${project.yearEnd !== project.yearStart ? '-' : project.yearEnd !== project.yearStart && project.yearEnd == null ? '' : project.yearEnd}`;
+    projectDuration.innerHTML = project.yearStart;
+
+    if(project.yearStart !== project.yearEnd) {
+        projectDuration.innerHTML += '-';
+
+        if (project.yearEnd != null) {
+            projectDuration.innerHTML += project.yearEnd;
+        }
+    }
 
     cardTitleColumn1Div.appendChild(projectTitle);
     cardTitleColumn1Div.appendChild(projectDuration);
