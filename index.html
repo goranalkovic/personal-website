@@ -70,44 +70,27 @@
 </section>
 
 <nav aria-label="main navigation" class="navbar is-transparent is-fixed-top" id="navbar" role="navigation">
+
+    <a class="navbar-item" href="#learnmore">
+        About me
+    </a>
+
+    <a class="navbar-item" href="#skills">
+        Skills
+    </a>
+
     <div class="navbar-brand">
-            <img alt="Goran Alković" class="brand-img" src="img/logo/logo-v4.svg" style="width: 4.6rem; margin: 1rem;"/>
-
-        <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navbarBasicExample"
-           role="button">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
+        <img alt="Goran Alković" class="brand-img" src="img/logo/logo-v4.svg" style="width: 4.6rem; margin: 1rem;"/>
     </div>
 
-    <div class="navbar-menu" id="navbarBasicExample">
-        <div class="navbar-start">
-            <a class="navbar-item">
-                About me
-            </a>
+    <a class="navbar-item" href="#work">
+        Work
+    </a>
 
-            <a class="navbar-item">
-                Skills
-            </a>
+    <a class="navbar-item" href="#contact">
+        Contact
+    </a>
 
-            <a class="navbar-item">
-                Work
-            </a>
-
-
-        </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-link is-outlined">
-                        <span>Contact</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 </nav>
 
 
@@ -132,8 +115,8 @@
     </div>
 </section>
 
-<section class="section">
-    <div class="container" id="page-container">
+<section class="section" id="skills">
+    <div class="container">
         <h1 class="title has-text-centered">
             Skills
         </h1>
@@ -143,12 +126,12 @@
     </div>
 </section>
 
-<section class="section">
+<section class="section" id="work">
     <div class="container" id="page-container">
         <h1 class="title has-text-centered">
             Work
         </h1>
-        <div class="columns is-mobile is-multiline is-centered" id="project-container"></div>
+        <div class="columns is-mobile is-multiline is-centered" id="project-container" style="min-height: 10vh;"></div>
     </div>
     <div class="modal is-modal-hidden" id="gallery-modal">
         <div class="modal-background" onclick="closeModal()"></div>
@@ -171,12 +154,42 @@
                         <span class="icon is-small">
                             <i class="icon-arrow-right"></i>
                         </span>
-                    </button></div>
+                    </button>
+                </div>
             </div>
 
 
         </div>
-                <button aria-label="close" class="modal-close is-large" onclick="closeModal()"></button>
+        <button aria-label="close" class="modal-close is-large" onclick="closeModal()"></button>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <div class="container">
+        <h1 class="title has-text-centered">
+            Contact
+        </h1>
+
+        <div class="buttons is-centered">
+            <a href="mailto:goran.alkovic@hotmail.com" class="button">
+                <span class="icon">
+                  <i class="icon-envelope"></i>
+                </span>
+                <span>goran.alkovic@hotmail.com</span>
+            </a>
+            <a href="https://github.com/goranalkovic" class="button is-large">
+                <span class="icon">
+                  <i class="icon-social-github"></i>
+                </span>
+                <span>GitHub</span>
+            </a>
+            <a href="tel:+385976480800" class="button">
+                <span class="icon">
+                  <i class="icon-phone"></i>
+                </span>
+                <span>+385 976 480 800</span>
+            </a>
+        </div>
     </div>
 </section>
 
