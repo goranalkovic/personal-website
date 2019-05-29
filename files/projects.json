@@ -1,76 +1,160 @@
 [
-	{
-		"name": "St@k",
-		"yearStart": 2017,
-		"yearEnd": null,
-		"description": "Print design for the student magazines St@k and St@kić",
-		"heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
-		"images" : [
-			"https://goranalkovic.github.io/img/projects/stak/hero-1.png",
-			"https://goranalkovic.github.io/img/projects/stak/hero-2.png",
-			"https://goranalkovic.github.io/img/projects/stak/hero-3.png",
-			"https://goranalkovic.github.io/img/projects/stak/hero-4.png",
-			"https://goranalkovic.github.io/img/projects/stak/hero-5.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-1.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-2.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-3.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-4.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-5.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-6.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-7.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-8.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-9.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-10.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-11.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-12.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-13.png",
-			"https://goranalkovic.github.io/img/projects/stak/page-14.png"
-		],
-		"tags": [
-			{
-				"text": "Print design",
-				"color": "is-primary"
-			},
-			{
-				"text": "InDesign",
-				"color": ""
-			},
-			{
-				"text": "Illustrator",
-				"color": ""
-			},
-			{
-				"text": "Photoshop",
-				"color": ""
-			}
-		]
-	},
-	{
-		"name": "FOI @ STEM Games 2018",
-		"yearStart": 2018,
-		"yearEnd": 2018,
-		"description": "Visuals for the t-shirts and banner that represented\n<abbr title=\"Faculty of organization and informatics\">FOI</abbr>\nat STEM Games 2018\n<br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
-		"heroImage": "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
-		"images" : [
-			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
-			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
-			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
-			"https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
-			"https://goranalkovic.github.io/img/projects/szfoi/stem-afterparty-poster.png"
-		],
-		"tags": [
-			{
-				"text": "Print design",
-				"color": "is-primary"
-			},
-			{
-				"text": "Graphic design",
-				"color": "is-info"
-			},
-			{
-				"text": "Illustrator",
-				"color": ""
-			}
-		]
-	}
+  {
+    "name": "St@k",
+    "yearStart": 2017,
+    "yearEnd": null,
+    "description": "Print design for the student magazines St@k and St@kić",
+    "heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
+      "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
+      "https://goranalkovic.github.io/img/projects/stak/hero-3.png",
+      "https://goranalkovic.github.io/img/projects/stak/hero-4.png",
+      "https://goranalkovic.github.io/img/projects/stak/hero-5.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-1.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-2.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-3.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-4.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-5.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-6.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-7.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-8.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-9.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-10.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-11.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-12.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-13.png",
+      "https://goranalkovic.github.io/img/projects/stak/page-14.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "InDesign",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "FOI @ STEM Games 2018",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
+    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/16-05-stem-afterparty-poster.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Promo design",
+        "color": "is-link"
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Mladi pomažu",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Posters and Facebook event covers for the humanitarian action <i>Mladi pomažu</i>",
+    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-google-forms-cover.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-plakat-print.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-fb-event-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-google-forms-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-božićni-party-a3-poster-fb.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Promo design",
+        "color": "is-link"
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Tjedan brucoša",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Posters and Facebook event covers for events of the <i>Freshman week</i>",
+    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_A2_print.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_A2_print.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_FB.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Promo design",
+        "color": "is-link"
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "FOI Student council",
+    "yearStart": 2017,
+    "yearEnd": null,
+    "description": "Various visuals for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr> Student council",
+    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/sz-poster-a5.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/sz-poster-a5.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/welcome-party-2018-event-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stress-relief-party-21-11-event-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/07-03-new-semester-new-me-event-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/humanitarni-tjedan-1-event-cover.png"
+    ],
+    "tags": [
+          {
+        "text": "Promo design",
+        "color": "is-link"
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  }
 ]
