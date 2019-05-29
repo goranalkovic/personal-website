@@ -1,11 +1,13 @@
-// import * as Random from "./random";
-
 document.addEventListener("DOMContentLoaded", () => {
-    $('#navbar-logo').attr('src', getNewImg());
+    let navbarLogo = document.querySelector('#navbar-logo');
 
-    document.getElementById('navbar-logo').addEventListener('click', swapNavLogo);
+    navbarLogo.setAttribute('src', getNewImg());
+
+    navbarLogo.addEventListener('click', swapNavLogo);
 
     console.log("Loaded");
+
+    loadProjects();
 });
 
 let usedLogos = [1, 4, 7, 2, 5, 8, 3, 6, 9];
@@ -51,7 +53,7 @@ function getRandomElement() {
 }
 
 function getNewImg() {
-    let currentSrc = document.getElementById('navbar-logo').src;
+    let currentSrc = document.querySelector('#navbar-logo').src;
 
     let currentVersion = currentSrc.slice(-5, -4);
 
@@ -75,21 +77,26 @@ function swapNavLogo() {
     canSwap = false;
 
     // Get logo element
-    let logo = $('#navbar-logo');
+    let logo = document.querySelector('#navbar-logo');
 
     // Start animation
-    logo.addClass('animated shake fast');
+    logo.classList.add('animated shake fast');
 
     // Swap logo
     setTimeout(() => {
-        logo.attr('src', getNewImg());
+        logo.setAttribute('src', getNewImg());
     }, 650);
 
     // Remove animation
     setTimeout(() => {
-        logo.removeClass('animated shake fast');
+        logo.classList.remove('animated shake fast');
         canSwap = true;
     }, 850);
 
 }
 
+function loadProjects(){
+    fetch('https://goranalkovic.github.io/files/projects.json')
+        .then(response => response.json())
+        .then(json => console.log(json));
+}

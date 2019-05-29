@@ -1,0 +1,30 @@
+[
+	{
+		"name": "St@k",
+		"yearStart": 2016,
+		"yearEnd": null,
+		"description": "Print design for the student magazines St@k and St@kić",
+		"heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
+		"images" : [
+			"https://goranalkovic.github.io/img/projects/stak/card-hero.png"
+		],
+		"tags": [
+			{
+				"text": "Print design",
+				"color": "is-primary"
+			},
+			{
+				"text": "InDesign",
+				"color": ""
+			},
+			{
+				"text": "Illustrator",
+				"color": ""
+			},
+			{
+				"text": "Photoshop",
+				"color": ""
+			}
+		]
+	}
+]
