@@ -23,9 +23,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
           rel="stylesheet">
 
-    <!-- Lightbox CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
-
     <!-- Fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">  -->
     <link
@@ -41,15 +38,15 @@
 <section class="hero is-fullheight is-light is-bold" id="page-hero">
     <div class="hero-head">
         <div class="container has-text-centered" style="margin-top: 2.5rem;">
-            <a class="button is-dark is-rounded is-small is-outlined"
-               href="https://github.com/goranalkovic/goranalkovic.github.io/raw/master/files/Goran_Alkovic_CV.pdf">
+            <a class="button is-dark is-small is-outlined"
+               href="files/Goran_Alkovic_CV.pdf">
                 <p>Just give me the CV</p>
             </a>
         </div>
     </div>
     <div class="hero-body">
         <div class="container has-text-centered">
-            <img alt="Goran Alković" class="brand-img" id="navbar-logo" src="img/logo/logo-v4.svg"/>
+            <img alt="Goran Alković" class="brand-img" src="img/logo/logo-v4.svg"/>
 
 
             <h1 class="title">
@@ -62,7 +59,7 @@
     </div>
     <div class="hero-foot">
         <div class="container has-text-centered" style="margin-bottom: 2.5rem;">
-            <a class="button is-link is-rounded has-text-weight-semibold" href="#navbar">
+            <a class="button is-link is-medium has-text-weight-semibold animated infinite pulse slower" href="#navbar">
                     <span class="icon is-medium">
                         <i class="icon-arrow-down"></i>
                     </span>
@@ -74,9 +71,7 @@
 
 <nav aria-label="main navigation" class="navbar is-transparent is-fixed-top" id="navbar" role="navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <img height="28" src="https://bulma.io/images/bulma-logo.png" width="112">
-        </a>
+            <img alt="Goran Alković" class="brand-img" src="img/logo/logo-v4.svg" style="width: 4.6rem; margin: 1rem;"/>
 
         <a aria-expanded="false" aria-label="menu" class="navbar-burger burger" data-target="navbarBasicExample"
            role="button">
@@ -89,50 +84,32 @@
     <div class="navbar-menu" id="navbarBasicExample">
         <div class="navbar-start">
             <a class="navbar-item">
-                Home
+                About me
             </a>
 
             <a class="navbar-item">
-                Documentation
+                Skills
             </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                    More
-                </a>
+            <a class="navbar-item">
+                Work
+            </a>
 
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Jobs
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
-                </div>
-            </div>
+
         </div>
 
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
+                    <a class="button is-link is-outlined">
+                        <span>Contact</span>
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </nav>
+
 
 <section class="section" id="learnmore">
     <div class="container">
@@ -144,7 +121,7 @@
                     <img class="is-rounded" src="img/its-a-me.jpg">
                 </figure>
             </div>
-            <div class="column is-4-mobile is-6-tablet is-5-desktop is-5-widescreen is-4-fullhd">
+            <div class="column is-12-mobile is-6-tablet is-5-desktop is-5-widescreen is-4-fullhd">
                 <h2 class="subtitle has-text-centered-mobile">
                     I'm a bachelor of informatics from Varaždin, Croatia. Always learning new things and doing
                     amazing stuff with things I already know. I love all kinds of design, but I also love making
@@ -158,7 +135,18 @@
 <section class="section">
     <div class="container" id="page-container">
         <h1 class="title has-text-centered">
-            Projects
+            Skills
+        </h1>
+        <div class="columns is-mobile is-multiline is-centered">
+
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container" id="page-container">
+        <h1 class="title has-text-centered">
+            Work
         </h1>
         <div class="columns is-mobile is-multiline is-centered" id="project-container"></div>
     </div>
@@ -167,7 +155,7 @@
         <div class="modal-content">
             <div class="columns is-centered is-vcentered is-variable is-1">
                 <div class="column is-narrow">
-                    <button class="button is-inverted is-outlined" onclick="prevImage()">
+                    <button class="button is-dark" onclick="prevImage()">
                         <span class="icon is-small">
                             <i class="icon-arrow-left"></i>
                         </span>
@@ -179,7 +167,7 @@
                     </div>
                 </div>
                 <div class="column is-narrow">
-                    <button class="button is-inverted is-outlined" onclick="nextImage()">
+                    <button class="button is-dark" onclick="nextImage()">
                         <span class="icon is-small">
                             <i class="icon-arrow-right"></i>
                         </span>

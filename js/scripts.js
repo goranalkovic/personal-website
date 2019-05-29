@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let navbarLogo = document.querySelector('#navbar-logo');
+    let navbarLogo = document.querySelectorAll('.brand-img');
 
-    navbarLogo.setAttribute('src', getNewImg());
+    let firstImg = getNewImg();
+    navbarLogo[0].setAttribute('src', firstImg);
+    navbarLogo[1].setAttribute('src', firstImg);
 
-    navbarLogo.addEventListener('click', swapNavLogo);
+    navbarLogo[0].addEventListener('click', swapNavLogo);
+    navbarLogo[1].addEventListener('click', swapNavLogo);
 
     console.log("Loaded");
 
@@ -63,7 +66,7 @@ function getRandomElement() {
 }
 
 function getNewImg() {
-    let currentSrc = document.querySelector('#navbar-logo').src;
+    let currentSrc = document.querySelector('.brand-img').src;
 
     let currentVersion = currentSrc.slice(-5, -4);
 
@@ -87,23 +90,27 @@ function swapNavLogo() {
     canSwap = false;
 
     // Get logo element
-    let logo = document.querySelector('#navbar-logo');
+    let logos = document.querySelectorAll('.brand-img');
 
     // Start animation
-    logo.classList.add('animated');
-    logo.classList.add('shake');
-    logo.classList.add('fast');
+    logos[0].classList.add('animated');
+    logos[0].classList.add('jello');
+    logos[1].classList.add('animated');
+    logos[1].classList.add('jello');
 
     // Swap logo
     setTimeout(() => {
-        logo.setAttribute('src', getNewImg());
-    }, 650);
+        let newImg = getNewImg();
+        logos[0].setAttribute('src', newImg);
+        logos[1].setAttribute('src', newImg);
+    }, 450);
 
     // Remove animation
     setTimeout(() => {
-        logo.classList.remove('animated');
-        logo.classList.remove('shake');
-        logo.classList.remove('fast');
+        logos[0].classList.remove('animated');
+        logos[0].classList.remove('jello');
+        logos[1].classList.remove('animated');
+        logos[1].classList.remove('jello');
         canSwap = true;
     }, 850);
 
@@ -150,42 +157,42 @@ function prevImage() {
 }
 
 async function loadProjects() {
-    let data = [
-        {
-            "name": "St@k",
-            "yearStart": 2016,
-            "yearEnd": null,
-            "description": "Print design for the student magazines St@k and St@kić",
-            "heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
-            "images": [
-                "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
-                "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
-                "https://goranalkovic.github.io/img/projects/stak/hero-3.png",
-                "https://goranalkovic.github.io/img/projects/stak/hero-4.png",
-            ],
-            "tags": [
-                {
-                    "text": "Print design",
-                    "color": "is-primary"
-                },
-                {
-                    "text": "InDesign",
-                    "color": ""
-                },
-                {
-                    "text": "Illustrator",
-                    "color": ""
-                },
-                {
-                    "text": "Photoshop",
-                    "color": ""
-                }
-            ]
-        }
-    ];
+    // let data = [
+    //     {
+    //         "name": "St@k",
+    //         "yearStart": 2016,
+    //         "yearEnd": null,
+    //         "description": "Print design for the student magazines St@k and St@kić",
+    //         "heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
+    //         "images": [
+    //             "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
+    //             "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
+    //             "https://goranalkovic.github.io/img/projects/stak/hero-3.png",
+    //             "https://goranalkovic.github.io/img/projects/stak/hero-4.png",
+    //         ],
+    //         "tags": [
+    //             {
+    //                 "text": "Print design",
+    //                 "color": "is-primary"
+    //             },
+    //             {
+    //                 "text": "InDesign",
+    //                 "color": ""
+    //             },
+    //             {
+    //                 "text": "Illustrator",
+    //                 "color": ""
+    //             },
+    //             {
+    //                 "text": "Photoshop",
+    //                 "color": ""
+    //             }
+    //         ]
+    //     }
+    // ];
 
     let response = await fetch('/files/projects.json');
-    data = await response.json();
+    let data = await response.json();
 
     for (let project of data) {
        addProjectCard(project, document.querySelector('#project-container'));
@@ -258,7 +265,7 @@ function addProjectCard(project, projectContainer) {
     cardTitleColumn2Div.className = 'column is-narrow';
 
     let galleryBtn = document.createElement('button');
-    galleryBtn.className = 'button is-rounded';
+    galleryBtn.className = 'button';
     galleryBtn.addEventListener('click', () => {
         currentProject = project;
         showModal();
@@ -290,7 +297,7 @@ function addProjectCard(project, projectContainer) {
 
     for (let tag of project.tags) {
         let newTag = document.createElement('span');
-        newTag.className = 'tag is-rounded ' + tag.color;
+        newTag.className = 'tag ' + tag.color;
         newTag.innerHTML = tag.text;
         tags.appendChild(newTag);
     }

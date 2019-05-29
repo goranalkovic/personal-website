@@ -1,7 +1,7 @@
-#navbar-logo {
+.brand-img {
     cursor: ew-resize;
     width: 8.5rem;
-    box-shadow: 0px 0.2rem 0.8rem rgba(10, 10, 10, 0.3);
+    box-shadow: 0 0.2rem 0.8rem rgba(10, 10, 10, 0.3);
     margin-bottom: 1.5rem;
     border-radius: 0.2rem;
 }
@@ -118,6 +118,10 @@ abbr {
 
 #gallery-modal, #gallery-modal .modal-background, #gallery-modal .modal-content {
     transition: 0.2s all;
+}
+
+#gallery-modal button {
+    border-radius: 999px; height: 2rem; width: 2rem; padding: 0;
 }
 
 @supports (backdrop-filter: blur(5px)) {

@@ -64,7 +64,7 @@
         "color": "is-primary"
       },
       {
-        "text": "Promo design",
+        "text": "Digital design",
         "color": "is-link"
       },
       {
@@ -91,7 +91,7 @@
         "color": "is-primary"
       },
       {
-        "text": "Promo design",
+        "text": "Digital design",
         "color": "is-link"
       },
       {
@@ -120,7 +120,7 @@
         "color": "is-primary"
       },
       {
-        "text": "Promo design",
+        "text": "Digital design",
         "color": "is-link"
       },
       {
@@ -144,7 +144,7 @@
     ],
     "tags": [
           {
-        "text": "Promo design",
+        "text": "Digital design",
         "color": "is-link"
       },
       {
@@ -153,6 +153,155 @@
       },
       {
         "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Brucošijada grada Varaždina",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Posters, Facebook event covers, ID cards and tickets for the annual student party - <i>Brucošijada</i>",
+    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/brucosijada-2018-poster.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/brucosijada-2018-poster.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/brucosiajda-2018-event-cover.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-izvođač.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-press.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-organizator.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Aronija Juraj",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Logo and bottle labels for Aronija Juraj",
+    "heroImage": "https://goranalkovic.github.io/img/projects/aronija-juraj/logo.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/aronija-juraj/logo.png",
+      "https://goranalkovic.github.io/img/projects/aronija-juraj/bottle-label.png",
+      "https://goranalkovic.github.io/img/projects/aronija-juraj/bottle-label-back.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Dose of sharks",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Custom Wordpress design and logo for an e-commerce website",
+    "heroImage": "https://goranalkovic.github.io/img/projects/doseofsharks/logo-V-color.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/doseofsharks/logo-V-color.png",
+      "https://goranalkovic.github.io/img/projects/doseofsharks/doseofsharks-website.png"
+    ],
+    "tags": [
+      {
+        "text": "Web design",
+        "color": "is-warning"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Photoshop",
+        "color": ""
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      },
+      {
+        "text": "Wordpress",
+        "color": ""
+      },
+      {
+        "text": "WooCommerce",
+        "color": ""
+      },
+      {
+        "text": "SEO",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "Hip Ocean",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
+    "heroImage": "https://goranalkovic.github.io/img/projects/hipocean/Logo-Color-Text.png",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/hipocean/landing-page.png",
+      "https://goranalkovic.github.io/img/projects/hipocean/shop.png",
+      "https://goranalkovic.github.io/img/projects/hipocean/home-page.png"
+    ],
+    "tags": [
+      {
+        "text": "Web design",
+        "color": "is-warning"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Web design",
+        "color": "is-warning"
+      },
+      {
+        "text": "Textile design",
+        "color": "is-info"
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      },
+      {
+        "text": "Wordpress",
+        "color": ""
+      },
+      {
+        "text": "WooCommerce",
+        "color": ""
+      },
+      {
+        "text": "SEO",
         "color": ""
       }
     ]
