@@ -134,7 +134,7 @@ function nextImage(){
         currentImage = 0;
     }
 
-    document.querySelector('#gallery-modal img').setAttribute('src', currentProject[currentImage]);
+    document.querySelector('#gallery-modal img').setAttribute('src', currentProject.images[currentImage]);
 }
 
 function prevImage() {
@@ -145,7 +145,7 @@ function prevImage() {
         currentImage = currentProject.images.length - 1;
     }
 
-    document.querySelector('#gallery-modal img').setAttribute('src', currentProject[currentImage]);
+    document.querySelector('#gallery-modal img').setAttribute('src', currentProject.images[currentImage]);
 
 }
 
