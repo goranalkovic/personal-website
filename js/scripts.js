@@ -95,8 +95,10 @@ function swapNavLogo() {
     // Start animation
     logos[0].classList.add('animated');
     logos[0].classList.add('jello');
+    logos[0].classList.add('blur');
     logos[1].classList.add('animated');
     logos[1].classList.add('jello');
+    logos[1].classList.add('blur');
 
     // Swap logo
     setTimeout(() => {
@@ -109,8 +111,10 @@ function swapNavLogo() {
     setTimeout(() => {
         logos[0].classList.remove('animated');
         logos[0].classList.remove('jello');
+        logos[0].classList.remove('blur');
         logos[1].classList.remove('animated');
         logos[1].classList.remove('jello');
+        logos[1].classList.remove('blur');
         canSwap = true;
     }, 850);
 
@@ -297,7 +301,7 @@ function addProjectCard(project, projectContainer) {
 
     for (let tag of project.tags) {
         let newTag = document.createElement('span');
-        newTag.className = 'tag ' + tag.color;
+        newTag.className = 'tag '; // + tag.color;
         newTag.innerHTML = tag.text;
         tags.appendChild(newTag);
     }
