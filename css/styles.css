@@ -4,13 +4,13 @@
     box-shadow: 0 0.2rem 0.8rem rgba(10, 10, 10, 0.3);
     margin-bottom: 1.5rem;
     border-radius: 0.2rem;
+    transition: 0.25s all;
 }
 
 .brand-img-menu {
-    width: 4.6rem; margin: 1rem;
+    width: 4.6rem;
     height: 3.1rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 1rem;
 }
 
 p, h1, h2, h3, h4, h5, h6, a, b, i, em, span, strong, button, input {
@@ -73,15 +73,6 @@ abbr {
     transform: translateX(-9rem) translateY(2rem) scale(1);
 }
 
-
-.card-image img {
-    background: transparent;
-    -ms-interpolation-mode: bicubic;
-    /*object-fit: cover;*/
-    padding: 5%;
-    object-fit: scale-down;
-}
-
 .tags {
     pointer-events: none
 }
@@ -105,30 +96,47 @@ abbr {
 }
 
 .card {
-    box-shadow: 0 0 7px hsla(0, 0%, 0%, 0.1);
-    transition: 0.2s box-shadow;
-    border-radius: 8px;
-    height: 36rem;
-    display: flex;
-    flex-direction: column;
+    /*box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.12);*/
+    /*box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.3);*/
+    box-shadow: 0 -4px 2px hsla(0, 0%, 0%, 0);
+    border: 1px solid #e6e6e6;
+    transition: 0.2s border, 0.4s box-shadow;
+    border-radius: 4px;
+    height: 15rem;
 }
 
 .card:hover {
-    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1), 0 6px 12px hsla(0, 0%, 0%, 0.1);
+    border: 1px solid white;
+    box-shadow: 0 0 6px hsla(0, 0%, 0%, 0.1), 0 6px 24px hsla(0, 0%, 0%, 0.1);
 }
 
-.card-content {
-    flex: 1;
+.card .card-content {
+    height: 100%;
     display: flex;
-    flex-direction: column;
 }
 
-.card-content .content {
-    flex: 1;
+#project-container .card {
+    cursor: pointer;
+}
+
+.project-image {
+    min-height: 4rem;
+    height: 5rem;
+    width: 100%;
+    padding: 0 5% 0.5rem;
+    margin: 0.5rem auto;
+    object-fit: contain;
+    position: center;
+    /*filter: saturate(0);*/
+    /*transition: 0.4s filter;*/
+}
+
+.card .container {
+    margin: auto;
 }
 
 .blur {
-    filter: blur(3px);
+    filter: blur(1px) saturate(0.18) sepia(0.1);
 }
 
 .is-modal-hidden .modal-content {

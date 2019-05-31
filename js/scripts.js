@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+    loadProjects();
+
     let navbarLogo = document.querySelectorAll('.brand-img');
 
     let firstImg = getNewImg();
@@ -10,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("Loaded");
 
-    loadProjects();
 });
 
 window.addEventListener("scroll",function(){
@@ -161,46 +163,14 @@ function prevImage() {
 }
 
 async function loadProjects() {
-    // let data = [
-    //     {
-    //         "name": "St@k",
-    //         "yearStart": 2016,
-    //         "yearEnd": null,
-    //         "description": "Print design for the student magazines St@k and St@kić",
-    //         "heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
-    //         "images": [
-    //             "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
-    //             "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
-    //             "https://goranalkovic.github.io/img/projects/stak/hero-3.png",
-    //             "https://goranalkovic.github.io/img/projects/stak/hero-4.png",
-    //         ],
-    //         "tags": [
-    //             {
-    //                 "text": "Print design",
-    //                 "color": "is-primary"
-    //             },
-    //             {
-    //                 "text": "InDesign",
-    //                 "color": ""
-    //             },
-    //             {
-    //                 "text": "Illustrator",
-    //                 "color": ""
-    //             },
-    //             {
-    //                 "text": "Photoshop",
-    //                 "color": ""
-    //             }
-    //         ]
-    //     }
-    // ];
 
-    let response = await fetch('/files/projects.json');
+    let response = await fetch('./files/projects.json');
     let data = await response.json();
 
     for (let project of data) {
        addProjectCard(project, document.querySelector('#project-container'));
     }
+
 }
 
 var currentProject;
@@ -211,113 +181,116 @@ function addProjectCard(project, projectContainer) {
 
     // Container div
     let containerDiv = document.createElement('div');
-    containerDiv.className = 'column is-narrow is-12-mobile is-6-tablet is-4-desktop is-4-widescreen';
+    containerDiv.className = 'column is-narrow is-6-mobile is-4-tablet is-4-desktop is-3-widescreen';
 
     // Card
 
     let cardDiv = document.createElement('div');
     cardDiv.className = 'card';
 
-    // Card header image
-
-    let cardImgDiv = document.createElement('div');
-    cardImgDiv.className = 'card-image';
-
-    let cardImgFigure = document.createElement('figure');
-    cardImgFigure.className = 'image is-3by2';
-
-    let cardImgImage = document.createElement('img');
-    cardImgImage.setAttribute('src', project.heroImage);
-    cardImgImage.setAttribute('alt', 'Project image');
-
-    cardImgFigure.appendChild(cardImgImage);
-    cardImgDiv.appendChild(cardImgFigure);
-
-    // Card contents
-
     let cardContentDiv = document.createElement('div');
     cardContentDiv.className = 'card-content';
 
+    let cardTitleDiv = document.createElement('div');
+    cardTitleDiv.className = 'container has-text-centered';
+
+    // Card header image
+
+    let cardImgImage = document.createElement('img');
+    cardImgImage.className = 'project-image';
+    cardImgImage.setAttribute('src', project.heroImage);
+    cardImgImage.setAttribute('alt', 'Project image');
+
+    cardTitleDiv.appendChild(cardImgImage);
+
     // Card title
 
-    let cardTitleDiv = document.createElement('div');
-    cardTitleDiv.className = 'columns is-mobile';
-
-    let cardTitleColumn1Div = document.createElement('div');
-    cardTitleColumn1Div.className = 'column';
-
     let projectTitle = document.createElement('h4');
-    projectTitle.className = 'title is-4';
+    projectTitle.className = 'title is-5';
     projectTitle.innerHTML = project.name;
 
     let projectDuration = document.createElement('h6');
     projectDuration.className = 'subtitle is-6';
     projectDuration.innerHTML = project.yearStart;
 
+    if (project.yearEnd == null) {
+        project.yearEnd = new Date().getFullYear();
+    }
+
     if(project.yearStart !== project.yearEnd) {
         projectDuration.innerHTML += '-';
 
-        if (project.yearEnd != null) {
+        // if (project.yearEnd != null) {
             projectDuration.innerHTML += project.yearEnd;
-        }
+        // }
     }
 
-    cardTitleColumn1Div.appendChild(projectTitle);
-    cardTitleColumn1Div.appendChild(projectDuration);
-
-    let cardTitleColumn2Div = document.createElement('div');
-    cardTitleColumn2Div.className = 'column is-narrow';
-
-    let galleryBtn = document.createElement('button');
-    galleryBtn.className = 'button';
-    galleryBtn.addEventListener('click', () => {
-        currentProject = project;
-        showModal();
-    });
-
-    let galleryBtnSpan = document.createElement('span');
-    galleryBtnSpan.className = 'icon is-medium';
-
-    let galleryBtnIcon = document.createElement('i');
-    galleryBtnIcon.className = 'icon-picture';
-
-    galleryBtnSpan.appendChild(galleryBtnIcon);
-    galleryBtn.appendChild(galleryBtnSpan);
-    cardTitleColumn2Div.appendChild(galleryBtn);
-
-    cardTitleDiv.appendChild(cardTitleColumn1Div);
-    cardTitleDiv.appendChild(cardTitleColumn2Div);
-
-    // Card body
-
-    let projectDescription = document.createElement('div');
-    projectDescription.className = 'content';
-    projectDescription.innerHTML = project.description;
-
-    // Tags
-
-    let tags = document.createElement('div');
-    tags.className = 'tags';
-
-    for (let tag of project.tags) {
-        let newTag = document.createElement('span');
-        newTag.className = 'tag '; // + tag.color;
-        newTag.innerHTML = tag.text;
-        tags.appendChild(newTag);
-    }
-
-    cardContentDiv.appendChild(cardTitleDiv);
-    cardContentDiv.appendChild(projectDescription);
-    cardContentDiv.appendChild(tags);
+    cardTitleDiv.appendChild(projectTitle);
+    cardTitleDiv.appendChild(projectDuration);
 
     //
 
-    cardDiv.appendChild(cardImgDiv);
+    // Tags
+
+    // let tags = document.createElement('div');
+    // tags.className = 'tags is-centered';
+    //
+    // for (let tag of project.tags) {
+    //     let newTag = document.createElement('span');
+    //     newTag.className = 'tag '; // + tag.color;
+    //     newTag.innerHTML = tag.text;
+    //     tags.appendChild(newTag);
+    // }
+
+    // cardContentDiv.appendChild(projectDescription);
+    // cardTitleDiv.appendChild(tags);
+
+    // Gallery button
+
+    let galleryBtn = document.createElement('button');
+    // galleryBtn.className = 'button is-small is-rounded';
+    galleryBtn.className = 'card';
+    // galleryBtn.addEventListener('click', () => {
+    //     currentProject = project;
+    //     showModal();
+    // });
+
+    // let galleryBtnSpan = document.createElement('span');
+    // galleryBtnSpan.className = 'icon is-medium';
+    //
+    // let galleryBtnIcon = document.createElement('i');
+    // galleryBtnIcon.className = 'icon-magnifier';
+    //
+    // let galleryBtnText = document.createElement('span');
+    // galleryBtnText.innerText = 'Details';
+    //
+    // galleryBtnSpan.appendChild(galleryBtnIcon);
+    // galleryBtn.appendChild(galleryBtnSpan);
+    // // galleryBtn.appendChild(galleryBtnText);
+    // cardTitleDiv.appendChild(galleryBtn);
+
+
+    // Card body
+
+    // let projectDescription = document.createElement('div');
+    // projectDescription.className = 'content';
+    // projectDescription.innerHTML = project.description;
+
+
+
+    //
+
+    cardContentDiv.appendChild(cardTitleDiv);
     cardDiv.appendChild(cardContentDiv);
 
     //
 
     containerDiv.appendChild(cardDiv);
 
+    containerDiv.addEventListener('click', () => {
+        currentProject = project;
+        showModal();
+    });
     projectContainer.appendChild(containerDiv);
+
 }

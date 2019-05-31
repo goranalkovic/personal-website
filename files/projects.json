@@ -4,7 +4,7 @@
     "yearStart": 2017,
     "yearEnd": null,
     "description": "Print design for the student magazines St@k and St@kić",
-    "heroImage": "https://goranalkovic.github.io/img/projects/stak/card-hero.png",
+    "heroImage": "img/card-images/card-stak.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
       "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
@@ -46,11 +46,81 @@
     ]
   },
   {
+    "name": "STEM Games",
+    "yearStart": 2019,
+    "yearEnd": null,
+    "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
+    "heroImage": "img/card-images/card-stemgames.svg",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/hipocean/landing-page.png",
+      "https://goranalkovic.github.io/img/projects/hipocean/shop.png",
+      "https://goranalkovic.github.io/img/projects/hipocean/home-page.png"
+    ],
+    "tags": [
+      {
+        "text": "Web design",
+        "color": "is-warning"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Textile design",
+        "color": "is-info"
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      },
+      {
+        "text": "Wordpress",
+        "color": ""
+      },
+      {
+        "text": "WooCommerce",
+        "color": ""
+      },
+      {
+        "text": "SEO",
+        "color": ""
+      }
+    ]
+  },
+  {
     "name": "FOI @ STEM Games 2018",
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
-    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+    "heroImage": "img/card-images/card-foistemgames2018.svg",
+    "images": [
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
+      "https://goranalkovic.github.io/img/projects/szfoi/16-05-stem-afterparty-poster.png"
+    ],
+    "tags": [
+      {
+        "text": "Print design",
+        "color": "is-primary"
+      },
+      {
+        "text": "Digital design",
+        "color": "is-link"
+      },
+      {
+        "text": "Illustrator",
+        "color": ""
+      }
+    ]
+  },
+  {
+    "name": "FOI @ STEM Games 2019",
+    "yearStart": 2018,
+    "yearEnd": 2018,
+    "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
+    "heroImage": "img/card-images/card-foistemgames2019.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
       "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
@@ -78,7 +148,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Posters and Facebook event covers for the humanitarian action <i>Mladi pomažu</i>",
-    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-google-forms-cover.png",
+    "heroImage": "img/card-images/card-mladipomazu.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-plakat-print.png",
       "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-fb-event-cover.png",
@@ -109,7 +179,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Posters and Facebook event covers for events of the <i>Freshman week</i>",
-    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_A2_print.png",
+    "heroImage": "img/card-images/card-tjedanbrucosa.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_A2_print.png",
       "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_FB.png"
@@ -134,7 +204,7 @@
     "yearStart": 2017,
     "yearEnd": null,
     "description": "Various visuals for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr> Student council",
-    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/sz-poster-a5.png",
+    "heroImage": "img/card-images/card-szfoi.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/szfoi/sz-poster-a5.png",
       "https://goranalkovic.github.io/img/projects/szfoi/welcome-party-2018-event-cover.png",
@@ -162,7 +232,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Posters, Facebook event covers, ID cards and tickets for the annual student party - <i>Brucošijada</i>",
-    "heroImage": "https://goranalkovic.github.io/img/projects/szfoi/brucosijada-2018-poster.png",
+    "heroImage": "img/card-images/card-brucosijada2018.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/szfoi/brucosijada-2018-poster.png",
       "https://goranalkovic.github.io/img/projects/szfoi/brucosiajda-2018-event-cover.png",
@@ -194,7 +264,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Logo and bottle labels for Aronija Juraj",
-    "heroImage": "https://goranalkovic.github.io/img/projects/aronija-juraj/logo.png",
+    "heroImage": "img/card-images/card-aronija.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/aronija-juraj/logo.png",
       "https://goranalkovic.github.io/img/projects/aronija-juraj/bottle-label.png",
@@ -224,7 +294,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Custom Wordpress design and logo for an e-commerce website",
-    "heroImage": "https://goranalkovic.github.io/img/projects/doseofsharks/logo-V-color.png",
+    "heroImage": "img/card-images/card-doseofsharks.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/doseofsharks/logo-V-color.png",
       "https://goranalkovic.github.io/img/projects/doseofsharks/doseofsharks-website.png"
@@ -265,7 +335,7 @@
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
-    "heroImage": "https://goranalkovic.github.io/img/projects/hipocean/Logo-Color-Text.png",
+    "heroImage": "img/card-images/card-hipocean.svg",
     "images": [
       "https://goranalkovic.github.io/img/projects/hipocean/landing-page.png",
       "https://goranalkovic.github.io/img/projects/hipocean/shop.png",
