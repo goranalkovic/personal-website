@@ -6,25 +6,63 @@
     "description": "Print design for the student magazines St@k and St@kić",
     "heroImage": "img/card-images/card-stak.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/stak/hero-1.png",
-      "https://goranalkovic.github.io/img/projects/stak/hero-2.png",
-      "https://goranalkovic.github.io/img/projects/stak/hero-3.png",
-      "https://goranalkovic.github.io/img/projects/stak/hero-4.png",
-      "https://goranalkovic.github.io/img/projects/stak/hero-5.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-1.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-2.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-3.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-4.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-5.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-6.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-7.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-8.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-9.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-10.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-11.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-12.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-13.png",
-      "https://goranalkovic.github.io/img/projects/stak/page-14.png"
+      {
+        "src": "img/projects/stak/hero-1.png"
+      },
+      {
+        "src": "img/projects/stak/hero-2.png"
+      },
+      {
+        "src": "img/projects/stak/hero-3.png"
+      },
+      {
+        "src": "img/projects/stak/hero-4.png"
+      },
+      {
+        "src": "img/projects/stak/hero-5.png"
+      },
+      {
+        "src": "img/projects/stak/page-1.png"
+      },
+      {
+        "src": "img/projects/stak/page-2.png"
+      },
+      {
+        "src": "img/projects/stak/page-3.png"
+      },
+      {
+        "src": "img/projects/stak/page-4.png"
+      },
+      {
+        "src": "img/projects/stak/page-5.png"
+      },
+      {
+        "src": "img/projects/stak/page-6.png"
+      },
+      {
+        "src": "img/projects/stak/page-7.png"
+      },
+      {
+        "src": "img/projects/stak/page-8.png"
+      },
+      {
+        "src": "img/projects/stak/page-9.png"
+      },
+      {
+        "src": "img/projects/stak/page-10.png"
+      },
+      {
+        "src": "img/projects/stak/page-11.png"
+      },
+      {
+        "src": "img/projects/stak/page-12.png"
+      },
+      {
+        "src": "img/projects/stak/page-13.png"
+      },
+      {
+        "src": "img/projects/stak/page-14.png"
+      }
     ],
     "tags": [
       {
@@ -52,9 +90,15 @@
     "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
     "heroImage": "img/card-images/card-stemgames.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/hipocean/landing-page.png",
-      "https://goranalkovic.github.io/img/projects/hipocean/shop.png",
-      "https://goranalkovic.github.io/img/projects/hipocean/home-page.png"
+      {
+        "src": "img/projects/hipocean/landing-page.png"
+      },
+      {
+        "src": "img/projects/hipocean/shop.png"
+      },
+      {
+        "src": "img/projects/hipocean/home-page.png"
+      }
     ],
     "tags": [
       {
@@ -88,17 +132,27 @@
     ]
   },
   {
-    "name": "FOI @ STEM Games 2018",
+    "name": "FOI STEM Games",
     "yearStart": 2018,
     "yearEnd": 2018,
     "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
     "heroImage": "img/card-images/card-foistemgames2018.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/16-05-stem-afterparty-poster.png"
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-front.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-banner.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-back.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png"
+      },
+      {
+        "src": "img/projects/szfoi/16-05-stem-afterparty-poster.png"
+      }
     ],
     "tags": [
       {
@@ -116,17 +170,27 @@
     ]
   },
   {
-    "name": "FOI @ STEM Games 2019",
-    "yearStart": 2018,
-    "yearEnd": 2018,
+    "name": "FOI STEM Games",
+    "yearStart": 2019,
+    "yearEnd": 2019,
     "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
     "heroImage": "img/card-images/card-foistemgames2019.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-front.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-banner.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-back.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/16-05-stem-afterparty-poster.png"
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-front.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-banner.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-back.png"
+      },
+      {
+        "src": "img/projects/szfoi/stemgames-2018-shirt-knowledgeteam-front.png"
+      },
+      {
+        "src": "img/projects/szfoi/16-05-stem-afterparty-poster.png"
+      }
     ],
     "tags": [
       {
@@ -150,10 +214,18 @@
     "description": "Posters and Facebook event covers for the humanitarian action <i>Mladi pomažu</i>",
     "heroImage": "img/card-images/card-mladipomazu.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-plakat-print.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-fb-event-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-google-forms-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/mladipomazu-božićni-party-a3-poster-fb.png"
+      {
+        "src": "img/projects/szfoi/mladipomazu-plakat-print.png"
+      },
+      {
+        "src": "img/projects/szfoi/mladipomazu-fb-event-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/mladipomazu-google-forms-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/mladipomazu-božićni-party-a3-poster-fb.png"
+      }
     ],
     "tags": [
       {
@@ -181,8 +253,12 @@
     "description": "Posters and Facebook event covers for events of the <i>Freshman week</i>",
     "heroImage": "img/card-images/card-tjedanbrucosa.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_A2_print.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/tjedan-brucoša-poster_FB.png"
+      {
+        "src": "img/projects/szfoi/tjedan-brucoša-poster_A2_print.png"
+      },
+      {
+        "src": "img/projects/szfoi/tjedan-brucoša-poster_FB.png"
+      }
     ],
     "tags": [
       {
@@ -206,14 +282,24 @@
     "description": "Various visuals for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr> Student council",
     "heroImage": "img/card-images/card-szfoi.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/sz-poster-a5.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/welcome-party-2018-event-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/stress-relief-party-21-11-event-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/07-03-new-semester-new-me-event-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/humanitarni-tjedan-1-event-cover.png"
+      {
+        "src": "img/projects/szfoi/sz-poster-a5.png"
+      },
+      {
+        "src": "img/projects/szfoi/welcome-party-2018-event-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/stress-relief-party-21-11-event-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/07-03-new-semester-new-me-event-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/humanitarni-tjedan-1-event-cover.png"
+      }
     ],
     "tags": [
-          {
+      {
         "text": "Digital design",
         "color": "is-link"
       },
@@ -234,11 +320,21 @@
     "description": "Posters, Facebook event covers, ID cards and tickets for the annual student party - <i>Brucošijada</i>",
     "heroImage": "img/card-images/card-brucosijada2018.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/szfoi/brucosijada-2018-poster.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/brucosiajda-2018-event-cover.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-izvođač.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-press.png",
-      "https://goranalkovic.github.io/img/projects/szfoi/akreditacije-organizator.png"
+      {
+        "src": "img/projects/szfoi/brucosijada-2018-poster.png"
+      },
+      {
+        "src": "img/projects/szfoi/brucosiajda-2018-event-cover.png"
+      },
+      {
+        "src": "img/projects/szfoi/akreditacije-izvođač.png"
+      },
+      {
+        "src": "img/projects/szfoi/akreditacije-press.png"
+      },
+      {
+        "src": "img/projects/szfoi/akreditacije-organizator.png"
+      }
     ],
     "tags": [
       {
@@ -266,9 +362,15 @@
     "description": "Logo and bottle labels for Aronija Juraj",
     "heroImage": "img/card-images/card-aronija.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/aronija-juraj/logo.png",
-      "https://goranalkovic.github.io/img/projects/aronija-juraj/bottle-label.png",
-      "https://goranalkovic.github.io/img/projects/aronija-juraj/bottle-label-back.png"
+      {
+        "src": "img/projects/aronija-juraj/logo.png"
+      },
+      {
+        "src": "img/projects/aronija-juraj/bottle-label.png"
+      },
+      {
+        "src": "img/projects/aronija-juraj/bottle-label-back.png"
+      }
     ],
     "tags": [
       {
@@ -296,8 +398,12 @@
     "description": "Custom Wordpress design and logo for an e-commerce website",
     "heroImage": "img/card-images/card-doseofsharks.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/doseofsharks/logo-V-color.png",
-      "https://goranalkovic.github.io/img/projects/doseofsharks/doseofsharks-website.png"
+      {
+        "src": "img/projects/doseofsharks/logo-V-color.png"
+      },
+      {
+        "src": "img/projects/doseofsharks/doseofsharks-website.png"
+      }
     ],
     "tags": [
       {
@@ -337,9 +443,15 @@
     "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
     "heroImage": "img/card-images/card-hipocean.svg",
     "images": [
-      "https://goranalkovic.github.io/img/projects/hipocean/landing-page.png",
-      "https://goranalkovic.github.io/img/projects/hipocean/shop.png",
-      "https://goranalkovic.github.io/img/projects/hipocean/home-page.png"
+      {
+        "src": "img/projects/hipocean/landing-page.png"
+      },
+      {
+        "src": "img/projects/hipocean/shop.png"
+      },
+      {
+        "src": "img/projects/hipocean/home-page.png"
+      }
     ],
     "tags": [
       {

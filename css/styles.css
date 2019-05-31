@@ -91,6 +91,10 @@ abbr {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.14);
 }
 
+.navbar-item:hover {
+    background: none !important;
+}
+
 .is-modal-hidden {
     opacity: 0;
 }
@@ -145,6 +149,10 @@ abbr {
 
 .modal-content img {
     border-radius: 0.3rem;
+}
+
+.skill-name span:first-of-type{
+    margin-right: 0.6rem;
 }
 
 #gallery-modal .modal-content {

@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    loadSkills();
     loadProjects();
 
     let navbarLogo = document.querySelectorAll('.brand-img');
@@ -162,6 +163,108 @@ function prevImage() {
 
 }
 
+async function loadSkills() {
+    let response = await fetch('./files/cv.json');
+    let data = await response.json();
+
+    for (let skillList of data) {
+        addSkillCard(skillList, document.querySelector('#skills-container'));
+    }
+}
+
+function addSkillCard(skillList, skillContainer) {
+    let mainColumns = document.createElement('div');
+    mainColumns.className = 'columns is-variable is-5';
+    mainColumns.style = 'margin-bottom: 2rem';
+
+    //
+    let columnDiv = document.createElement('div');
+    columnDiv.className = 'column is-12-mobile has-text-centered-mobile is-4-tablet is-3';
+
+    let skillsColumn = document.createElement('div');
+    skillsColumn.className = 'column is-9 columns is-multiline';
+
+    // Title
+
+    let title = document.createElement('h4');
+    title.className = 'subtitle is-4 skill-name';
+
+    let titleIconSpan = document.createElement('span');
+    titleIconSpan.className = 'icon ' + skillList.iconColor;
+
+    let titleIconIcon = document.createElement('i');
+    titleIconIcon.className = skillList.icon;
+
+    titleIconSpan.appendChild(titleIconIcon);
+
+    title.appendChild(titleIconSpan);
+
+    let titleText = document.createElement('span');
+    titleText.innerHTML = skillList.name;
+
+    title.appendChild(titleText);
+
+    columnDiv.appendChild(title);
+
+    // Contents
+
+
+
+
+
+    for (let skill of skillList.items){
+
+        let skillsUlColumn = document.createElement('div');
+        skillsUlColumn.className = 'column is-12-mobile has-text-centered-mobile is-5-tablet is-4-desktop';
+
+        let skillsUl = document.createElement('ul');
+        skillsUl.className = 'skill-items';
+
+        if (skill.section != null) {
+
+            let liElement = document.createElement('li');
+            liElement.innerHTML = `<b class="${skillList.iconColor} is-size-5">` + skill.section + '</b>';
+            skillsUl.appendChild(liElement);
+
+            for (let skillItem of skill.items) {
+                let liElement = document.createElement('li');
+                let middle = '';
+
+                if (skillItem.subtitle != null) {
+                    middle = '<span class="is-size-6">' + skillItem.subtitle + '</span><br>';
+                }
+
+                liElement.innerHTML = '<b class="is-size-6">' + skillItem.name + '</b><br>' + middle + '<span class="has-text-grey-light is-size-6">' + skillItem.level + '</><br><br>';
+
+                skillsUl.appendChild(liElement);
+            }
+        }
+        else {
+            let liElement = document.createElement('li');
+            let middle = '';
+
+            if (skill.subtitle != null) {
+                middle = '<span class="is-size-6">' + skill.subtitle + '</span><br>';
+            }
+
+            liElement.innerHTML = '<b class="is-size-6">' + skill.name + '</b><br>' + middle + '<span class="has-text-grey-light is-size-6">' + skill.level + '</><br><br>';
+
+            skillsUl.appendChild(liElement);
+        }
+
+        skillsUlColumn.appendChild(skillsUl);
+        skillsColumn.appendChild(skillsUlColumn);
+    }
+
+    //
+
+
+    mainColumns.appendChild(columnDiv);
+    mainColumns.appendChild(skillsColumn);
+
+    skillContainer.appendChild(mainColumns);
+}
+
 async function loadProjects() {
 
     let response = await fetch('./files/projects.json');
@@ -248,35 +351,7 @@ function addProjectCard(project, projectContainer) {
     // Gallery button
 
     let galleryBtn = document.createElement('button');
-    // galleryBtn.className = 'button is-small is-rounded';
     galleryBtn.className = 'card';
-    // galleryBtn.addEventListener('click', () => {
-    //     currentProject = project;
-    //     showModal();
-    // });
-
-    // let galleryBtnSpan = document.createElement('span');
-    // galleryBtnSpan.className = 'icon is-medium';
-    //
-    // let galleryBtnIcon = document.createElement('i');
-    // galleryBtnIcon.className = 'icon-magnifier';
-    //
-    // let galleryBtnText = document.createElement('span');
-    // galleryBtnText.innerText = 'Details';
-    //
-    // galleryBtnSpan.appendChild(galleryBtnIcon);
-    // galleryBtn.appendChild(galleryBtnSpan);
-    // // galleryBtn.appendChild(galleryBtnText);
-    // cardTitleDiv.appendChild(galleryBtn);
-
-
-    // Card body
-
-    // let projectDescription = document.createElement('div');
-    // projectDescription.className = 'content';
-    // projectDescription.innerHTML = project.description;
-
-
 
     //
 
@@ -287,9 +362,16 @@ function addProjectCard(project, projectContainer) {
 
     containerDiv.appendChild(cardDiv);
 
+
+
     containerDiv.addEventListener('click', () => {
-        currentProject = project;
-        showModal();
+        lightGallery(projectContainer, {
+            dynamic: true,
+            hideControlOnEnd: true,
+            preload: 2,
+            download: false,
+            dynamicEl: project.images
+        });
     });
     projectContainer.appendChild(containerDiv);
 
