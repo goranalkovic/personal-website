@@ -117,7 +117,7 @@
           },
           {
             "name": "JavaScript & jQuery",
-            "subtitle": "Vanilla ES6",
+            "subtitle": "<i>Vanilla</i> ES6",
             "level": "Intermediate"
           },
           {
@@ -137,7 +137,7 @@
           },
           {
             "name": "PHP",
-            "subtitle": "Vanilla",
+            "subtitle": "<i>Vanilla</i>",
             "level": "Basic"
           },
           {

@@ -28,7 +28,16 @@ html {
 abbr {
     text-decoration: none;
     cursor: help;
-    border-bottom: 1px solid hsl(217, 71%, 53%);
+    background: rgba(216, 49, 49, 0.05);
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+.project-description-text {
+    text-align: center;
+    text-align-last: center;
+    max-width: 90%;
+    margin: auto;
 }
 
 .hero-underline::before {
@@ -66,11 +75,17 @@ abbr {
     transition: 0.24s all cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 0.2rem 1rem rgba(10, 10, 10, 0.2);
     z-index: 2;
+    pointer-events: none;
+    user-select: none;
 }
 
 .hero-underline:hover::after {
     opacity: 1;
     transform: translateX(-9rem) translateY(2rem) scale(1);
+}
+
+.hero-foot .button {
+    background: transparent !important;
 }
 
 .tags {
@@ -106,7 +121,9 @@ abbr {
     border: 1px solid #e6e6e6;
     transition: 0.2s border, 0.4s box-shadow;
     border-radius: 4px;
-    height: 15rem;
+    /*height: 15rem;*/
+    height: 20rem;
+    /*width: 20rem;*/
 }
 
 .card:hover {
@@ -140,7 +157,7 @@ abbr {
 }
 
 .blur {
-    filter: blur(1px) saturate(0.18) sepia(0.1);
+    /*filter: blur(1px);*/
 }
 
 .is-modal-hidden .modal-content {
@@ -170,14 +187,20 @@ abbr {
     padding: 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*.navbar {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
 .navbar-item:hover {
     background: transparent;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #itsame {

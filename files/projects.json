@@ -3,7 +3,7 @@
     "name": "St@k",
     "yearStart": 2017,
     "yearEnd": null,
-    "description": "Print design for the student magazines St@k and St@kić",
+    "description": "Design for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr> student magazines St@k and St@kić",
     "heroImage": "img/card-images/card-stak.svg",
     "images": [
       {
@@ -87,7 +87,7 @@
     "name": "STEM Games",
     "yearStart": 2019,
     "yearEnd": null,
-    "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
+    "description": "Print design and promo materials for the STEM Games competition",
     "heroImage": "img/card-images/card-stemgames.svg",
     "images": [
       {
@@ -135,7 +135,7 @@
     "name": "FOI STEM Games",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
+    "description": "T-shirt and banner designs that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018",
     "heroImage": "img/card-images/card-foistemgames2018.svg",
     "images": [
       {
@@ -173,7 +173,7 @@
     "name": "FOI STEM Games",
     "yearStart": 2019,
     "yearEnd": 2019,
-    "description": "Visuals for the t-shirts and banner that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2018 <br><br>Facebook event cover and poster for the <i>STEM Games afterparty</i>",
+    "description": "T-shirt and banner designs that represented <abbr title=\"Faculty of organization and informatics\">FOI</abbr> at STEM Games 2019",
     "heroImage": "img/card-images/card-foistemgames2019.svg",
     "images": [
       {
@@ -211,7 +211,7 @@
     "name": "Mladi pomažu",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Posters and Facebook event covers for the humanitarian action <i>Mladi pomažu</i>",
+    "description": "Branding and promo materials for the student humanitarian action <i>Mladi pomažu</i>",
     "heroImage": "img/card-images/card-mladipomazu.svg",
     "images": [
       {
@@ -279,7 +279,7 @@
     "name": "FOI Student council",
     "yearStart": 2017,
     "yearEnd": null,
-    "description": "Various visuals for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr> Student council",
+    "description": "Visuals and promo materials for the <abbr title=\"Faculty of organization and informatics\">FOI</abbr>'s Student council",
     "heroImage": "img/card-images/card-szfoi.svg",
     "images": [
       {
@@ -317,7 +317,7 @@
     "name": "Brucošijada grada Varaždina",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Posters, Facebook event covers, ID cards and tickets for the annual student party - <i>Brucošijada</i>",
+    "description": "Promo materials, accreditations and tickets for the annual student party Brucošijada",
     "heroImage": "img/card-images/card-brucosijada2018.svg",
     "images": [
       {
@@ -359,7 +359,7 @@
     "name": "Aronija Juraj",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Logo and bottle labels for Aronija Juraj",
+    "description": "Branding and bottle labels for Aronija Juraj",
     "heroImage": "img/card-images/card-aronija.svg",
     "images": [
       {
@@ -395,7 +395,7 @@
     "name": "Dose of sharks",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Custom Wordpress design and logo for an e-commerce website",
+    "description": "Branding and a custom Wordpress website",
     "heroImage": "img/card-images/card-doseofsharks.svg",
     "images": [
       {
@@ -440,7 +440,7 @@
     "name": "Hip Ocean",
     "yearStart": 2018,
     "yearEnd": 2018,
-    "description": "Custom Wordpress design, logo and shirt/brand designs for an e-commerce website",
+    "description": "Branding, custom Wordpress website and t-shirt designs",
     "heroImage": "img/card-images/card-hipocean.svg",
     "images": [
       {

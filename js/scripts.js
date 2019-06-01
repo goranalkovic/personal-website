@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     loadProjects();
 
     let navbarLogo = document.querySelectorAll('.brand-img');
+    //
+    // let firstImg = getNewImg();
+    // navbarLogo[0].setAttribute('src', firstImg);
+    // navbarLogo[1].setAttribute('src', firstImg);
 
-    let firstImg = getNewImg();
-    navbarLogo[0].setAttribute('src', firstImg);
-    navbarLogo[1].setAttribute('src', firstImg);
+    swapNavLogo();
 
     navbarLogo[0].addEventListener('click', swapNavLogo);
     navbarLogo[1].addEventListener('click', swapNavLogo);
@@ -328,8 +330,13 @@ function addProjectCard(project, projectContainer) {
         // }
     }
 
+    let projectDesription = document.createElement('p');
+    projectDesription.className = 'is-6 has-text-gray-lighter project-description-text';
+    projectDesription.innerHTML = project.description;
+
     cardTitleDiv.appendChild(projectTitle);
     cardTitleDiv.appendChild(projectDuration);
+    cardTitleDiv.appendChild(projectDesription);
 
     //
 
@@ -365,14 +372,19 @@ function addProjectCard(project, projectContainer) {
 
 
     containerDiv.addEventListener('click', () => {
-        lightGallery(projectContainer, {
+
+        lightGallery(containerDiv, {
             dynamic: true,
             hideControlOnEnd: true,
             preload: 2,
             download: false,
-            dynamicEl: project.images
+            dynamicEl: project.images,
+            mode: 'lg-slide'
         });
     });
+
     projectContainer.appendChild(containerDiv);
 
 }
+
+var galleryImages = [];

@@ -52,7 +52,7 @@
         <div class="container has-text-centered" style="margin-top: 2.5rem;">
             <a class="button is-dark is-small is-outlined"
                href="files/Goran_Alkovic_CV.pdf">
-                <p>Just give me the CV</p>
+                <p>Just the CV, please</p>
             </a>
         </div>
     </div>
@@ -70,39 +70,44 @@
         </div>
     </div>
     <div class="hero-foot">
-        <div class="container has-text-centered" style="margin-bottom: 2.5rem;">
-            <a class="button is-link is-medium has-text-weight-semibold animated infinite pulse slower" href="#navbar">
-                    <span class="icon is-medium">
-                        <i class="icon-arrow-down"></i>
+        <div class="container has-text-centered" style="margin-bottom: 2.5rem">
+            <a class="button is-light is-large" href="#navbar">
+                <span class="icon is-large has-text-danger animated infinite fadeOutDown slower">
+                        <i class="icon-arrow-down has-text-weight-bold"></i>
                     </span>
-                <p>More about me</p>
             </a>
         </div>
     </div>
 </section>
 
 <nav aria-label="main navigation" class="navbar is-transparent is-fixed-top" id="navbar" role="navigation">
-
-    <a class="navbar-item" href="#learnmore">
-        About me
-    </a>
-
-    <a class="navbar-item" href="#skills">
-        What I can do
-    </a>
-
-    <div class="navbar-brand">
-        <img alt="Goran Alković" class="brand-img brand-img-menu" src="img/logo/logo-v4.svg"/>
+    <div class="columns is-vcentered is-centered is-mobile is-variable is-0">
+        <div class="column is-narrow">
+            <a class="navbar-item" href="#learnmore">
+                About me
+            </a>
+        </div>
+        <div class="column is-narrow">
+            <a class="navbar-item" href="#skills">
+                What I can do
+            </a>
+        </div>
+        <div class="column is-narrow is-hidden-mobile">
+            <div class="navbar-brand">
+                <img alt="Goran Alković" class="brand-img brand-img-menu" src="img/logo/logo-v4.svg"/>
+            </div>
+        </div>
+        <div class="column is-narrow">
+            <a class="navbar-item" href="#work">
+                What I've done
+            </a>
+        </div>
+        <div class="column is-narrow">
+            <a class="navbar-item" href="#contact">
+                Contact me
+            </a>
+        </div>
     </div>
-
-    <a class="navbar-item" href="#work">
-        What I've done
-    </a>
-
-    <a class="navbar-item" href="#contact">
-        Contact me
-    </a>
-
 </nav>
 
 
@@ -142,35 +147,22 @@
         </h1>
         <div class="columns is-mobile is-multiline is-centered" id="project-container"></div>
     </div>
-    <div class="modal is-modal-hidden" id="gallery-modal">
-        <div class="modal-background" onclick="closeModal()"></div>
-        <div class="modal-content">
-            <div class="columns is-centered is-vcentered is-variable is-1">
-                <div class="column is-narrow">
-                    <button class="button is-dark" onclick="prevImage()">
-                        <span class="icon is-small">
-                            <i class="icon-arrow-left"></i>
-                        </span>
-                    </button>
-                </div>
-                <div class="column">
-                    <div class="image">
-                        <img alt="" src="https://bulma.io/images/placeholders/1280x960.png">
-                    </div>
-                </div>
-                <div class="column is-narrow">
-                    <button class="button is-dark" onclick="nextImage()">
-                        <span class="icon is-small">
-                            <i class="icon-arrow-right"></i>
-                        </span>
-                    </button>
-                </div>
-            </div>
+<!--    <div class="modal is-modal-hidden" id="gallery-modal">-->
+<!--        <div class="modal-background" onclick="closeModal()"></div>-->
+<!--        <div class="modal-content">-->
+<!--            <div class="columns is-centered is-vcentered is-variable is-1">-->
+<!--                <div class="column">-->
+<!--                    <div class="image">-->
+<!--                        <img alt="" src="https://bulma.io/images/placeholders/1280x960.png">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--               -->
+<!--            </div>-->
 
 
-        </div>
-        <button aria-label="close" class="modal-close is-large" onclick="closeModal()"></button>
-    </div>
+<!--        </div>-->
+<!--        <button aria-label="close" class="modal-close is-large" onclick="closeModal()"></button>-->
+<!--    </div>-->
 </section>
 
 <section class="section" id="contact">
@@ -179,25 +171,31 @@
             Contact me
         </h1>
 
-        <div class="buttons is-centered">
-            <a href="mailto:goran.alkovic@hotmail.com" class="button">
+        <div class="columns is-centered has-text-centered-mobile">
+            <div class="column is-narrow">
+                <a href="mailto:goran.alkovic@hotmail.com" class="button">
                 <span class="icon">
                   <i class="icon-envelope"></i>
                 </span>
-                <span>goran.alkovic@hotmail.com</span>
-            </a>
-            <a href="https://github.com/goranalkovic" class="button is-large">
+                    <span>goran.alkovic@hotmail.com</span>
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="https://github.com/goranalkovic" class="button">
                 <span class="icon">
                   <i class="icon-social-github"></i>
                 </span>
-                <span>GitHub</span>
-            </a>
-            <a href="tel:+385976480800" class="button">
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div class="column is-narrow">
+                <a href="tel:+385976480800" class="button">
                 <span class="icon">
                   <i class="icon-phone"></i>
                 </span>
-                <span>+385 976 480 800</span>
-            </a>
+                    <span>+385 976 480 800</span>
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -205,7 +203,7 @@
 <footer class="footer">
     <div class="content has-text-centered">
         <p>&copy; Goran Alković, 2019</p>
-        <a href="#">Back to top</a>
+        <a href="#navbar">Back to top</a>
     </div>
 </footer>
 </body>
