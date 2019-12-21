@@ -5,11 +5,29 @@
   import ProjectCard from './components/ProjectCard.svelte';
   import ContactButton from './components/ContactButton.svelte';
   import { flip } from 'svelte/animate';
-  import { slide } from 'svelte/transition';
+  import { slide, fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
 
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+
+  let leftObserver = new IntersectionObserver(
+    function(entries) {
+      leftOverlay = entries[0].isIntersecting === false;
+    },
+    { threshold: [0.7] }
+  );
+
+  let rightObserver = new IntersectionObserver(
+    function(entries) {
+     rightOverlay = entries[0].isIntersecting === false;
+    },
+    { threshold: [0.7] }
+  );
+
+
+  
 
   async function loadSkills() {
     // await sleep(2000);
@@ -26,6 +44,21 @@
   let projects = loadProjects();
 
   let projectContainer;
+
+  let currentSkillSet = null;
+
+  let leftOverlay = false;
+  let rightOverlay = true;
+
+  onMount(() => {
+    console.log('the component has mounted');
+
+    console.log('Observing 0');
+    leftObserver.observe(document.querySelector('#skill-categories button:first-of-type'));
+
+    console.log('Observing 4');
+    rightObserver.observe(document.querySelector('#skill-categories button:last-of-type'));
+  });
 </script>
 
 <style>
@@ -34,11 +67,45 @@
   }
 
   .bg-texture-skills {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23b2f5ea' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.2' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   }
 
   .bg-texture-projects {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fefcbf' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  .scroll-overlay {
+    content: ' ';
+    height: 6rem;
+    position: absolute;
+    width: 6rem;
+    pointer-events: none;
+  }
+
+  .scroll-overlay-left {
+    background-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 1) 80%,
+      rgb(255,255,255) 100%
+    );
+    left: 0;
+  }
+
+  .scroll-overlay-right {
+    background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 60%,
+      rgba(255, 255, 255, 1) 80%,
+      rgb(255,255,255) 100%
+    );
+    left: calc(100% - 6rem);
+  }
+
+  .border-1 {
+    border-width: 1px;
   }
 </style>
 
@@ -49,40 +116,96 @@
     What I do
   </h1>
 
-  <div class="flex w-full flex-wrap justify-center max-w-6xl mx-auto">
+  <div class="md:flex md:flex-col xl:items-center">
     {#await skills}
       <p class="has-text-centered">⏳</p>
     {:then value}
-      {#each value as skill, index (index)}
-        <SkillList {skill} />
-      {/each}
+
+      <div id="skill-categories"
+        class="flex lg:justify-center overflow-x-auto mx-auto px-0 py-4
+        scrolling-touch h-40">
+        <style>
+          ::-webkit-scrollbar {
+            height: 4px;
+            display: none;
+          }
+        </style>
+        {#each value as skill, index (index)}
+          <button
+            class="w-32 h-20 {currentSkillSet === index ? 'bg-texture-skills text-purple-600 font-bold pointer-events-none shadow-lg' : 'bg-white border-1 hover:border-white border-solid border-gray-200 transition-border focus:shadow-md hover:shadow-md hover:cursor-pointer'}
+            rounded-sm m-2 p-1 flex flex-col flex-shrink-0 flex-grow-0
+            items-center justify-center text-center transition-shadow
+            transition-250 select-none "
+            on:click={() => (currentSkillSet = index)}>
+            <span
+              class="text-2xl icon {currentSkillSet === index ? skill.iconColor : 'text-gray-600'}"
+              aria-hidden="true">
+              <i class={skill.icon} />
+            </span>
+
+            <h4 class="text-base font-display">
+              <span>{skill.name}</span>
+
+            </h4>
+
+          </button>
+        {/each}
+
+       {#if leftOverlay}
+          <div transition:fade class="scroll-overlay scroll-overlay-left" />
+        {/if}
+
+        {#if rightOverlay}
+          <div transition:fade class="scroll-overlay scroll-overlay-right" />
+        {/if}
+
+      </div>
+
+
+
+<div class="-mt-10">
+      {#if currentSkillSet != null}
+        <SkillList skill={value[currentSkillSet]} />
+
+        
+      <button on:click={() => currentSkillSet = null } class="block h-6 my-4 sm-max:w-full sm-max:h-8 bg-transparent mx-auto">
+         <p class="text-sm text-center text-gray-400 hover:text-purple-400 transition-color">Hide details</p>
+   
+      </button>
+    
+    {:else}
+    <p class="text-sm text-center text-gray-400">Click/tap on any category for details</p>
+      {/if}
+</div>
     {:catch error}
       <p>Something went wrong while loading skill list: {error.message}</p>
     {/await}
   </div>
 </div>
 
-<div class="p-8">
+<div class="p-8 pt-0">
   <h1 class="text-3xl text-center px-4 py-2 text-purple-600 select-none">
     Projects
   </h1>
 
-<div class="flex flex-wrap w-full justify-center max-w-6xl mx-auto">
+  <div class="flex flex-wrap w-full justify-center max-w-6xl mx-auto">
 
-  {#await projects}
-    <p class="has-text-centered">⏳</p>
-  {:then value}
-    {#each value as project}
-      <ProjectCard {project} />
-    {/each}
-  {:catch error}
-    <p>Something went wrong while loading project list: {error.message}</p>
-  {/await}
+    {#await projects}
+      <p class="has-text-centered">⏳</p>
+    {:then value}
+      {#each value as project}
+        <ProjectCard {project} />
+      {/each}
+    {:catch error}
+      <p>Something went wrong while loading project list: {error.message}</p>
+    {/await}
 
+  </div>
 </div>
-</div>
 
-<p class="text-center text-gray-500 pt-4 select-none">&copy; Goran Alković, 2019</p>
+<p class="text-center text-gray-500 pt-4 select-none">
+  &copy; Goran Alković, 2019
+</p>
 <p class="text-center text-gray-200 pb-4 select-none">
   Made with Svelte and Tailwind.css, hosted on GitHub
 </p>

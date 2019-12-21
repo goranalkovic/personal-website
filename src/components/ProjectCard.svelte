@@ -27,10 +27,14 @@
     padding: 0 4px;
     border-radius: 4px;
   }
+
+  .border-1 {
+    border-width: 1px;
+  }
 </style>
 
 <button aria-describedby="Project"
-  class="w-8/12 md:w-4/12 lg:w-3/12 bg-white shadow focus:shadow-lg hover:shadow-lg rounded-lg
+  class="w-8/12 md:w-4/12 lg:w-3/12 bg-white border-1 hover:border-white border-solid border-gray-200 transition-border focus:shadow-lg hover:shadow-lg rounded-lg
   hover:cursor-pointer m-4 p-5 flex flex-col items-center text-center transition-shadow transition-250 select-none"
   on:click={showGallery}
   bind:this={projectContainer}>
