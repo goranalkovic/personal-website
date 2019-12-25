@@ -16,9 +16,9 @@ module.exports = {
       'none': 'none',
       'all': 'all',
       'color': 'color',
-      'bg': 'background-color',
+      'bg': 'background',
       'border': 'border-color',
-      'colors': ['color', 'background-color', 'border-color'],
+      'colors': ['color', 'background-color', 'border-color', 'background'],
       'opacity': 'opacity',
       'transform': 'transform',
       'width': 'width',
@@ -46,10 +46,22 @@ module.exports = {
       'default': '0ms',
       '0': '0ms',
       '100': '100ms',
+      '150': '150ms',
       '250': '250ms',
+      '300': '300ms',
       '500': '500ms',
       '750': '750ms',
       '1000': '1000ms',
+    },
+    linearGradients: {
+      directions: { // defaults to these values
+        'r': 'to right',
+        'l': 'to left'
+      },
+      colors: { // defaults to {}
+      'light': ['rgb(255,255,255)', 'rgba(255,255,255,0)'],
+      'dark': ['rgb(26, 32, 44)', 'rgba(26, 32, 44,0)'],
+        },
     },
     willChange: { // defaults to these values
       'auto': 'auto',
@@ -57,14 +69,21 @@ module.exports = {
       'contents': 'contents',
       'opacity': 'opacity',
       'transform': 'transform',
+      'bg': 'background-color'
     },
     extend: {
 
     }
   },
-  variants: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'active']
-  ,
+  variants: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus', 'active', 'dark', 'dark-hover', 'dark-group-hover'],
+  // variants: {
+  //   backgroundColor: ['dark', 'dark-hover', 'dark-group-hover'],
+  //   borderColor: ['dark', 'dark-focus', 'dark-focus-within'],
+  //   textColor: ['dark', 'dark-hover', 'dark-active', 'dark-group-hover']
+  // },
   plugins: [
     require('tailwindcss-transitions')(),
+    require('tailwindcss-gradients')(),
+    require('tailwindcss-dark-mode')(),
   ]
 }

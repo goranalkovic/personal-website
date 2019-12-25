@@ -32,20 +32,21 @@
   
   <div class="sm-max:text-center select-none" >
    <div
-    class="flex text-center md:text-left justify-center w-full flex-wrap sm-max:flex-no-wrap sm-max:flex-col flex-1"
+    class="flex text-left pl-6 md:pl-0 justify-left w-full flex-wrap sm-max:flex-no-wrap sm-max:flex-col flex-1"
     transition:fade>
     {#if childrenVisible}
        {#each skill.items as item, i (i)}
         <ul class="md:ml-10 flex-grow" transition:fade={{ duration: 200, delay: 50 * i }} 
         animate:flip={{ duration: 200 }}>
-          <li  >
-            <b class="{skill.iconColor} text-xl">{item.section}</b>
+         <div class="inline-block w-full flex-1 flex-shrink-0 min-w-full">
+          <li class="py-2 border-b dark:border-gray-700">
+            <b class="text-purple-500 dark:text-purple-400 text-xl">{item.section}</b>
           </li>
 
           {#each item.items as itm, ind (ind)}
             <li
             animate:flip={{ duration: 200 }}
-              class="m-2 md:flex-1"
+              class="m-2 mb-3 md:flex-1 text-black dark:text-gray-400"
               transition:slide={{ duration: 200 }}>
 
               <b class="">
@@ -54,7 +55,7 @@
 
               {#if itm.subtitle != null}
                 <br />
-                <span class="">
+                <span class="text-gray-500 dark:text-gray-600">
                   {@html itm.subtitle}
                 </span>
               {/if}
@@ -63,6 +64,7 @@
 
             </li>
           {/each}
+         </div>
         </ul>
       {/each}
     {/if}

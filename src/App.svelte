@@ -16,18 +16,15 @@
     function(entries) {
       leftOverlay = entries[0].isIntersecting === false;
     },
-    { threshold: [0.7] }
+    { threshold: [0.85] }
   );
 
   let rightObserver = new IntersectionObserver(
     function(entries) {
      rightOverlay = entries[0].isIntersecting === false;
     },
-    { threshold: [0.7] }
+    { threshold: [0.85] }
   );
-
-
-  
 
   async function loadSkills() {
     // await sleep(2000);
@@ -51,14 +48,13 @@
   let rightOverlay = true;
 
   onMount(() => {
-    console.log('the component has mounted');
-
-    console.log('Observing 0');
     leftObserver.observe(document.querySelector('#skill-categories button:first-of-type'));
-
-    console.log('Observing 4');
     rightObserver.observe(document.querySelector('#skill-categories button:last-of-type'));
   });
+
+  const toggleDark = () => {
+document.documentElement.classList.toggle('mode-dark')
+  };
 </script>
 
 <style>
@@ -74,45 +70,21 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fefcbf' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   }
 
-  .scroll-overlay {
-    content: ' ';
-    height: 6rem;
-    position: absolute;
-    width: 6rem;
-    pointer-events: none;
+  .mask-l {
+    mask-image: linear-gradient( to right, rgba(0, 0, 0, 1.0) 40%, transparent 70%);
   }
 
-  .scroll-overlay-left {
-    background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.8) 60%,
-      rgba(255, 255, 255, 1) 80%,
-      rgb(255,255,255) 100%
-    );
-    left: 0;
-  }
-
-  .scroll-overlay-right {
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(255, 255, 255, 0.8) 60%,
-      rgba(255, 255, 255, 1) 80%,
-      rgb(255,255,255) 100%
-    );
-    left: calc(100% - 6rem);
-  }
-
-  .border-1 {
-    border-width: 1px;
+   .mask-r {
+    mask-image: linear-gradient( to left, rgba(0, 0, 0, 1.0) 40%, transparent 70%);
   }
 </style>
 
 <Hero />
 
-<div class="p-8 pb-0">
-  <h1 class="text-3xl text-center px-4 py-2 text-purple-600 select-none">
+<div class="mt-16 p-8 pb-0">
+  <h1
+    class="text-3xl text-center px-4 py-2 text-purple-600 dark:text-purple-400
+    select-none">
     What I do
   </h1>
 
@@ -121,7 +93,8 @@
       <p class="has-text-centered">⏳</p>
     {:then value}
 
-      <div id="skill-categories"
+      <div
+        id="skill-categories"
         class="flex lg:justify-center overflow-x-auto mx-auto px-0 py-4
         scrolling-touch h-40">
         <style>
@@ -132,18 +105,18 @@
         </style>
         {#each value as skill, index (index)}
           <button
-            class="w-32 h-20 {currentSkillSet === index ? 'bg-texture-skills text-purple-600 font-bold pointer-events-none shadow-lg' : 'bg-white border-1 hover:border-white border-solid border-gray-200 transition-border focus:shadow-md hover:shadow-md hover:cursor-pointer'}
-            rounded-sm m-2 p-1 flex flex-col flex-shrink-0 flex-grow-0
-            items-center justify-center text-center transition-shadow
-            transition-250 select-none "
+            class="w-32 h-20 {currentSkillSet === index ? 'bg-texture-skills text-purple-600 dark:bg-gray-800 font-bold pointer-events-none shadow-lg' : 'bg-white dark:bg-gray-900 border hover:border-white border-solid border-gray-200 dark:border-gray-800 focus:shadow-md hover:shadow-md hover:cursor-pointer dark-hover:bg-gray-800'}
+            rounded m-2 p-1 flex flex-col flex-shrink-0 flex-grow-0 items-center
+            justify-center text-center transition-shadow transition-border
+            transition-300 select-none "
             on:click={() => (currentSkillSet = index)}>
             <span
-              class="text-2xl icon {currentSkillSet === index ? skill.iconColor : 'text-gray-600'}"
+              class="text-2xl icon {currentSkillSet === index ? 'text-purple-500 dark:text-purple-400' : 'text-gray-600 dark:text-gray-600'}"
               aria-hidden="true">
               <i class={skill.icon} />
             </span>
 
-            <h4 class="text-base font-display">
+            <h4 class="text-base font-display {currentSkillSet === index ? 'dark:text-purple-400': 'dark:text-gray-500'}">
               <span>{skill.name}</span>
 
             </h4>
@@ -151,40 +124,61 @@
           </button>
         {/each}
 
-       {#if leftOverlay}
-          <div transition:fade class="scroll-overlay scroll-overlay-left" />
+
+
+        {#if leftOverlay}
+                 <div
+          transition:fade
+          class="mask-l left-0 h-24 w-20 pointer-events-none flex items-center justify-left p-0
+          rounded-sm absolute bg-white dark:bg-gray-900
+          text-gray-400 dark:text-gray-700">
+          <span class="icon-arrow-left pl-4"></span>
+        </div>
         {/if}
 
         {#if rightOverlay}
-          <div transition:fade class="scroll-overlay scroll-overlay-right" />
+               <div
+          transition:fade
+          class="mask-r right-0 h-24 w-20 pointer-events-none flex items-center justify-center p-0
+          rounded-sm absolute bg-white dark:bg-gray-900
+          text-gray-400 dark:text-gray-700">
+          <span class="icon-arrow-right pl-8"></span>
+        </div>
         {/if}
 
       </div>
 
+      <div class="-mt-10">
+        {#if currentSkillSet != null}
+          <SkillList skill={value[currentSkillSet]} />
 
+          <button
+            on:click={() => (currentSkillSet = null)}
+            class="block h-6 my-4 sm-max:w-full sm-max:h-8 bg-transparent
+            mx-auto">
+            <p
+              class="text-sm text-center text-gray-400 hover:text-purple-400
+              transition-color dark:text-gray-600 dark-hover:text-purple-300">
+              Hide details
+            </p>
 
-<div class="-mt-10">
-      {#if currentSkillSet != null}
-        <SkillList skill={value[currentSkillSet]} />
-
-        
-      <button on:click={() => currentSkillSet = null } class="block h-6 my-4 sm-max:w-full sm-max:h-8 bg-transparent mx-auto">
-         <p class="text-sm text-center text-gray-400 hover:text-purple-400 transition-color">Hide details</p>
-   
-      </button>
-    
-    {:else}
-    <p class="text-sm text-center text-gray-400">Click/tap on any category for details</p>
-      {/if}
-</div>
+          </button>
+        {:else}
+          <p class="text-sm text-center text-gray-400 dark:text-gray-700">
+            Click/tap on any category for details
+          </p>
+        {/if}
+      </div>
     {:catch error}
       <p>Something went wrong while loading skill list: {error.message}</p>
     {/await}
   </div>
 </div>
 
-<div class="p-8 pt-0">
-  <h1 class="text-3xl text-center px-4 py-2 text-purple-600 select-none">
+<div class="p-8 pt-0 mt-8">
+  <h1
+    class="text-3xl text-center px-4 py-2 text-purple-600 dark:text-purple-400
+    select-none">
     Projects
   </h1>
 
@@ -203,17 +197,21 @@
   </div>
 </div>
 
-<p class="text-center text-gray-500 pt-4 select-none">
+<p class="text-center text-gray-500 dark:text-gray-600 pt-4 select-none">
   &copy; Goran Alković, 2019
 </p>
-<p class="text-center text-gray-200 pb-4 select-none">
+<p class="text-center text-gray-300 dark:text-gray-700 pb-4 select-none">
   Made with Svelte and Tailwind.css, hosted on GitHub
 </p>
 
+<button on:click={toggleDark} class="fixed bottom-0 left-0 z-50 ml-8 mb-16 sm-max:mb-24 h-10 w-10 p-0 rounded-full bg-white hover:bg-gray-600 border border-gray-100 hover:border-gray-700 hover:text-white dark:bg-gray-700 dark-hover:bg-gray-800 shadow-xl dark:border-gray-700 dark:text-gray-500 dark-hover:text-yellow-500 transition-all transition-300">
+  <span class="icon-bulb m-0 p-0"></span>
+</button>
+
 <footer
-  class="flex flex-row sm-max:flex-col bg-white p-5 items-center
-  md:items-baseline justify-center sticky bottom-0 shadow-2xl bg-texture-footer
-  rounded-tr-lg rounded-tl-lg select-none">
+  class="flex flex-row sm-max:flex-col bg-white dark:bg-gray-800 p-5 items-center
+  md:items-baseline justify-center sticky bottom-0 shadow-2xl bg-texture-footer 
+  rounded-tr-lg rounded-tl-lg select-none dark:text-gray-500">
   <h4 class=" sm-max:mb-2 sm-max:mr-0 mb-0 xs:mr-1 mr-2 text-lg font-semibold">
     Get in touch
   </h4>
@@ -227,7 +225,7 @@
       GitHub
     </ContactButton>
     <ContactButton href="tel:+385976480800" icon="icon-phone">
-      Mobile
+      Phone
     </ContactButton>
   </div>
 </footer>

@@ -31,21 +31,22 @@
   .border-1 {
     border-width: 1px;
   }
+
 </style>
 
 <button aria-describedby="Project"
-  class="w-8/12 md:w-4/12 lg:w-3/12 bg-white border-1 hover:border-white border-solid border-gray-200 transition-border focus:shadow-lg hover:shadow-lg rounded-lg
-  hover:cursor-pointer m-4 p-5 flex flex-col items-center text-center transition-shadow transition-250 select-none"
+  class="w-8/12 md:w-4/12 lg:w-3/12 bg-white dark:bg-gray-900 border-1 hover:border-white border-solid border-gray-200 dark:border-gray-800 dark-hover:bg-gray-800 transition-border focus:shadow-lg hover:shadow-lg rounded-lg
+  hover:cursor-pointer m-4 p-5 flex flex-col items-center text-center transition-shadow transition-all transition-300 select-none"
   on:click={showGallery}
   bind:this={projectContainer}>
     <img class="h-16" src={project.heroImage} alt={project.name} aria-hidden="true" />
 
-    <h4 class="text-xl font-semibold leading-tight font-display">
+    <h4 class="text-xl font-semibold leading-tight font-display dark:text-purple-400">
       {@html project.name}
     </h4>
-    <h6 class="text-gray-600 text-sm font-semibold">{project.yearStart} {yearSep} {yearEnd}</h6>
+    <h6 class="text-gray-600 dark:text-gray-500 text-sm font-semibold">{project.yearStart} {yearSep} {yearEnd}</h6>
 
-    <p class="text-sm mt-3 text-white text-gray-600">
+    <p class="text-sm mt-3 text-white text-gray-600 dark:text-gray-600">
       {@html project.description}
     </p>
 
