@@ -32,7 +32,7 @@
             "subtitle": "Vanilla"
           },
           {
-            "name": "NodeJS"
+            "name": "NodeJS basics"
           }
         ]
       },
@@ -56,7 +56,7 @@
         "items": [
           {
             "name": "Flutter",
-            "subtitle": "Native Android, iOS, web - Dart"
+            "subtitle": "Native Android, iOS - Dart"
           },
           {
             "name": "Xamarin",
@@ -69,7 +69,7 @@
         "items": [
           {
             "name": "iOS (basic)",
-            "subtitle": "Swift + UIKit / SwiftUI"
+            "subtitle": "Swift + UIKit, SwiftUI"
           },
           {
             "name": "Android (basic)",
@@ -88,7 +88,7 @@
         "items": [
           {
             "name": "UWP, WPF",
-            "subtitle": ".NET Core - X#, XAML"
+            "subtitle": ".NET Core - C#, XAML"
           },
           {
             "name": "WinForms",
@@ -151,23 +151,21 @@
         "section": "Graphic design",
         "items": [
           {
-            "name": "Adobe InDesign",
-            "subtitle": "Desktop publishing"
+            "name": "Desktop publishing",
+            "subtitle": "Adobe InDesign"
           },
           {
-            "name": "Adobe Illustrator",
-            "subtitle": "Logos and illustrations"
+            "name": "Logo design and illustration",
+            "subtitle": "Adobe Illustrator"
           }
         ]
       },
       {
-        "section": "UI/UX design",
+        "section": "Digital design",
         "items": [
           {
-            "name": "Adobe Xd"
-          },
-          {
-            "name": "Figma"
+            "name": "UI/UX design",
+            "subtitle": "Adobe Xd, Figma"
           }
         ]
       },
