@@ -79,7 +79,7 @@
     transition: var(--transition);
     cursor: pointer;
     border: 1px solid var(--border-color);
-    background: #333;
+    background: #d6d6d6;
     margin: var(--card-gap);
   }
 
