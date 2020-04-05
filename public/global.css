@@ -91,11 +91,11 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  /* text-decoration: underline; */
+a:not(.link-btn):hover {
+  text-decoration: underline;
 }
 
-a:visited {
+a:not(.link-btn):visited {
   color: var(--link-visited);
 }
 

@@ -89,7 +89,7 @@
 
 <div class="flex" use:links>
   <a
-    href="../files/Goran_Alkovic_CV.pdf"
+    href="https://goranalkovic.github.io/files/Goran_Alkovic_CV.pdf"
     class="link-btn"
     target="_blank"
     noroute>

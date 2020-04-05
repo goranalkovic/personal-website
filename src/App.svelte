@@ -202,7 +202,7 @@
 <footer>
   <p>
     <span>Copyright Goran Alković, 2020</span>
-    <span>Made with Svelte, hosted on GitHub</span>
+    <span>Made with Svelte, hosted on Netlify</span>
   </p>
 
   <div class="flex-btns theme-switch">
