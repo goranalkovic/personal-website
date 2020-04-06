@@ -10,6 +10,7 @@
 
     /* border: var(--card-border); */
     border-radius: var(--border-radius);
+    border: 0;
 
     background: var(--skill-gradient);
 

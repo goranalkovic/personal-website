@@ -11,7 +11,7 @@
     margin: var(--card-gap);
     border: 1px solid var(--border-color);
     background: var(--background);
-    transition: var(--transition);
+    /* transition: var(--transition-qui); */
     cursor: pointer;
 
     display: grid;
@@ -22,7 +22,7 @@
   }
 
   a:hover {
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--border-hover-color);
     background: hsla(var(--text-color-values), 0.03);
     color: var(--text-color);
   }

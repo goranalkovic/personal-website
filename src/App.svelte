@@ -77,13 +77,9 @@
   }
 
   .theme-switch button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 3rem;
     height: 3rem;
-    padding: 0.5rem;
+    padding: 0;
   }
 
   .theme-switch button:first-of-type {
@@ -100,21 +96,19 @@
     border-bottom-left-radius: 0;
   }
 
-  .theme-switch button i {
-    display: inline;
-    font-size: 1.5rem;
-    margin: 0 0 0.3rem 0;
+  .theme-switch button:not(.active) i {
     padding: 0;
-    text-align: center;
+    margin: 0;
     color: var(--text-color);
+    /* transform: translateX(2px); */
+  }
+
+  .theme-switch button:hover i {
+    color: #fff;
   }
 
   .theme-switch button span {
-    display: block;
     font-size: 0.85rem;
-    margin: 0;
-    margin-left: 0.3rem;
-    padding: 0;
     text-transform: uppercase;
     letter-spacing: 0;
     width: 0;
@@ -124,7 +118,6 @@
   .theme-switch button.active {
     pointer-events: none;
     color: var(--link);
-    border-color: var(--link);
     width: 6rem;
   }
 
@@ -139,7 +132,6 @@
   @media screen and (max-width: 944px) {
     footer {
       flex-direction: column;
-
       padding: 3rem 0;
     }
 
@@ -210,7 +202,10 @@
       <i class="bx bx-adjust" />
       <span>Auto</span>
     </button>
-    <button on:click={() => switchTheme(1)} class:active={themeMode == 1}>
+    <button
+      on:click={() => switchTheme(1)}
+      class:active={themeMode == 1}
+      style="margin: 0 1px;">
       <i class="bx bx-sun" />
       <span>Light</span>
     </button>

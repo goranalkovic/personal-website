@@ -68,92 +68,48 @@
     "url": "https://issuu.com/foi.stak",
     "images": [
       {
-        "src": "img/projects/stak/18.jpg",
-        "subHtml": "Magazine cover design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/19.jpg",
-        "subHtml": "Page design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/20.jpg",
-        "subHtml": "Article design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/21.jpg",
-        "subHtml": "Article design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/22.jpg",
-        "subHtml": "Article design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/23.jpg",
-        "subHtml": "Article design - St@k no. 19"
-      },
-      {
-        "src": "img/projects/stak/15.jpg",
-        "subHtml": "Article design - St@k no. 18"
-      },
-      {
-        "src": "img/projects/stak/16.jpg",
-        "subHtml": "Article design - St@k no. 18"
-      },
-      {
-        "src": "img/projects/stak/10.jpg",
-        "subHtml": "Page design - St@k no. 17"
-      },
-      {
-        "src": "img/projects/stak/7.jpg",
-        "subHtml": "Magazine cover design - St@k no. 16"
-      },
-      {
-        "src": "img/projects/stak/6.jpg",
-        "subHtml": "Article design - St@k no. 16"
-      },
-      {
-        "src": "img/projects/stak/5.jpg",
-        "subHtml": "Article design - St@k no. 15"
+        "src": "img/projects/stak/2.jpg",
+        "subHtml": "Magazine cover design - St@k no. 20"
       },
       {
         "src": "img/projects/stak/1.jpg",
-        "subHtml": "Magazine cover design - St@k no. 14"
-      },
-      {
-        "src": "img/projects/stak/2.jpg",
-        "subHtml": "Article design - St@k no. 14"
+        "subHtml": "Magazine cover designs"
       },
       {
         "src": "img/projects/stak/3.jpg",
-        "subHtml": "Article design - St@k no. 14"
+        "subHtml": "Article design"
       },
       {
-        "src": "img/projects/stak/4.jpg",
-        "subHtml": "Article design - St@k no. 13"
+        "src": "img/projects/stak/7.jpg",
+        "subHtml": "Article design"
       },
       {
-        "src": "img/projects/stak/17.jpg",
-        "subHtml": "Magazine cover design - St@kić no. 8"
-      },
-      {
-        "src": "img/projects/stak/13.jpg",
-        "subHtml": "Magazine cover design - St@kić no. 7"
-      },
-      {
-        "src": "img/projects/stak/14.jpg",
-        "subHtml": "Article design - St@kić no. 7"
-      },
-      {
-        "src": "img/projects/stak/12.jpg",
-        "subHtml": "Page design - St@kić no. 6"
+        "src": "img/projects/stak/5.jpg",
+        "subHtml": "Article design"
       },
       {
         "src": "img/projects/stak/8.jpg",
-        "subHtml": "Article design - St@kić no. 4"
+        "subHtml": "Article design"
       },
       {
         "src": "img/projects/stak/9.jpg",
-        "subHtml": "Article design - St@kić no. 4"
+        "subHtml": "Article design"
+      },
+      {
+        "src": "img/projects/stak/10.jpg",
+        "subHtml": "Article design"
+      },
+      {
+        "src": "img/projects/stak/11.jpg",
+        "subHtml": "Article design"
+      },
+      {
+        "src": "img/projects/stak/4.jpg",
+        "subHtml": "Page design"
+      },
+      {
+        "src": "img/projects/stak/6.jpg",
+        "subHtml": "Page design"
       }
     ]
   },
@@ -167,63 +123,63 @@
     "url": "https://stemgames.hr",
     "images": [
       {
-        "src": "img/projects/stemGames2019/1.png",
-        "subHtml": "Facebook event cover image"
+        "src": "img/projects/stemGames2019/1.jpg",
+        "subHtml": "Facebook event cover"
       },
       {
-        "src": "img/projects/stemGames2019/2.png",
-        "subHtml": "Event map (print & web)"
+        "src": "img/projects/stemGames2019/2.jpg",
+        "subHtml": "Event map"
       },
       {
-        "src": "img/projects/stemGames2019/3.png",
+        "src": "img/projects/stemGames2019/3.jpg",
         "subHtml": "Signpost"
       },
       {
-        "src": "img/projects/stemGames2019/4.png",
+        "src": "img/projects/stemGames2019/4.jpg",
         "subHtml": "Signpost"
       },
       {
-        "src": "img/projects/stemGames2019/11.png",
-        "subHtml": "Signpost<br><small>Photo by STEM Games</small>"
+        "src": "img/projects/stemGames2019/11.jpg",
+        "subHtml": "Signpost<br><br><small>Photo by STEM Games</small>"
       },
       {
-        "src": "img/projects/stemGames2019/8.png",
-        "subHtml": "Sports award (glass engraving)<br><small>Photo by STEM Games</small>"
+        "src": "img/projects/stemGames2019/5.png",
+        "subHtml": "Sports award (glass engraving)"
       },
       {
-        "src": "img/projects/stemGames2019/9.png",
-        "subHtml": "Banner<br><small>Photo by STEM Games</small>"
+        "src": "img/projects/stemGames2019/8.jpg",
+        "subHtml": "Sports award (glass engraving)<br><br><small>Photo by STEM Games</small>"
       },
       {
-        "src": "img/projects/stemGames2019/10.png",
-        "subHtml": "Banner<br><small>Photo by STEM Games</small>"
+        "src": "img/projects/stemGames2019/9.jpg",
+        "subHtml": "Banner<br><br><small>Photo by STEM Games</small>"
       },
       {
-        "src": "img/projects/stemGames2019/12.png",
-        "subHtml": "Accreditation<br><small>Photo by STEM Games</small>"
+        "src": "img/projects/stemGames2019/10.jpg",
+        "subHtml": "Banner<br><br><small>Photo by STEM Games</small>"
       },
       {
-        "src": "img/projects/stemGames2019/14.png",
+        "src": "img/projects/stemGames2019/12.jpg",
+        "subHtml": "Accreditation<br><br><small>Photo by STEM Games</small>"
+      },
+      {
+        "src": "img/projects/stemGames2019/14.jpg",
         "subHtml": "Billboard"
       },
       {
-        "src": "img/projects/stemGames2019/13.png",
-        "subHtml": "Billboard<br><small>Photo by STEM Games</small>"
-      },
-      {
-        "src": "img/projects/stemGames2019/15.png",
+        "src": "img/projects/stemGames2019/15.jpg",
         "subHtml": "Poster"
       },
       {
-        "src": "img/projects/stemGames2019/16.png",
+        "src": "img/projects/stemGames2019/16.jpg",
         "subHtml": "Certificate"
       },
       {
-        "src": "img/projects/stemGames2019/17.png",
+        "src": "img/projects/stemGames2019/17.jpg",
         "subHtml": "Price list"
       },
       {
-        "src": "img/projects/stemGames2019/18.png",
+        "src": "img/projects/stemGames2019/18.jpg",
         "subHtml": "Poster"
       }
     ]

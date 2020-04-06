@@ -16,17 +16,13 @@ html, body {
   --background-values: 0, 0%, 100%;
   --link: hsl(269, 100%, 39%);
   --link-visited: hsl(269, 100%, 31%);
-  --border-color: #ccc;
   --border-focus-color: hsl(269, 100%, 39%);
   --text-color: #333;
   --text-color-values: 0, 0%, 20%;
-  --button-color: #f0f0f0;
-  --button-active-color: #ddd;
+  --button-active-color: #eee;
   --button-disabled-color: #999;
   --input-disabled-text-color: #999;
   --scrollbar-color: rgba(30, 30, 30, 0.4);
-  /* --skill-gradient: linear-gradient( to bottom right, hsl(269, 37%, 46%), hsl(269, 37%, 40%)); */
-  --skill-gradient: linear-gradient( to bottom right, hsl(269, 0%, 96%), hsl(269, 0%, 90%));
   --shadow-opacity: 0.24;
 }
 
@@ -35,17 +31,15 @@ html.dark-theme {
   --background-values: 0, 0%, 14%;
   --link: hsl(269, 48%, 59%);
   --link-visited: hsl(269, 48%, 51%);
-  --border-color: #666;
   --border-focus-color: hsl(269, 48%, 59%);
   --text-color: #f5f5f5;
   --text-color-values: 0, 0%, 96%;
   --button-color: #444;
   --button-active-color: #555;
   --button-disabled-color: #363636;
+  --button-hover-color: #666;
   --input-disabled-text-color: #666;
   --scrollbar-color: rgba(240, 240, 240, 0.4);
-  /* --skill-gradient: linear-gradient( to bottom right, hsl(269, 27%, 23%), hsl(269, 27%, 18%)); */
-  --skill-gradient: linear-gradient( to bottom right, hsl(269, 0%, 19%), hsl(269, 0%, 16%));
   --shadow-opacity: 0.1;
 }
 
@@ -58,25 +52,30 @@ html.dark-theme {
   --card-width: 14rem;
   --card-height: 14rem;
   --card-height-mobile: 18rem;
-  --transition: all 0.3s ease;
+  --transition: all 0.3s ease-out;
   --transition-quick: all 0.2s ease-out;
   --border-radius: 6px;
+  --button-height: 3rem;
+  --skill-gradient: linear-gradient(to bottom, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
+  --button-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.05), hsla(var(--text-color-values), 0.08));
+  --button-hover-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.34), hsla(var(--text-color-values), 0.39));
+  --border-color: hsla(var(--text-color-values), 0.08);
+  --border-hover-color: hsla(var(--text-color-values), 0.2);
 }
 
 /* Other CSS */
 
 * {
-  user-select: none;
   box-sizing: border-box;
 }
 
 html, body {
-  /* position: relative; */
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  user-select: none;
 }
 
 body {
@@ -86,7 +85,7 @@ body {
   scroll-behavior: smooth;
 }
 
-a {
+a:not(.link-btn) {
   color: var(--link);
   text-decoration: none;
 }
@@ -99,44 +98,29 @@ a:not(.link-btn):visited {
   color: var(--link-visited);
 }
 
-label {
-  display: block;
-}
-
-input, button, select, textarea, .link-btn {
+button, .link-btn {
   font-family: inherit;
   font-size: inherit;
-  padding: 0.6rem 0.8rem;
-  margin: 0 0 0.5em 0;
-  /* box-sizing: border-box; */
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-}
-
-input:disabled, .link-btn:disabled {
-  color: var(--input-disabled-text-color);
-}
-
-input[type='range'] {
-  height: 0;
-}
-
-button, .link-btn {
-  color: var(--text-color);
-  /* background-color: var(--button-color); */
   outline: none;
-  border-radius: var(--border-radius);
-  /* border: 1px solid hsla(var(--text-color-values), 0.3); */
-  border: var(--card-border);
-  transition: var(--transition);
+  text-decoration: none;
   cursor: pointer;
-  background-color: transparent;
+  transition: background 0.3s ease, color 0.18s ease, width 0.3s ease-out, height 0.3s ease-out, border 0.2s ease;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  height: var(--button-height);
+  min-width: var(--button-height);
+  padding: 0 1rem;
+  margin: 0 0 0.5em 0;
+  background: var(--button-color);
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 button:not(:disabled):hover, .link-btn:not(:disabled):hover {
-  /* border-color: var(--link); */
-  /* background: var(--skill-gradient); */
-  background-color: var(--border-color);
+  background: var(--button-hover-color);
   color: #fff;
 }
 
@@ -156,24 +140,15 @@ button:focus, .link-btn:focus {
   border-color: var(--border-focus-color);
 }
 
-.link-btn {
-  display: block;
-}
-
-.link-btn i {
+button i, .link-btn i {
   color: var(--link);
   font-size: 1.25rem;
   line-height: 1rem;
   margin: 0;
   padding: 0;
-  transform: translateY(3px);
-  transition: var(--transition-quick);
-}
-
-button i {
-  color: var(--link);
-  transform: translateY(2px);
-  transition: var(--transition-quick);
+  /* transition: var(--transition); */
+  transition: color 0.18s ease;
+  margin-right: 6px;
 }
 
 ul {
