@@ -3,7 +3,7 @@
 
   export let icon;
   export let large = false;
-  export let style;
+  export let style = "";
 </script>
 
 <style>
