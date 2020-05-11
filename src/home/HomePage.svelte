@@ -6,6 +6,9 @@
   import ProjectCard from "../components/ProjectCard.svelte";
   import SkillCard from "../components/SkillCard.svelte";
   import SkillTitleCard from "../components/SkillTitleCard.svelte";
+  import Icon from "../components/Icon.svelte";
+
+  import { icons } from "../icons.js";
 
   async function loadSkills() {
     let response = await fetch("files/cv.json");
@@ -92,8 +95,9 @@
     href="https://goranalkovic.github.io/files/Goran_Alkovic_CV.pdf"
     class="link-btn"
     target="_blank"
+    rel="noreferrer"
     noroute>
-    <i class="bx bx-download" />
+    <Icon icon={icons.cv} />
     Download my CV
   </a>
 </div>

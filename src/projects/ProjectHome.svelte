@@ -6,6 +6,8 @@
 
   import Spinner from "../components/Spinner.svelte";
   import AdaptiveWrapGrid from "../components/AdaptiveWrapGrid.svelte";
+  import Icon from "../components/Icon.svelte";
+  import { icons } from "../icons.js";
 
   export let id = "";
 
@@ -19,7 +21,7 @@
     let response = await fetch("../files/projects.json");
     let projects = await response.json();
 
-    project = projects.filter(p => p.slug === id)[0];
+    project = projects.filter((p) => p.slug === id)[0];
 
     yearEnd = project.yearEnd == null ? currentYear : "";
     yearSep = project.yearStart !== project.yearEnd ? "-" : "";
@@ -174,7 +176,8 @@
 <div class="top-bar">
   <Link to="/">
     <button>
-      <i class="bx bx-arrow-back colored-icon" />
+      <!-- <i class="bx bx-arrow-back colored-icon" /> -->
+      <Icon icon={icons.arrowBack} />
       Back
     </button>
   </Link>
@@ -198,14 +201,16 @@
   <div class="flex-btns">
     {#if project.url != null}
       <a class="link-btn" href={project.url} target="_blank">
-        <i class="bx bx-link-external colored-icon" />
+        <!-- <i class="bx bx-link-external colored-icon" /> -->
+        <Icon icon={icons.externalLink} />
         Open
       </a>
     {/if}
 
     {#if project.githubUrl != null}
       <a class="link-btn" href={project.githubUrl} target="_blank">
-        <i class="bx bxl-github colored-icon" />
+        <!-- <i class="bx bxl-github colored-icon" /> -->
+        <Icon icon={icons.github} />
         GitHub
       </a>
     {/if}

@@ -56,7 +56,7 @@ html.dark-theme {
   --transition-quick: all 0.2s ease-out;
   --border-radius: 6px;
   --button-height: 3rem;
-  --skill-gradient: linear-gradient(to bottom, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
+  --skill-gradient: linear-gradient(to bottom right, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
   --button-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.05), hsla(var(--text-color-values), 0.08));
   --button-hover-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.34), hsla(var(--text-color-values), 0.39));
   --border-color: hsla(var(--text-color-values), 0.08);
@@ -91,7 +91,7 @@ a:not(.link-btn) {
 }
 
 a:not(.link-btn):hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:not(.link-btn):visited {
@@ -124,8 +124,8 @@ button:not(:disabled):hover, .link-btn:not(:disabled):hover {
   color: #fff;
 }
 
-button:not(:disabled):hover i, .link-btn:not(:disabled):hover i {
-  color: #fff;
+button:not(:disabled):hover svg, .link-btn:not(:disabled):hover svg {
+  fill: #fff;
 }
 
 button:disabled, .link-btn:disabled {
@@ -140,14 +140,14 @@ button:focus, .link-btn:focus {
   border-color: var(--border-focus-color);
 }
 
-button i, .link-btn i {
-  color: var(--link);
+button svg, .link-btn svg {
+  fill: var(--link);
   font-size: 1.25rem;
   line-height: 1rem;
   margin: 0;
   padding: 0;
   /* transition: var(--transition); */
-  transition: color 0.18s ease;
+  transition: fill 0.18s ease;
   margin-right: 6px;
 }
 

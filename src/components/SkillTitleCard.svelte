@@ -1,4 +1,5 @@
 <script>
+  import Icon from "./Icon.svelte";
   export let category;
 </script>
 
@@ -18,34 +19,28 @@
     margin: var(--card-gap);
 
     transition: var(--transition);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   h3 {
-    position: absolute;
+    /* position: absolute;
     top: var(--card-padding);
-    left: var(--card-padding);
+    left: var(--card-padding); */
 
-    font-size: 2.8rem;
+    font-size: 2rem;
     word-wrap: break-word;
-    font-weight: 200;
+    font-weight: 500;
     letter-spacing: -1px;
+    max-width: 6ch !important;
+    line-height: 1;
 
     padding: 0;
     margin: 0;
-  }
 
-  i {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.6rem;
-
-    font-size: 5rem;
-
-    margin: 0;
-    padding: 0;
-
-    opacity: 0.15;
-    color: var(--link);
+    text-align: center;
   }
 
   @media screen and (max-width: 944px) {
@@ -58,7 +53,13 @@
 
 <div>
   <h3>
+    <Icon icon={category.icon} large />
+    <br />
     {@html category.name}
   </h3>
-  <i class="bx {category.icon}" />
+  <!-- <Icon
+    icon={category.icon}
+    style="position: absolute; bottom: 0.9rem; right: 1rem; width: 5rem; height:
+    5rem; margin: 0; padding: 0; opacity: 0.15; color: var(--link);" /> -->
+  <!-- <i class="bx {category.icon}" /> -->
 </div>

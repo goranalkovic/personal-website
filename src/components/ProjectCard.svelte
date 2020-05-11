@@ -6,6 +6,7 @@
   a {
     width: calc(var(--card-width) - 2px);
     height: calc(var(--card-height) - 2px);
+
     border-radius: var(--border-radius);
     padding: var(--card-padding);
     margin: var(--card-gap);
@@ -94,6 +95,7 @@
     a {
       min-width: calc(var(--card-width) - 2px);
       min-height: calc(var(--card-height-mobile) - 2px);
+      height: 100%;
     }
 
     a .proj-name {

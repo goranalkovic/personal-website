@@ -1,7 +1,7 @@
 [
   {
     "name": "Web dev",
-    "icon": "bx-globe",
+    "icon": 9,
     "items": [
       {
         "section": "Frontend",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Mobile dev",
-    "icon": "bx-mobile-alt",
+    "icon": 10,
     "items": [
       {
         "section": "Cross-platform",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Desktop dev",
-    "icon": "bx-window-alt",
+    "icon": 15,
     "items": [
       {
         "section": "Microsoft .NET",
@@ -109,7 +109,7 @@
   },
   {
     "name": "Dev misc.",
-    "icon": "bx-code-curly",
+    "icon": 2,
     "items": [
       {
         "section": "Other languages",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Design",
-    "icon": "bx-paint",
+    "icon": 12,
     "items": [
       {
         "section": "Graphic design",
@@ -186,7 +186,7 @@
   },
   {
     "name": "Langs.",
-    "icon": "bx-flag",
+    "icon": 7,
     "items": [
       {
         "items": [

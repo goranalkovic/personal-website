@@ -9,6 +9,9 @@
   import ProjectHome from "./projects/ProjectHome.svelte";
   import HomePage from "./home/HomePage.svelte";
 
+  import Icon from "./components/Icon.svelte";
+  import { icons } from "./icons.js";
+
   export let url = "";
   let themeMode = 0;
 
@@ -95,17 +98,16 @@
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-
-  .theme-switch button:not(.active) i {
+  /* 
+  .theme-switch button:not(.active) :global(svg) {
     padding: 0;
     margin: 0;
-    color: var(--text-color);
-    /* transform: translateX(2px); */
+    fill: var(--text-color);
   }
 
-  .theme-switch button:hover i {
-    color: #fff;
-  }
+  .theme-switch button:hover :global(svg) {
+    fill: #fff !important;
+  } */
 
   .theme-switch button span {
     font-size: 0.85rem;
@@ -177,15 +179,22 @@
   <h2>Contact me</h2>
   <div class="flex-btns">
     <a href="mailto:goran.alkovic@hotmail.com" class="link-btn" target="_blank">
-      <i class="bx bx-envelope" />
+      <!-- <i class="bx bx-envelope" /> -->
+      <Icon icon={icons.email} />
       E-mail
     </a>
-    <a href="https://github.com/goranalkovic" class="link-btn" target="_blank">
-      <i class="bx bxl-github" />
+    <a
+      href="https://github.com/goranalkovic"
+      class="link-btn"
+      target="_blank"
+      rel="noreferrer">
+      <!-- <i class="bx bxl-github" /> -->
+      <Icon icon={icons.github} />
       GitHub
     </a>
     <a href="tel:+385976480800" class="link-btn" target="_blank">
-      <i class="bx bx-phone" />
+      <!-- <i class="bx bx-phone" /> -->
+      <Icon icon={icons.call} />
       Phone
     </a>
   </div>
@@ -199,18 +208,26 @@
 
   <div class="flex-btns theme-switch">
     <button on:click={() => switchTheme(0)} class:active={themeMode == 0}>
-      <i class="bx bx-adjust" />
+      <!-- <i class="bx bx-adjust" /> -->
+      <Icon
+        icon={icons.autoTheme}
+        style={themeMode != 0 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
       <span>Auto</span>
     </button>
     <button
       on:click={() => switchTheme(1)}
       class:active={themeMode == 1}
       style="margin: 0 1px;">
-      <i class="bx bx-sun" />
+      <Icon
+        icon={icons.lightTheme}
+        style={themeMode != 1 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
       <span>Light</span>
     </button>
     <button on:click={() => switchTheme(2)} class:active={themeMode == 2}>
-      <i class="bx bx-moon" />
+      <!-- <i class="bx bx-moon" /> -->
+      <Icon
+        icon={icons.darkTheme}
+        style={themeMode != 2 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
       <span>Dark</span>
     </button>
   </div>
