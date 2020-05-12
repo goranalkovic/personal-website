@@ -1,25 +1,3 @@
-@import url('https://rsms.me/inter/inter.css');
-html, body {
-  font-family: 'Inter', sans-serif;
-}
-
-/* Theming */
-
-/* :root {
-  --background: #fff;
-  --background-values: 0, 0%, 100%;
-  --link: hsl(269, 100%, 39%);
-  --link-visited: hsl(269, 100%, 31%);
-  --border-focus-color: hsl(269, 100%, 39%);
-  --text-color: #333;
-  --text-color-values: 0, 0%, 20%;
-  --button-active-color: #eee;
-  --button-disabled-color: #999;
-  --input-disabled-text-color: #999;
-  --scrollbar-color: rgba(30, 30, 30, 0.4);
-  --shadow-opacity: 0.24;
-} */
-
 html.dark-theme {
   --background: #242424;
   --background-values: 0, 0%, 14%;
@@ -36,48 +14,6 @@ html.dark-theme {
   --scrollbar-color: rgba(240, 240, 240, 0.4);
   --shadow-opacity: 0.1;
 }
-
-/* General variables */
-
-/* :root {
-  --card-gap: 0.5rem;
-  --card-padding: 1rem;
-  --card-border: 1px solid var(--border-color);
-  --card-width: 14rem;
-  --card-height: 14rem;
-  --card-height-mobile: 18rem;
-  --transition: all 0.3s ease-out;
-  --transition-quick: all 0.2s ease-out;
-  --border-radius: 6px;
-  --button-height: 3rem;
-  --skill-gradient: linear-gradient(to bottom right, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
-  --button-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.05), hsla(var(--text-color-values), 0.08));
-  --button-hover-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.34), hsla(var(--text-color-values), 0.39));
-  --border-color: hsla(var(--text-color-values), 0.08);
-  --border-hover-color: hsla(var(--text-color-values), 0.2);
-} */
-
-/* Other CSS */
-
-/* * {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  user-select: none;
-}
-
-body {
-  color: var(--text-color);
-  box-sizing: border-box;
-  background-color: var(--background);
-  scroll-behavior: smooth;
-} */
 
 h1 {
   margin: 2rem auto 1rem auto;
@@ -176,8 +112,6 @@ main {
   justify-content: center;
   align-items: center;
   align-content: stretch;
-  /* width: 100vw; */
-  /* padding: 2rem 0; */
   min-height: 80vh;
   padding: 0;
   margin: 0;
@@ -192,4 +126,9 @@ main {
     max-width: 80vw;
     line-height: 3.5rem;
   }
+}
+
+@import url('https://rsms.me/inter/inter.css');
+html, body {
+  font-family: 'Inter', sans-serif;
 }
