@@ -131,7 +131,7 @@
 
 <a href="/projects/{project.slug}" class="link-btn">
   <span class="proj-name">{project.name}</span>
-  <img src={project.heroImage} alt={project.slug} />
+  <img src={project.heroImage} loading="lazy" alt={project.slug} />
   <span class="proj-year">
     {project.yearStart}{project.yearStart !== project.yearEnd ? '-' : ''}{project.yearEnd == null ? new Date().getFullYear() : ''}
   </span>

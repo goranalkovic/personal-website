@@ -1,9 +1,9 @@
 html.dark-theme {
   --background: #242424;
   --background-values: 0, 0%, 14%;
-  --link: hsl(269, 48%, 59%);
-  --link-visited: hsl(269, 48%, 51%);
-  --border-focus-color: hsl(269, 48%, 59%);
+  --link: hsl(269, 100%, 82%);
+  --link-visited: hsl(269, 53%, 67%);
+  --border-focus-color: hsl(269, 59%, 80%);
   --text-color: #f5f5f5;
   --text-color-values: 0, 0%, 96%;
   --button-color: #444;
@@ -82,13 +82,7 @@ button:focus, .link-btn:focus {
 
 button svg, .link-btn svg {
   fill: var(--link);
-  font-size: 1.25rem;
-  line-height: 1rem;
-  margin: 0;
-  padding: 0;
-  /* transition: var(--transition); */
   transition: fill 0.18s ease;
-  margin-right: 6px;
 }
 
 ul {

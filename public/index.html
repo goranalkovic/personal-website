@@ -8,6 +8,10 @@
 
 	<title>Goran Alković</title>
 
+	<link rel='preload' href='/build/bundle.css' as="style">
+	<link rel='preload' href='/global.css' as="style">
+
+	<!-- Inlined essential CSS -->
 	<style>
 		:root {
 			--background: #fff;
@@ -57,11 +61,15 @@
 			background-color: var(--background);
 			scroll-behavior: smooth
 		}
+
+		button svg,
+		.link-btn svg {
+			width: 19px;
+			height: auto;
+		}
 	</style>
 
-	<link rel='preload' href='/build/bundle.css'>
-	<link rel='preload' href='/global.css'>
-
+	<!-- Svelte bundle -->
 	<script defer src='/build/bundle.js'></script>
 
 	<!-- Favicons -->
@@ -70,10 +78,11 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
+	<!-- CSS async loading -->
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/3.1.0/loadCSS.min.js"
 		integrity="sha256-lrxR1QusNRdVrerboDtL6Qt+5ToI7RLO7uwemaYaG1Q=" crossorigin="anonymous"></script>
 	<script defer>
-		window.addEventListener('DOMContentLoaded', () => {
+		window.addEventListener('load', () => {
 			loadCSS("/build/bundle.css");
 			loadCSS("/global.css");
 		});
