@@ -69,11 +69,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/3.1.0/loadCSS.min.js"
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/3.1.0/loadCSS.min.js"
 		integrity="sha256-lrxR1QusNRdVrerboDtL6Qt+5ToI7RLO7uwemaYaG1Q=" crossorigin="anonymous"></script>
 	<script defer>
-		loadCSS("/build/bundle.css");
-		loadCSS("/global.css");
+		window.addEventListener('DOMContentLoaded', () => {
+			loadCSS("/build/bundle.css");
+			loadCSS("/global.css");
+		});
 	</script>
 </head>
 
