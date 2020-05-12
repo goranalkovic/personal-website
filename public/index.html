@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+
+
 <head>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
@@ -8,8 +12,64 @@
 
 	<title>Goran Alković</title>
 
+	<style>
+		:root {
+			--background: #fff;
+			--background-values: 0, 0%, 100%;
+			--link: hsl(269, 100%, 39%);
+			--link-visited: hsl(269, 100%, 31%);
+			--border-focus-color: hsl(269, 100%, 39%);
+			--text-color: #333;
+			--text-color-values: 0, 0%, 20%;
+			--button-active-color: #eee;
+			--button-disabled-color: #999;
+			--input-disabled-text-color: #999;
+			--scrollbar-color: rgba(30, 30, 30, 0.4);
+			--shadow-opacity: 0.24;
+
+			--card-gap: 0.5rem;
+			--card-padding: 1rem;
+			--card-border: 1px solid var(--border-color);
+			--card-width: 14rem;
+			--card-height: 14rem;
+			--card-height-mobile: 18rem;
+			--border-radius: 6px;
+			--button-height: 3rem;
+			--skill-gradient: linear-gradient(to bottom right, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
+			--button-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.05), hsla(var(--text-color-values), 0.08));
+			--button-hover-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.34), hsla(var(--text-color-values), 0.39));
+			--border-color: hsla(var(--text-color-values), 0.08);
+			--border-hover-color: hsla(var(--text-color-values), 0.2)
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow-x: hidden
+		}
+
+		body {
+			color: var(--text-color);
+			box-sizing: border-box;
+			background-color: var(--background);
+			scroll-behavior: smooth
+		}
+	</style>
+
 	<!-- <link rel='icon' type='image/png' href='/favicon.png'> -->
-	<link rel='stylesheet' href='/global.css'>
+	<!-- <link rel='stylesheet' href='/global.css'>-->
+	<!-- <link rel='preload' href='/global.css' as='style'> -->
+	<link rel="preload" href="/global.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet" href="/global.css"></noscript>
+
 	<link rel='stylesheet' href='/build/bundle.css'>
 
 	<script defer src='/build/bundle.js'></script>
@@ -19,12 +79,6 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-
-	<link rel="stylesheet" href="/other.css">
-
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet"> -->
-	<link rel="stylesheet" href="/font.css">
-
 </head>
 
 <body>
