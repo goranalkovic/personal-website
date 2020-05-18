@@ -1,4 +1,6 @@
 <script>
+  import { afterUpdate } from "svelte";
+
   import Spinner from "../components/Spinner.svelte";
   import AdaptiveWrapGrid from "../components/AdaptiveWrapGrid.svelte";
   import ProjectCard from "../components/ProjectCard.svelte";
@@ -17,6 +19,10 @@
     let response = await fetch("files/projects.json");
     return response.json();
   }
+
+  afterUpdate(() => {
+    // window.scrollTo(0, 0);
+  });
 </script>
 
 <style>
@@ -68,12 +74,6 @@
 </style>
 
 <header>
-  <!-- <img
-    src="../img/logo/logo-v1.svg"
-    alt="Goran Alković"
-    loading="lazy"
-    class="hero-img" /> -->
-
   <svg
     class="hero-img"
     xmlns="http://www.w3.org/2000/svg"

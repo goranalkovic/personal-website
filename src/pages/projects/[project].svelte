@@ -1,10 +1,9 @@
 <script>
   import { params } from "@sveltech/routify";
 
-  import { onMount } from "svelte";
+  import { onMount, afterUpdate } from "svelte";
   import { fade } from "svelte/transition";
 
-  // import { Link } from "svelte-routing";
   import { url } from "@sveltech/routify";
 
   import Spinner from "../../components/Spinner.svelte";
@@ -18,6 +17,10 @@
   let modalVisible = false;
   let modalImage = { src: null, desc: null };
 
+  afterUpdate(() => {
+    // window.scrollTo(0, 0);
+  });
+
   onMount(async () => {
     let response = await fetch("../../files/projects.json");
     let projects = await response.json();
@@ -26,8 +29,6 @@
 
     yearEnd = project.yearEnd == null ? currentYear : "";
     yearSep = project.yearStart !== project.yearEnd ? "-" : "";
-
-    // setTimeout(() => window.scrollTo(0, 0), 140);
   });
 </script>
 
@@ -36,6 +37,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 2rem;
   }
 
   header h1 {
@@ -145,11 +147,12 @@
 
   .back-btn {
     display: inline-flex;
-    position: sticky;
+    position: fixed;
     top: 2rem;
     left: 2rem;
     right: 2rem;
     z-index: 5;
+    width: 6rem;
   }
 
   @media screen and (max-width: 600px) {
@@ -165,6 +168,7 @@
 
     .back-btn {
       top: 0;
+      left: 0;
       justify-content: center;
       padding: 0.5rem 0;
       margin-bottom: 2rem;
@@ -178,7 +182,7 @@
 
 <a href={$url('/')} class="link-btn back-btn">
   <Icon icon={icons.arrowBack} />
-  Back
+  Home
 </a>
 
 {#if project == null}
