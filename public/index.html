@@ -5,6 +5,7 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width,initial-scale=1'>
 	<meta name="Description" content="Goran Alković's website">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';">
 
 	<title>Goran Alković</title>
 
@@ -62,10 +63,16 @@
 			scroll-behavior: smooth
 		}
 
-		button svg,
-		.link-btn svg {
+		svg {
 			width: 19px;
 			height: auto;
+		}
+
+		.hero-img {
+			width: 8rem;
+			border-radius: 3px;
+			overflow: hidden;
+			margin: 4rem auto 0 auto;
 		}
 	</style>
 

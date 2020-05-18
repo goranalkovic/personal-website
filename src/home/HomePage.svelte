@@ -38,12 +38,7 @@
     margin: 1rem auto;
   }
 
-  .hero-img {
-    width: 8rem;
-    border-radius: 3px;
-    overflow: hidden;
-    margin: 4rem auto 0 auto;
-  }
+  
 
   .flex {
     display: flex;
