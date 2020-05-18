@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "routify -b && rollup -c",
     "dev": "run-p watch:routify watch:rollup",
     "watch:rollup": "rollup -c -w",
     "watch:routify": "routify",
