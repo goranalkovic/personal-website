@@ -1,4 +1,6 @@
 <script>
+  import { url } from "@sveltech/routify";
+
   export let project;
 </script>
 
@@ -129,7 +131,7 @@
   }
 </style>
 
-<a href="/projects/{project.slug}" class="link-btn">
+<a href={$url('/projects/:id', { id: project.slug })} class="link-btn">
   <span class="proj-name">{project.name}</span>
   <img src={project.heroImage} loading="lazy" alt={project.slug} />
   <span class="proj-year">

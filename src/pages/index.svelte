@@ -1,6 +1,4 @@
 <script>
-  import { links } from "svelte-routing";
-
   import Spinner from "../components/Spinner.svelte";
   import AdaptiveWrapGrid from "../components/AdaptiveWrapGrid.svelte";
   import ProjectCard from "../components/ProjectCard.svelte";
@@ -37,8 +35,6 @@
 
     margin: 1rem auto;
   }
-
-  
 
   .flex {
     display: flex;
@@ -133,7 +129,7 @@
   </p>
 </header>
 
-<div class="flex" use:links>
+<div class="flex">
   <a
     href="https://goranalkovic.github.io/files/Goran_Alkovic_CV.pdf"
     class="link-btn"

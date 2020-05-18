@@ -1,18 +1,15 @@
 <script>
   import { onMount } from "svelte";
-  import { Route, Router } from "svelte-routing";
+  import { Router } from "@sveltech/routify";
+  import { routes } from "@sveltech/routify/tmp/routes";
   import { fade, fly } from "svelte/transition";
 
   import { currentThemeMode } from "./store.js";
   currentThemeMode.useLocalStorage();
 
-  import ProjectHome from "./projects/ProjectHome.svelte";
-  import HomePage from "./home/HomePage.svelte";
-
   import Icon from "./components/Icon.svelte";
   import { icons } from "./icons.js";
 
-  export let url = "";
   let themeMode = 0;
 
   function switchTheme(newMode) {
@@ -127,7 +124,8 @@
     font-weight: 600;
     width: fit-content;
   }
-  .theme-switch button.active i {
+
+  .theme-switch button.active svg {
     color: var(--link);
   }
 
@@ -155,25 +153,7 @@
   }
 </style>
 
-<Router {url}>
-  <main>
-    <Route path="/projects/:id" let:params>
-      <div
-        in:fly={{ y: 200, duration: 500, delay: 150 }}
-        out:fly={{ y: 200, duration: 150, delay: 0 }}>
-        <ProjectHome id={params.id} />
-      </div>
-    </Route>
-    <Route path="/">
-      <div
-        in:fade={{ duration: 150, delay: 250 }}
-        out:fly={{ y: -200, duration: 150, delay: 150 }}>
-        <HomePage />
-      </div>
-    </Route>
-
-  </main>
-</Router>
+<Router {routes} />
 
 <section class="contact">
   <h2>Contact me</h2>
@@ -202,7 +182,7 @@
 
 <footer>
   <p>
-    <span>Copyright Goran Alković, 2020</span>
+    <span>Copyright Goran AlkoviÄ‡, 2020</span>
     <span>Made with Svelte, hosted on Netlify</span>
   </p>
 

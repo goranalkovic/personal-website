@@ -1,15 +1,16 @@
 <script>
+  import { params } from "@sveltech/routify";
+
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
-  import { Link } from "svelte-routing";
+  // import { Link } from "svelte-routing";
+  import { url } from "@sveltech/routify";
 
-  import Spinner from "../components/Spinner.svelte";
-  import AdaptiveWrapGrid from "../components/AdaptiveWrapGrid.svelte";
-  import Icon from "../components/Icon.svelte";
-  import { icons } from "../icons.js";
-
-  export let id = "";
+  import Spinner from "../../components/Spinner.svelte";
+  import AdaptiveWrapGrid from "../../components/AdaptiveWrapGrid.svelte";
+  import Icon from "../../components/Icon.svelte";
+  import { icons } from "../../icons.js";
 
   let project = null;
   let currentYear = new Date().getFullYear();
@@ -18,15 +19,15 @@
   let modalImage = { src: null, desc: null };
 
   onMount(async () => {
-    let response = await fetch("../files/projects.json");
+    let response = await fetch("../../files/projects.json");
     let projects = await response.json();
 
-    project = projects.filter((p) => p.slug === id)[0];
+    project = projects.filter((p) => p.slug === $params.project)[0];
 
     yearEnd = project.yearEnd == null ? currentYear : "";
     yearSep = project.yearStart !== project.yearEnd ? "-" : "";
 
-    setTimeout(() => window.scrollTo(0, 0), 140);
+    // setTimeout(() => window.scrollTo(0, 0), 140);
   });
 </script>
 
@@ -142,11 +143,12 @@
     margin-right: 1rem;
   }
 
-  .top-bar {
-    display: flex;
-    width: 90vw;
+  .back-btn {
+    display: inline-flex;
     position: sticky;
-    top: 2.5rem;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
     z-index: 5;
   }
 
@@ -161,7 +163,7 @@
       max-width: 80vw;
     }
 
-    .top-bar {
+    .back-btn {
       top: 0;
       justify-content: center;
       padding: 0.5rem 0;
@@ -169,19 +171,15 @@
 
       background: var(--background);
       width: 100vw;
+      border-radius: 0;
     }
   }
 </style>
 
-<div class="top-bar">
-  <Link to="/">
-    <button>
-      <!-- <i class="bx bx-arrow-back colored-icon" /> -->
-      <Icon icon={icons.arrowBack} />
-      Back
-    </button>
-  </Link>
-</div>
+<a href={$url('/')} class="link-btn back-btn">
+  <Icon icon={icons.arrowBack} />
+  Back
+</a>
 
 {#if project == null}
   <Spinner />
@@ -222,6 +220,7 @@
         class="thumb"
         src="../{image.src}"
         alt={image.subHtml}
+        loading="lazy"
         on:click={() => {
           modalImage = { src: image.src, desc: image.subHtml };
           modalVisible = true;
@@ -235,7 +234,7 @@
       transition:fade>
       <div class="modal">
         <p class="muted">Click or tap anywhere to close</p>
-        <img src="../{modalImage.src}" alt={modalImage.desc} />
+        <img src="../{modalImage.src}" alt={modalImage.desc} loading="lazy" />
         <p class="description">
           {@html modalImage.desc}
         </p>
