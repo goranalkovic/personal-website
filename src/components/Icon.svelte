@@ -8,7 +8,8 @@
 
 <style>
   svg {
-    fill: var(--link);
+    /* fill: var(--link); */
+    fill: var(--text-color);
     height: 19px;
     width: 19px;
     margin-right: 8px;

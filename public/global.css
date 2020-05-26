@@ -87,10 +87,10 @@
 		border-color: var(--border-focus-color);
 	}
 
-	button svg, .link-btn svg {
+	/* button svg, .link-btn svg {
 		fill: var(--link);
 		transition: fill 0.18s ease;
-	}
+	} */
 
 	ul {
 		list-style-type: none;

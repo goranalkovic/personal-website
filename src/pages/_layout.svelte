@@ -137,8 +137,12 @@
     width: fit-content;
   }
 
-  .theme-switch button.active svg {
-    color: var(--link);
+  :global(.theme-switch button svg) {
+    fill: var(--text-color) !important;
+  }
+
+  :global(.theme-switch button.active svg) {
+    color: var(--link) !important;
   }
 
   @media screen and (max-width: 944px) {
@@ -198,7 +202,7 @@
 
 <footer>
   <p>
-    <span>Copyright Goran AlkoviÄ‡, 2020</span>
+    <span>Copyright Goran Alković, 2020</span>
     <span>Made with Svelte, hosted on Netlify</span>
   </p>
 
@@ -210,20 +214,13 @@
         style={themeMode != 0 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
       <span>Auto</span>
     </button>
-    <button
-      on:click={() => switchTheme(1)}
-      class:active={themeMode == 1}
-      style="margin: 0 1px;">
-      <Icon
-        icon={icons.lightTheme}
-        style={themeMode != 1 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
+    <button on:click={() => switchTheme(1)} class:active={themeMode == 1}>
+      <Icon icon={icons.lightTheme} />
       <span>Light</span>
     </button>
     <button on:click={() => switchTheme(2)} class:active={themeMode == 2}>
       <!-- <i class="bx bx-moon" /> -->
-      <Icon
-        icon={icons.darkTheme}
-        style={themeMode != 2 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
+      <Icon icon={icons.darkTheme} />
       <span>Dark</span>
     </button>
   </div>
