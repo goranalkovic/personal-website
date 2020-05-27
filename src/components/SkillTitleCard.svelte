@@ -53,13 +53,8 @@
 
 <div>
   <h3>
-    <Icon icon={category.icon} large />
+    <Icon icon={category.icon} style="fill: var(--link)" large />
     <br />
     {@html category.name}
   </h3>
-  <!-- <Icon
-    icon={category.icon}
-    style="position: absolute; bottom: 0.9rem; right: 1rem; width: 5rem; height:
-    5rem; margin: 0; padding: 0; opacity: 0.15; color: var(--link);" /> -->
-  <!-- <i class="bx {category.icon}" /> -->
 </div>

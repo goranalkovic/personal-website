@@ -3,13 +3,13 @@
 
   export let icon;
   export let large = false;
-  export let style = "";
+  export let style;
 </script>
 
 <style>
   svg {
     /* fill: var(--link); */
-    fill: var(--text-color);
+    /* fill: var(--text-color); */
     height: 19px;
     width: 19px;
     margin-right: 8px;

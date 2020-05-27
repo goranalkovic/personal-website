@@ -7,6 +7,7 @@
   currentThemeMode.useLocalStorage();
 
   import Icon from "../components/Icon.svelte";
+  import IconButton from "../components/IconButton.svelte";
   import { icons } from "../icons.js";
   import { onMount } from "svelte";
 
@@ -92,6 +93,7 @@
     width: 3rem;
     height: 3rem;
     padding: 0;
+    fill: var(--text-color);
   }
 
   .theme-switch button:first-of-type {
@@ -101,19 +103,20 @@
 
   .theme-switch button:nth-of-type(2) {
     border-radius: 0;
+    margin: 0 1px;
   }
 
   .theme-switch button:last-of-type {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  /* 
+
   .theme-switch button:not(.active) :global(svg) {
     padding: 0;
     margin: 0;
     fill: var(--text-color);
   }
-
+  /*
   .theme-switch button:hover :global(svg) {
     fill: #fff !important;
   } */
@@ -129,20 +132,13 @@
   .theme-switch button.active {
     pointer-events: none;
     color: var(--link);
+    fill: var(--link) !important;
     width: 6rem;
   }
 
   .theme-switch button.active span {
     font-weight: 600;
     width: fit-content;
-  }
-
-  :global(.theme-switch button svg) {
-    fill: var(--text-color) !important;
-  }
-
-  :global(.theme-switch button.active svg) {
-    color: var(--link) !important;
   }
 
   @media screen and (max-width: 944px) {
@@ -178,25 +174,22 @@
 <section class="contact">
   <h2>Contact me</h2>
   <div class="flex-btns">
-    <a href="mailto:goran.alkovic@hotmail.com" class="link-btn" target="_blank">
-      <!-- <i class="bx bx-envelope" /> -->
-      <Icon icon={icons.email} />
-      E-mail
-    </a>
-    <a
+    <IconButton
+      href="mailto:goran.alkovic@hotmail.com"
+      label="E-mail"
+      icon={icons.email}
+      style="margin: 5px;" />
+    <IconButton
       href="https://github.com/goranalkovic"
-      class="link-btn"
-      target="_blank"
-      rel="noreferrer">
-      <!-- <i class="bx bxl-github" /> -->
-      <Icon icon={icons.github} />
-      GitHub
-    </a>
-    <a href="tel:+385976480800" class="link-btn" target="_blank">
-      <!-- <i class="bx bx-phone" /> -->
-      <Icon icon={icons.call} />
-      Phone
-    </a>
+      label="GitHub"
+      icon={icons.github}
+      style="margin: 5px;" />
+    <IconButton
+      href="tel:+385976480800"
+      label="Phone"
+      icon={icons.call}
+      style="margin: 5px;" />
+
   </div>
 </section>
 
@@ -208,10 +201,7 @@
 
   <div class="flex-btns theme-switch">
     <button on:click={() => switchTheme(0)} class:active={themeMode == 0}>
-      <!-- <i class="bx bx-adjust" /> -->
-      <Icon
-        icon={icons.autoTheme}
-        style={themeMode != 0 ? 'fill: var(--text-color); margin-right: 0;' : ''} />
+      <Icon icon={icons.autoTheme} />
       <span>Auto</span>
     </button>
     <button on:click={() => switchTheme(1)} class:active={themeMode == 1}>

@@ -51,7 +51,7 @@
 		outline: none;
 		text-decoration: none;
 		cursor: pointer;
-		transition: background 0.3s ease, color 0.18s ease, width 0.3s ease-out, height 0.3s ease-out, border 0.2s ease;
+		transition: background 0.3s ease, color 0.18s ease, width 0.3s ease-out, height 0.3s ease-out, border 0.2s ease, fill 0.18s ease, transform 0.15s ease;
 		border: 1px solid transparent;
 		border-radius: var(--border-radius);
 		height: var(--button-height);
@@ -64,15 +64,18 @@
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
+		fill: var(--link);
+	}
+
+	.link-btn:visited {
+		color: var(--text-color);
 	}
 
 	button:not(:disabled):hover, .link-btn:not(:disabled):hover {
 		background: var(--button-hover-color);
 		color: #fff;
-	}
-
-	button:not(:disabled):hover svg, .link-btn:not(:disabled):hover svg {
 		fill: #fff;
+		transform: scale(1.025);
 	}
 
 	button:disabled, .link-btn:disabled {
@@ -86,11 +89,6 @@
 	button:focus, .link-btn:focus {
 		border-color: var(--border-focus-color);
 	}
-
-	/* button svg, .link-btn svg {
-		fill: var(--link);
-		transition: fill 0.18s ease;
-	} */
 
 	ul {
 		list-style-type: none;

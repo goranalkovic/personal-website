@@ -110,7 +110,8 @@
   html.dark-theme a:focus img,
   html.dark-theme button:hover img,
   html.dark-theme button:focus img {
-    filter: saturate(80%) contrast(90%) brightness(110%);
+    /* filter: saturate(80%) contrast(90%) brightness(110%); */
+    /* filter: brightness(200%) contrast(50%); */
   }
 
   @media screen and (max-width: 944px) {

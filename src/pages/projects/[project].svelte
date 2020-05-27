@@ -9,6 +9,7 @@
   import Spinner from "../../components/Spinner.svelte";
   import AdaptiveWrapGrid from "../../components/AdaptiveWrapGrid.svelte";
   import Icon from "../../components/Icon.svelte";
+  import IconButton from "../../components/IconButton.svelte";
   import { icons } from "../../icons.js";
 
   let project = null;
@@ -145,16 +146,6 @@
     margin-right: 1rem;
   }
 
-  .back-btn {
-    display: inline-flex;
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
-    z-index: 5;
-    width: 6rem;
-  }
-
   @media screen and (max-width: 600px) {
     header h1 {
       font-size: 3rem;
@@ -165,25 +156,10 @@
     header p {
       max-width: 80vw;
     }
-
-    .back-btn {
-      top: 0;
-      left: 0;
-      justify-content: center;
-      padding: 0.5rem 0;
-      margin-bottom: 2rem;
-
-      background: var(--background);
-      width: 100vw;
-      border-radius: 0;
-    }
   }
 </style>
 
-<a href={$url('/')} class="link-btn back-btn">
-  <Icon icon={icons.arrowBack} />
-  Home
-</a>
+<IconButton isBack />
 
 {#if project == null}
   <Spinner />
