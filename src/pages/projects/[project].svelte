@@ -129,7 +129,7 @@
 
     object-fit: cover;
 
-    cursor: zoom-in;
+    /* cursor: zoom-in; */
   }
 
   @media screen and (max-width: 600px) {
