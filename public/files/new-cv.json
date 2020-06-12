@@ -1,0 +1,230 @@
+{
+	"about": "I'm studying Databases and knowledge bases in Varaždin, Croatia. Always learning new things and doing amazing stuff with things I already know. I love all kinds of design, but I also love making something amazing out of my designs.",
+	"work": [
+		{
+			"when": "March - April 2020",
+			"who": "SocialByte",
+			"what": "Branding and a Wordpress website",
+			"summary": "I designed a logo system for the agency, then set up a Wordpress website, customized it, added custom content and did some basic SEO",
+			"featured": true
+		},
+		{
+			"when": "June - August 2019",
+			"who": "Ekobit",
+			"what": "Summer internship",
+			"summary": "I was a part of a team that worked on a company's project, used C# and SQL, learned a lot about optimizing SQL queries",
+			"featured": true
+		},
+		{
+			"when": "April 2019",
+			"who": "Faculty of organization and informatics",
+			"what": "T-shirt, banner and promotional materials design for STEM Games 2019",
+			"summary": "I used Adobe Illustrator to create t-shirt and banner designs and did some promotional materials in Adobe Xd"
+		},
+		{
+			"when": "December 2018 - May 2019",
+			"who": "STEM Games",
+			"what": "Lead designer",
+			"summary": "I lead the design team and designed promotional materials, the event map, banners, accrediations, etc.",
+			"featured": true
+		},
+		{
+			"when": "December 2018",
+			"who": "Aronija Juraj",
+			"what": "Branding and bottle label design",
+			"summary": "I designed a logo, a simple brand system and bottle labels for <i>Aronija Juraj</i>"
+		},
+		{
+			"when": "December 2018",
+			"who": "Mladi pomažu - student humanitarian action",
+			"what": "Branding and promotional materials",
+			"summary": "I used Adobe Illustrator to create a logo and promotional materials for the event"
+		},
+		{
+			"when": "October 2018",
+			"who": "Brucošijada grada Varaždina 2018.",
+			"what": "Branding, promotional materials and accrediation design",
+			"summary": "I used Adobe Photoshop and Illustrator to create a logo, then designed all the promotional materials and designed accrediations"
+		},
+		{
+			"when": "April 2018",
+			"who": "Faculty of organization and informatics",
+			"what": "T-shirt, banner and promotional materials design for STEM Games 2018",
+			"summary": "I used Adobe Illustrator to create t-shirt, banner designs and promotional materials"
+		},
+		{
+			"when": "March 2018 - September 2019",
+			"who": "Student council FOI",
+			"what": "Member",
+			"summary": "I was a part of the Faculty of organization and informatics' Student council, worked on various projects and worked in a team"
+		},
+		{
+			"when": "August - September 2018",
+			"who": "Dose of sharks",
+			"what": "Branding and a Wordpress website",
+			"summary": "I made a logo and a basic design system, then set up and designed a website that also used WooCommerce"
+		},
+		{
+			"when": "April - July 2017",
+			"who": "Kaufland Varaždin",
+			"what": "Student job - groecery store",
+			"summary": "I worked in the store warehouse, distributed items to their appropriate locations in the store"
+		},
+		{
+			"when": "March 2017 - November 2018",
+			"who": "Freelancing",
+			"what": "UpWork",
+			"summary": "I did graphic design work for a client using Adobe InDesign and Adobe Illustrator"
+		},
+		{
+			"when": "July 2017 - July 2019",
+			"who": "HipOcean",
+			"what": "Branding, Wordpress website and t-shirt design, website maintenance",
+			"summary": "I made a logo, a basic design system and couple of t-shirt designs in Adobe Illustrator, then set up a Wordpress website with WooCommerce. I maintained the website until July 2019."
+		},
+		{
+			"when": "2016 - 2017",
+			"who": "FOI Career week",
+			"what": "Part of the Organization team",
+			"summary": "I worked in the Organization team, supporting all the event activities"
+		},
+		{
+			"when": "2016 - now",
+			"who": "Temple Bar Stubičke Toplice",
+			"what": "Promotional materials design",
+			"summary": "I used Adobe Photoshop, Adobe Illustrator and Adobe Xd to design various promotional materials for Temple Bar<div class=\"print-only page-break\" ><br/><br/><br/></div>"
+		},
+		{
+			"when": "2016 - now",
+			"who": "St@k - FOI student magazine",
+			"what": "Magazine and promotional materials design, design team lead",
+			"summary": "Working in a team I improved my coworking skills. Magazine design was done in Adobe InDesign, together with Adobe Photoshop and Adobe Illustrator for supporting materials. Adobe Xd was used for some promotional materials.",
+			"featured": true
+		},
+		{
+			"when": "2015",
+			"who": "Bruno Bašić",
+			"what": "Personal website",
+			"summary": "I used Worpdress to make a personal website for a friend"
+		},
+		{
+			"when": "2011 - 2015",
+			"who": "Tehničar - student magazine of Technical school Slavonski Brod",
+			"what": "Magazine design",
+			"summary": "I used Adobe InDesign to lay out the magazine and Adobe Photoshop and Adobe Illustrator for supporting materials."
+		}
+	],
+	"certsAndAwards": [
+		{
+			"when": "2019",
+			"title": "SmartUp 2019",
+			"description": "Certificate of participation"
+		},
+		{
+			"when": "2019",
+			"title": "STEM Games",
+			"description": "Certificate of participation - design team lead"
+		},
+		{
+			"when": "2018",
+			"title": "Rector's award",
+			"description": "St@k - FOI student magazine"
+		},
+		{
+			"when": "2018",
+			"title": "Advanced Python programming workshop @ FOI",
+			"description": "Completed"
+		},
+		{
+			"when": "2018",
+			"title": "Game development workshop @ FOI",
+			"description": "Completed"
+		},
+		{
+			"when": "2018",
+			"title": "STEM Games",
+			"description": "Certificate of participation - Technology Arena competitor"
+		},
+		{
+			"when": "2017",
+			"title": "Code4Bjelovar <i>hackathon</i>",
+			"description": "Second place"
+		},
+		{
+			"when": "2016",
+			"title": "Microsoft IoT hackathon, Brežice, Slovenia",
+			"description": "Third place"
+		},
+		{
+			"when": "2016",
+			"title": "Microsoft Technology Associate",
+			"description": "Windows Operating System Fundamentals"
+		}
+	],
+	"skills": [
+		{
+			"name": "Web dev",
+			"description": [
+				"I know my way around <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b> (ES6). <a href='https://svelte.dev' target='_blank' rel='noreferrer'><b>Svelte</b></a> is my favorite JS framework, but I find <a href='https://blazor.net' target='_blank' rel='noreferrer'><b>Blazor</b></a> (C#) also pretty interesting. Besides that, I know some <i>vanilla</i> <b>PHP</b> and <b>NodeJS</b>, but nothing too complex.",
+				"<b>Wordpress</b> is my favorite tool for making good websites that are easy to manage. I can set up the website, customize it to client's liking, manage plugins, do some basic SEO optimization."
+			]
+		},
+		{
+			"name": "Design and creative",
+			"description": [
+				"<b>Print, logo and UI/UX design</b> are things i <b>love</b> doing. I use the <b>Adobe</b> suite (Photoshop, Illustrator, InDesign, Xd) and <b>Figma</b>.",
+				"I can also do some <b>basic video and audio editing</b> in Adobe Audition and Adobe After Effects."
+			]
+		},
+		{
+			"name": "Mobile and hybrid app dev",
+			"description": [
+				"<b>Flutter</b> is my favorite cross-platform framework, I've done a couple of projects with it and I'm getting better every day. I also explored <b>Electron</b> for a bit and can make a basic app using it.",
+				"I know basics of <b>native Android</b> (Kotlin) and <b>native iOS</b> (Swift) development that I learned at the faculty."
+			]
+		},
+		{
+			"name": "Dev misc.",
+			"description": [
+				"I've worked mostly with Microsoft technologies and I can develop <b>UWP</b>, <b>WPF</b> and <b>WinForms</b> apps using <b>C#</b> and <b>XAML</b>. I know some <b>C++</b> and <b>Python</b>.",
+				"I'm comfortable with version control using <b>Git</b> and I've done some <b>basic CI/CD</b> setups.",
+				"I worked in a couple of teams using <b>Agile and SCRUM</b> methodologies."
+			]
+		},
+		{
+			"name": "Languages",
+			"description": [
+				"I'm a native speaker of <b>Croatian</b> and pretty good with <b>English</b> (~level C1)."
+			]
+		},
+		{
+			"name": "Other",
+			"description": [
+				"I'm pretty good with <b>LaTeX</b> and <b>Microsoft Office</b> and can do some <b>basic computer networking</b>."
+			]
+		}
+	],
+	"education": [
+		{
+			"when": "2018 - now",
+			"what": "Databases and knowledge bases - mag. inf.",
+			"description": "Faculty of organization and informatics Varaždin"
+		},
+		{
+			"when": "2015 - 2018",
+			"what": "Information systems - univ. bacc. inf.",
+			"description": "Faculty of organization and informatics Varaždin"
+		},
+		{
+			"when": "2011-2015",
+			"what": "Computer technician",
+			"description": "Technical school Slavonski Brod"
+		}
+	],
+	"contact": {
+		"phone": "<span style='opacity: 0.6'>(+385)</span> 976 480 800",
+		"email": "contact@goranalkovic.com",
+		"github": "https://github.com/goranalkovic",
+		"website": "https://goranalkovic.com"
+	}
+}

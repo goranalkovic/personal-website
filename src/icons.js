@@ -15,5 +15,7 @@ export const icons = {
     lightTheme: 13,
     call: 14,
     desktop: 15,
-    externalLink: 16
+    externalLink: 16,
+    chevronDown: 17,
+    print: 18
 };

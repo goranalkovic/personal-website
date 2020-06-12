@@ -1,7 +1,7 @@
 <script>
   import { params } from "@sveltech/routify";
 
-  import { onMount, afterUpdate } from "svelte";
+  import { onMount } from "svelte";
   import { fade } from "svelte/transition";
 
   import { url } from "@sveltech/routify";
@@ -18,10 +18,6 @@
   let modalVisible = false;
   let modalImage = { src: null, desc: null };
 
-  afterUpdate(() => {
-    // window.scrollTo(0, 0);
-  });
-
   onMount(async () => {
     let response = await fetch("../../files/projects.json");
     let projects = await response.json();
@@ -35,105 +31,68 @@
 
 <style>
   header {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 2rem;
+    width: 100vw;
+    text-align: left;
+    margin: 0;
+    padding: 2rem 4rem;
+    position: sticky;
+    top: 0;
+    background: hsla(var(--background-values), 0.8);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "back title right";
+  }
+
+  header .description {
+    margin-left: 1rem;
+    grid-area: title;
+  }
+
+  header .flex-btns {
+    grid-area: right;
   }
 
   header h1 {
-    margin: 2rem auto;
-    margin-bottom: 1rem;
-    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
     max-width: 17ch;
-    line-height: 4.1rem;
+    line-height: 125%;
     letter-spacing: -2px;
+    text-align: left;
   }
 
   header h2 {
     margin: 0;
-    font-size: 1.5rem;
-    font-weight: 500;
+    margin-top: -0.25rem;
+    padding: 0;
+    font-size: 1.4rem;
+    font-weight: 400;
     opacity: 0.6;
     letter-spacing: -1px;
-  }
-
-  header img {
-    max-height: 10rem;
-    max-width: 400px;
-    min-height: 8rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  html.dark-theme header img {
-    filter: brightness(200%) contrast(50%);
+    text-align: left;
   }
 
   header p {
-    max-width: 40ch;
-    margin: 1rem auto 2rem auto;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 150%;
+    text-align: left;
   }
 
-  .thumb {
-    width: 12rem;
-    height: 12rem;
-    object-fit: cover;
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-    cursor: pointer;
-    border: 1px solid var(--border-color);
-    background: #d6d6d6;
-    margin: var(--card-gap);
-  }
+  /* header img {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 1rem;
+  } */
 
-  .thumb:hover {
-    transform: scale(0.95);
-  }
-
-  .modal-backdrop {
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.92);
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  .modal {
-    z-index: 200;
-    user-select: none;
-  }
-
-  .modal img {
-    max-width: 85vw;
-    max-height: 60vh;
-    border-radius: 8px;
-    pointer-events: none;
-    background-color: black;
-  }
-
-  .muted {
-    text-align: center;
-    color: var(--input-disabled-text-color);
-    opacity: 0.8;
-  }
-
-  .description {
-    font-size: 1.2rem;
-    text-align: center;
-    z-index: 200;
-    color: #aaa;
-  }
+  /* html.dark-theme header img {
+    filter: brightness(200%) contrast(50%);
+  } */
 
   .flex-btns {
     display: flex;
@@ -146,79 +105,104 @@
     margin-right: 1rem;
   }
 
+  .gallery {
+    padding: 20px 8rem;
+    margin: 0 auto;
+
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    grid-auto-rows: 40vmax;
+    /* display: grid;
+    grid-gap: 1rem;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-auto-flow: dense; */
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    min-width: 4rem;
+    min-height: 24rem;
+
+    object-fit: cover;
+
+    cursor: zoom-in;
+  }
+
   @media screen and (max-width: 600px) {
-    header h1 {
-      font-size: 3rem;
-      max-width: 80vw;
-      line-height: 3.5rem;
+    .gallery {
+      padding: 20px 1rem;
+      grid-template-columns: 1fr;
+      grid-auto-rows: 40rem;
+    }
+    header {
+      /* flex-direction: column;
+      align-items: center; */
+      padding: 1rem;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: "back title" "blank right";
+      grid-gap: 1rem;
+      /* position: static; */
     }
 
-    header p {
-      max-width: 80vw;
+    header .description {
+      margin-left: 0;
+      /* margin-top: 1rem; */
+      grid-area: title;
+    }
+
+    header .flex-btns {
+      justify-content: flex-start;
+      margin: 0;
     }
   }
 </style>
-
-<IconButton isBack />
 
 {#if project == null}
   <Spinner />
 {:else}
   <header>
-    <img src="../{project.heroImage}" alt="{project.name} - logo" />
+    <div class="backbtn">
+      <IconButton href="/#projects" icon={icons.arrowBack} />
+    </div>
+    <!-- <img src="../{project.heroImage}" alt="{project.name} - logo" /> -->
 
-    <h1>{project.name}</h1>
+    <div class="description">
+      <h1>{project.name}</h1>
 
-    <h2>{project.yearStart} {yearSep} {yearEnd}</h2>
+      <h2>{project.yearStart} {yearSep} {yearEnd}</h2>
 
-    <p>
-      {@html project.description}
-    </p>
+      <p>
+        {@html project.description}
+      </p>
+    </div>
+    <div class="flex-btns">
+      {#if project.url != null}
+        <a class="link-btn" href={project.url} target="_blank">
+          <!-- <i class="bx bx-link-external colored-icon" /> -->
+          <Icon icon={icons.externalLink} />
+          Open
+        </a>
+      {/if}
+
+      {#if project.githubUrl != null}
+        <a class="link-btn" href={project.githubUrl} target="_blank">
+          <!-- <i class="bx bxl-github colored-icon" /> -->
+          <Icon icon={icons.github} />
+          GitHub
+        </a>
+      {/if}
+    </div>
+
   </header>
 
-  <div class="flex-btns">
-    {#if project.url != null}
-      <a class="link-btn" href={project.url} target="_blank">
-        <!-- <i class="bx bx-link-external colored-icon" /> -->
-        <Icon icon={icons.externalLink} />
-        Open
-      </a>
-    {/if}
-
-    {#if project.githubUrl != null}
-      <a class="link-btn" href={project.githubUrl} target="_blank">
-        <!-- <i class="bx bxl-github colored-icon" /> -->
-        <Icon icon={icons.github} />
-        GitHub
-      </a>
-    {/if}
-  </div>
-
-  <AdaptiveWrapGrid narrow>
+  <div class="gallery">
     {#each project.images as image}
-      <img
-        class="thumb"
-        src="../{image.src}"
-        alt={image.subHtml}
-        loading="lazy"
-        on:click={() => {
-          modalImage = { src: image.src, desc: image.subHtml };
-          modalVisible = true;
-        }} />
+      <img src="../{image.src}" alt={image.subHtml} loading="lazy" />
     {/each}
-  </AdaptiveWrapGrid>
-  {#if modalVisible}
-    <div
-      class="modal-backdrop"
-      on:click={() => (modalVisible = false)}
-      transition:fade>
-      <div class="modal">
-        <p class="muted">Click or tap anywhere to close</p>
-        <img src="../{modalImage.src}" alt={modalImage.desc} loading="lazy" />
-        <p class="description">
-          {@html modalImage.desc}
-        </p>
-      </div>
-    </div>
-  {/if}
+  </div>
 {/if}

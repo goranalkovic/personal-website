@@ -49,7 +49,7 @@
     "yearEnd": 2019,
     "description": "A Svelte-based PWA that uses SoundFontPlayer for playing many kinds of instruments",
     "heroImage": "img/card-images/card-simplepiano.svg",
-    "url": "https://jolly-babbage-e8dd33.netlify.com/",
+    "url": "https://piano.goranalkovic.com/",
     "githubUrl": "https://github.com/goranalkovic/SimplePiano",
     "images": [
       {

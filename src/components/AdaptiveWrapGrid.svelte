@@ -30,18 +30,15 @@
 
 <style>
   div {
-    width: 100%;
-    max-width: 1300px;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--card-width));
+    grid-auto-rows: var(--card-height);
+    gap: var(--card-gap);
     justify-content: center;
 
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    padding: 1rem 0;
+    margin: 0;
+    margin-top: 1rem;
   }
 
   .narrow {
@@ -56,22 +53,16 @@
     div,
     div.narrow {
       min-height: 20rem;
-      /* width: calc(100vw - 1.05rem); */
-      width: 100vw;
-
-      /* padding: 1rem 0.5rem 0 0.5rem; */
-      padding: 0;
-      margin-top: 1rem;
-      margin-bottom: 4rem;
-      margin-right: 0;
-      margin-left: 0;
+      width: 80vw;
 
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
 
-      align-items: center;
-      justify-content: flex-start;
-      flex-wrap: nowrap;
+      grid-template-rows: var(--card-height);
+      grid-template-columns: repeat(12, var(--card-width));
+      row-gap: 0;
+      column-gap: var(--card-gap);
+      justify-content: start;
     }
   }
 </style>

@@ -52,7 +52,7 @@
     align-items: center;
 
     margin: 0;
-    padding: 5rem 20vw;
+    padding: 4rem 20vw;
 
     background: hsla(var(--text-color-values), 0.02);
   }
@@ -72,17 +72,9 @@
     opacity: 0.4;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 2rem;
-    margin-bottom: 6rem;
-  }
-
   .flex-btns {
     display: flex;
+    justify-content: flex-end;
   }
 
   div:not(.theme-switch).flex-btns *:not(:last-child) {
@@ -116,10 +108,6 @@
     margin: 0;
     fill: var(--text-color);
   }
-  /*
-  .theme-switch button:hover :global(svg) {
-    fill: #fff !important;
-  } */
 
   .theme-switch button span {
     font-size: 0.85rem;
@@ -141,19 +129,37 @@
     width: fit-content;
   }
 
+  main {
+    min-height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+  }
+
   @media screen and (max-width: 944px) {
     footer {
+      padding: 4rem 10vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    footer {
       flex-direction: column;
-      padding: 3rem 0;
     }
 
     footer p {
       text-align: center;
       margin-bottom: 1.5rem;
     }
-  }
-
-  @media screen and (max-width: 400px) {
     .flex-btns:not(.theme-switch) {
       flex-direction: column;
     }
@@ -166,52 +172,31 @@
 </style>
 
 <main>
-  <div bind:offsetWidth={$width}>
+  <div bind:offsetWidth={$width} class="content">
     <slot decorator={TabsTransition} scoped={{ width }} />
   </div>
+
+  <footer>
+    <p>
+      <span>Copyright Goran Alković, 2020</span>
+      <span>Made with Svelte, hosted on Netlify</span>
+    </p>
+
+    <div class="flex-btns theme-switch">
+      <button on:click={() => switchTheme(0)} class:active={themeMode == 0}>
+        <Icon icon={icons.autoTheme} />
+        <span>Auto</span>
+      </button>
+      <button on:click={() => switchTheme(1)} class:active={themeMode == 1}>
+        <Icon icon={icons.lightTheme} />
+        <span>Light</span>
+      </button>
+      <button on:click={() => switchTheme(2)} class:active={themeMode == 2}>
+        <!-- <i class="bx bx-moon" /> -->
+        <Icon icon={icons.darkTheme} />
+        <span>Dark</span>
+      </button>
+    </div>
+  </footer>
+
 </main>
-
-<section class="contact">
-  <h2>Contact me</h2>
-  <div class="flex-btns">
-    <IconButton
-      href="mailto:goran.alkovic@hotmail.com"
-      label="E-mail"
-      icon={icons.email}
-      style="margin: 5px;" />
-    <IconButton
-      href="https://github.com/goranalkovic"
-      label="GitHub"
-      icon={icons.github}
-      style="margin: 5px;" />
-    <IconButton
-      href="tel:+385976480800"
-      label="Phone"
-      icon={icons.call}
-      style="margin: 5px;" />
-
-  </div>
-</section>
-
-<footer>
-  <p>
-    <span>Copyright Goran Alković, 2020</span>
-    <span>Made with Svelte, hosted on Netlify</span>
-  </p>
-
-  <div class="flex-btns theme-switch">
-    <button on:click={() => switchTheme(0)} class:active={themeMode == 0}>
-      <Icon icon={icons.autoTheme} />
-      <span>Auto</span>
-    </button>
-    <button on:click={() => switchTheme(1)} class:active={themeMode == 1}>
-      <Icon icon={icons.lightTheme} />
-      <span>Light</span>
-    </button>
-    <button on:click={() => switchTheme(2)} class:active={themeMode == 2}>
-      <!-- <i class="bx bx-moon" /> -->
-      <Icon icon={icons.darkTheme} />
-      <span>Dark</span>
-    </button>
-  </div>
-</footer>

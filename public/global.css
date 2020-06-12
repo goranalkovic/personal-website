@@ -9,6 +9,7 @@
 		--background: #242424;
 		--background-values: 0, 0%, 14%;
 		--link: hsl(269, 100%, 82%);
+		--cv-underline: hsla(269, 90%, 72%, 0.4);
 		--link-visited: hsl(269, 53%, 67%);
 		--border-focus-color: hsl(269, 59%, 80%);
 		--text-color: #f5f5f5;
@@ -26,7 +27,7 @@
 		margin: 2rem auto 1rem auto;
 		max-width: 17ch;
 		font-size: 4rem;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: 4.1rem;
 		letter-spacing: -2px;
 		text-align: center;
@@ -97,32 +98,210 @@
 	}
 
 	h2 {
-		margin: 2rem auto;
+		margin: 0;
+		padding: 0;
 		font-size: 2.8rem;
-		text-align: center;
 		font-weight: 500;
 		letter-spacing: -1px;
+		text-align: left;
 	}
 
-	main {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
-		justify-content: start;
-		align-items: center;
-		align-content: stretch;
-		/* min-height: 80vh; */
-		padding: 4rem;
+	h3 {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	.cv-block {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		column-gap: 3rem;
+	}
+
+	.cv-block h3 {
 		margin: 0;
+		padding: 0;
+	}
+
+	.cv-block ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 1.5rem;
+		grid-column-gap: 3rem;
+		/* max-width: 65ch; */
+	}
+
+	.cv-block.skills ul li p b {
+		font-weight: 400;
+		color: var(--text-color);
+		background-image: linear-gradient(120deg, var(--cv-underline) 0%, var(--cv-underline) 100%);
+		background-repeat: no-repeat;
+		background-size: 100% 4px;
+		background-position: 0 92%;
+		transition: 0.25s background-size ease, 0.2s color ease;
+	}
+
+	.cv-block.skills ul li p:nth-child(2) a:hover b {
+		background-size: 100% 88%;
+	}
+
+	section, .padded {
+		/* padding: 0 25vw; */
+		max-width: 1000px;
+		margin: 4rem auto;
+	}
+
+	a, p, span, small, ul, li, b, i, strong, em {
+		transition: 0.2s color ease;
+	}
+
+	div, main, section, html, body {
+		transition: 0.4s background-color ease;
+	}
+
+	@media screen and (max-width: 1600px) {
+		section, .padded {
+			max-width: 100vw;
+			padding: 0 20vw;
+		}
+	}
+
+	@media screen and (max-width: 1200px) {
+		.cv-block {
+			grid-template-columns: 1fr;
+		}
+		.cv-block h3 {
+			margin-bottom: 1rem;
+		}
 	}
 
 	@media screen and (max-width: 944px) {
-		main {
-			padding: 2rem;
-		}
 		h1 {
 			font-size: 3rem;
-			max-width: 80vw;
 			line-height: 3.5rem;
+		}
+		.cv-block, .cv-block ul {
+			grid-template-columns: 1fr;
+			width: 100%;
+		}
+		section, .padded {
+			max-width: 100vw;
+			padding: 0 10vw;
+		}
+	}
+
+	.print-only {
+		display: none;
+	}
+
+	@media print {
+		html, body {
+			background: #fff;
+			color: #333;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: initial;
+			--background: #fff;
+			--background-values: 0, 0%, 100%;
+			--cv-underline: hsla(269, 100%, 69%, 0.4);
+			--link: hsl(269, 80%, 49%);
+			--link-visited: hsl(269, 80%, 41%);
+			--border-focus-color: hsl(269, 80%, 49%);
+			--text-color: #333;
+			--text-color-values: 0, 0%, 20%;
+			--button-active-color: #eee;
+			--button-disabled-color: #999;
+			--input-disabled-text-color: #999;
+			--scrollbar-color: rgba(30, 30, 30, 0.4);
+			--shadow-opacity: 0.24;
+		}
+		html {
+			margin: 1cm;
+			font-size: 13px;
+		}
+		button, a.link-btn, footer {
+			display: none !important;
+		}
+		main, .content {
+			margin: 0;
+			padding: 0;
+			max-width: calc(100vw - 2cm) !important;
+		}
+		.top-bar, .padded {
+			margin-top: -2rem !important;
+			margin-bottom: 4rem !important;
+		}
+		.top-bar h1:not(.print-only) {
+			display: none;
+		}
+		.top-bar h1 {
+			margin: 0;
+			font-size: 3.4rem;
+			transform: translateX(-2px);
+		}
+		.top-bar h2 {
+			font-size: 1.4rem;
+			font-weight: 300;
+			margin: 0;
+			letter-spacing: 0;
+			color: #000;
+		}
+		.top-bar h2 span {
+			color: var(--link) !important;
+		}
+		.print-only {
+			display: block;
+		}
+		.cv-block {
+			margin: 2.25rem auto;
+		}
+		.cv-block.skills {
+			/* break-before: page; */
+			break-after: page;
+		}
+		li, h4 {
+			break-inside: avoid-page;
+			break-before: avoid-page;
+			break-after: avoid-page;
+		}
+		.cv-block ul {
+			grid-template-columns: 1fr;
+		}
+		.cv-contact {
+			display: grid;
+		}
+		.cv-contact ul {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.cv-contact span {
+			font-weight: 600;
+			color: var(--link)
+		}
+		#projects, #resume {
+			display: none !important;
+		}
+		header {
+			margin: 0 !important;
+			height: 6cm !important;
+		}
+		.print-home-skills {
+			break-before: page;
+		}
+		.no-print {
+			display: none !important;
+		}
+		.home-quick-resume-title {
+			text-align: center;
+			/* margin-top: -0.5rem; */
+			margin-bottom: 3rem;
+		}
+		hr.print-only {
+			opacity: 0.1;
+			width: 50%;
+			/* margin-top: -0.5rem; */
 		}
 	}

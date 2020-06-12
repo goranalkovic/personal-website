@@ -3,51 +3,46 @@
   import { url } from "@sveltech/routify";
   import { icons } from "../icons.js";
 
-  export let href;
-  export let label;
-  export let icon;
-  export let style;
-  export let isBack = false;
+  export let href = null;
+  export let label = null;
+  export let icon = null;
+  export let style = null;
+  export let external = false;
 </script>
 
 <style>
-  .back-btn {
-    display: inline-flex;
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
-    z-index: 5;
-    width: 6rem;
+  .square {
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
   }
-  @media screen and (max-width: 600px) {
-    .back-btn {
-      top: 0;
-      left: 0;
-      justify-content: center;
-      padding: 0.5rem 0;
-      margin-bottom: 2rem;
 
-      background: var(--background);
-      width: 100vw;
-      border-radius: 0;
-    }
+  .square :global(svg) {
+    margin: 0;
   }
 </style>
 
-{#if href != null && !isBack}
-  <a {href} {style} class="link-btn" target="_blank" rel="noreferrer">
-    <Icon {icon} />
-    {label}
-  </a>
-{:else if isBack}
-  <a href={$url('/')} class="link-btn back-btn">
-    <Icon icon={icons.arrowBack} />
-    Back
-  </a>
+{#if href != null}
+  {#if external}
+    <a
+      {href}
+      {style}
+      class="link-btn"
+      class:square={label == null}
+      target="_blank"
+      rel="noreferrer">
+      <Icon {icon} />
+      {#if label != null}{label}{/if}
+    </a>
+  {:else}
+    <a {href} {style} class="link-btn" class:square={label == null}>
+      <Icon {icon} />
+      {#if label != null}{label}{/if}
+    </a>
+  {/if}
 {:else}
-  <button {style} on:click>
+  <button {style} on:click class:square={label == null}>
     <Icon {icon} />
-    {label}
+    {#if label != null}{label}{/if}
   </button>
 {/if}

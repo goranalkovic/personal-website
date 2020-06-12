@@ -17,7 +17,8 @@
 
     border-radius: var(--border-radius);
     padding: var(--card-padding);
-    margin: var(--card-gap);
+    /* margin: var(--card-gap); */
+    margin: 0;
     border: 1px solid var(--border-color);
     background: var(--background);
     /* transition: var(--transition-qui); */
@@ -121,7 +122,7 @@
       min-height: calc(var(--card-height-mobile) - 2px);
       height: 100%;
     }
-
+    /*
     a .proj-name,
     button .proj-name {
       opacity: 1;
@@ -154,7 +155,7 @@
     html:not(.dark-theme) a img,
     html:not(.dark-thme) button img {
       filter: none;
-    }
+    } */
   }
 </style>
 

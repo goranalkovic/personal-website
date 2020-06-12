@@ -24,9 +24,10 @@
 		:root {
 			--background: #fff;
 			--background-values: 0, 0%, 100%;
-			--link: hsl(269, 100%, 39%);
-			--link-visited: hsl(269, 100%, 31%);
-			--border-focus-color: hsl(269, 100%, 39%);
+			--cv-underline: hsla(269, 100%, 69%, 0.4);
+			--link: hsl(269, 80%, 49%);
+			--link-visited: hsl(269, 80%, 41%);
+			--border-focus-color: hsl(269, 80%, 49%);
 			--text-color: #333;
 			--text-color-values: 0, 0%, 20%;
 			--button-active-color: #eee;
@@ -35,7 +36,7 @@
 			--scrollbar-color: rgba(30, 30, 30, 0.4);
 			--shadow-opacity: 0.24;
 
-			--card-gap: 0.5rem;
+			--card-gap: 1rem;
 			--card-padding: 1rem;
 			--card-border: 1px solid var(--border-color);
 			--card-width: 14rem;
@@ -46,7 +47,7 @@
 			--skill-gradient: linear-gradient(to bottom right, hsla(var(--text-color-values), 0.02), hsla(var(--text-color-values), 0.06));
 			--button-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.05), hsla(var(--text-color-values), 0.08));
 			--button-hover-color: linear-gradient(to bottom, hsla(var(--text-color-values), 0.34), hsla(var(--text-color-values), 0.39));
-			--border-color: hsla(var(--text-color-values), 0.08);
+			--border-color: hsla(var(--text-color-values), 0.16);
 			--border-hover-color: hsla(var(--text-color-values), 0.2)
 		}
 
@@ -65,10 +66,8 @@
 
 		body {
 			color: var(--text-color);
-			box-sizing: border-box;
 			background-color: var(--background);
 			scroll-behavior: smooth;
-			/* padding: 2rem; */
 		}
 
 		svg {
@@ -80,6 +79,8 @@
 	<!-- CSS async loading -->
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/loadCSS/3.1.0/loadCSS.min.js"
 		integrity="sha256-lrxR1QusNRdVrerboDtL6Qt+5ToI7RLO7uwemaYaG1Q=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
+		integrity="sha256-eVNjHw5UeU0jUqPPpZHAkU1z4U+QFBBY488WvueTm88=" crossorigin="anonymous"></script>
 	<script defer>
 		window.addEventListener('load', () => {
 			loadCSS("/build/bundle.css");
